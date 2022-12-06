@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100;200;300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  /* height: 500px; */
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 2px 2px 5px var(--background-clr);
+  background-color: #223341;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e4667;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #32495d;
+}
+
+/* ---------============== MAIN CONTENT =================---------- */
+
+.main-content {
+  height: 2700px;
+  margin-top: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-bottom: 50px; */
+  position: relative;
+}
+.gear-content {
+  margin-top: 50px;
+  background-color: #7193aca1;
+  padding: 50px;
+
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-btn {
+  /* padding: 10px; */
+  background-color: #223341;
+  color: white;
+  border: none;
+  transition: 0.5s ease;
+  font-size: 1.5rem;
+}
+.cart-btn:hover {
+  color: #ffae21;
+  cursor: pointer;
+}
+.cart-container {
+  position: relative;
+  transition: 0.5s ease;
+}
+.shopping-cart {
+  width: 80px;
+  border-radius: 10px 0px 0px 10px;
+  position: fixed;
+
+  right: 0;
+  top: 50%;
+
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  color: white;
+  background-color: #223341;
+  transition: 0.5s ease;
+}
+
+.merch-container {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
+.container {
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #223341;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  margin-right: 70px;
+}
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 10px 0px #223341;
+}
+.container button {
+  background-color: #223341;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.5s ease;
+}
+.container button:hover {
+  color: #ffae21;
+  cursor: pointer;
+}
+.container img {
+  width: 250px;
+  height: 250px;
+}
+.headers {
+  transform: translateY(-90px);
+  color: white;
+}
+.bg-img {
+  /* width: 100%; */
+  position: relative;
+  height: 20%;
+
+  text-align: center;
+  margin-top: 10px;
+  background-image: url(pictures/gear.jpg);
+  background-size: cover;
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
+}
+.overlay-clr {
+  background-color: #223341;
+  opacity: 0.8;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  width: 100%;
+}
+
+.side-bar {
+  position: fixed;
+  background-color: #223341;
+  border-radius: 10px 0px 0px 10px;
+  width: 30%;
+  top: 110px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9999;
+  transition: 0.5s ease;
+  margin-left: 5rem;
+  /* box-shadow: 30px 0px 40px 50px #2233419b; */
+
+  /* display: inline; */
+}
+.side-bar span {
+  color: white;
+  font-size: 3rem;
+  margin: 20px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.close-sidebar {
+  background-color: #223341;
+  border: none;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+  font-size: 3rem;
+}
+.close-sidebar:hover {
+  color: #ffae21;
+  cursor: pointer;
+}
+.checkout-menu {
+  background-color: white;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 90%;
+  position: relative;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-container span {
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 0;
+}
+
+.payment {
+  position: fixed;
+  bottom: 50px;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+.checkout-btn {
+  background-color: #223341;
+  color: white;
+  border: none;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+  transition: 0.5s ease;
+}
+.checkout-btn:hover {
+  color: #ffae21;
+  cursor: pointer;
+}
+
+.chosen-merch {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.merch-container {
+  width: 100%;
+}
+.cartImg > img {
+  width: 100px;
+}
+
+.remove-btn {
+  display: none;
+}
+
+.remove-btn:hover {
+  color: #ff6b7a;
+}
+.hidden {
+}
+
+.payment {
+  margin-top: 50px;
+}

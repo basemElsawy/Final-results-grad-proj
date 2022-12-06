@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Assessment</title>
+    <link rel="stylesheet" href="header&footer.css" />
+    <link rel="stylesheet" href="assessmentProgressStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/7031694be7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Pocket-<span class="Orange-txt hlf">Coach</span></div>
+
+      <img
+        src="pictures/muscle.png"
+        width="100px"
+        height="100px"
+        alt="muscle"
+        class="muscle-img"
+      />
+
+      <ul class="navbar">
+        <li><a href="/merchandise page/Merch.Html">Merchandise</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="/Home.html">About us</a></li>
+      </ul>
+    </header>
+    <main class="main-content">
+      <div class="bg-img">
+        <div class="overlay-clr"></div>
+        <div class="headers">
+          <h1>Body <span class="Orange-txt">Assessment</span></h1>
+          <h4>
+            This stage is for your own info for now just to know your athletic
+            level make sure you fill all the inputs ...
+          </h4>
+        </div>
+      </div>
+      <div class="steps-header">
+        you're almost their just few more steps before the library
+      </div>
+      <section class="inputs-section">
+        <h1 class="box-header">
+          General Health <span class="Orange-txt">Questions</span>
+        </h1>
+
+        <div class="form-container">
+          <section class="form-section not-selected selected">
+            <form action="URL" class="form-page">
+              <div class="input-container">
+                <div>
+                  <span class="question"
+                    >Do you have any history with single sports like
+                    <br />
+                    bodybuilding weightlifting or group sports etc...?</span
+                  >
+                </div>
+                <div>
+                  <label for="question-one-yes">Yes</label>
+                  <input type="radio" id="question-one-yes" />
+                  <label for="question-one-no">No</label>
+                  <input type="radio" id="question-one-no" />
+                </div>
+              </div>
+              <div class="input-container">
+                <div>
+                  <span class="question"
+                    >History with any chronic disease ?</span
+                  >
+                </div>
+                <div>
+                  <label for="question-one-yes">Yes</label>
+                  <input type="radio" id="question-one-yes" />
+                  <label for="question-one-no">No</label>
+                  <input type="radio" id="question-one-no" />
+                </div>
+              </div>
+              <div class="input-container">
+                <div>
+                  <span class="question"
+                    >Have you been severly injured in your body?</span
+                  >
+                </div>
+                <div class="text-input-container">
+                  <div class="text-yes-no">
+                    <label for="question-one-yes">Yes</label>
+                    <input type="radio" id="question-one-yes" />
+                    <label for="question-one-no">No</label>
+                    <input type="radio" id="question-one-no" />
+                  </div>
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="If yes would mention the injury here"
+                  />
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="form-section not-selected">
+            <form action="URL" class="form-page">
+              <div class="input-container">
+                <div>
+                  <span class="question"> What is your fitness goal ? </span>
+                </div>
+                <div>
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="Be specific about your goal"
+                  />
+                </div>
+              </div>
+              <div class="input-container">
+                <div>
+                  <span class="question"
+                    >What type of exercise do you enjoy the most?</span
+                  >
+                </div>
+                <div>
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="your answer here"
+                  />
+                </div>
+              </div>
+              <div class="input-container">
+                <div>
+                  <span class="question"
+                    >What are your thoughts about strength training?</span
+                  >
+                </div>
+                <div class="text-input-container">
+                  <input
+                    class="text-input"
+                    type="text"
+                    placeholder="Your answer here"
+                  />
+                </div>
+              </div>
+            </form>
+          </section>
+          <section class="form-section not-selected">
+            <form action="url" class="profile-details">
+              <div class="profile-settings">
+                <label for="user-name"> User name </label>
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="User name"
+                />
+              </div>
+              <div class="profile-settings">
+                <label for="e-mail">E-mail</label>
+                <input
+                  type="text"
+                  name="e-mail"
+                  id="e-mail"
+                  placeholder="Ex : champion @ gmail.com"
+                />
+              </div>
+              <div class="profile-settings">
+                <label for="password"> Password </label>
+                <input
+                  type="password"
+                  name="Password"
+                  id="user-name"
+                  placeholder="make it confidential"
+                />
+              </div>
+              <div class="profile-settings">
+                <label for="confirm-password"> confirm-password </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="confirm-password"
+                  placeholder="re-write password"
+                />
+              </div>
+            </form>
+          </section>
+          <section class="form-section not-selected">
+            <div class="select-image">
+              <img
+                src="pictures/user profile.jpg"
+                alt="user-prof"
+                width="25%"
+                height="25%"
+              />
+              <button class="add-picture">Add a picture</button>
+              <form action="url">
+                <textarea
+                  name="description"
+                  id="write-somthing"
+                  cols="50"
+                  rows="5"
+                >
+Write something about yourself</textarea
+                >
+              </form>
+              <span class="skip">you can skip this by clicking start-work</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="main-prog-container">
+          <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="Next-page">Next</button>
+
+          <a class="hidden Start-work" href="/starting workout/WorkoutPage.html"
+            >Start Work</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-section">
+        <div class="footer-content">
+          <ul id="footer-links">
+            <li><a class="footer-link1">Refrences</a></li>
+            <span class="v-row"></span>
+            <li><a class="footer-link2">User profile</a></li>
+            <span class="v-row"></span>
+            <li><a class="footer-link3">Merchandise</a></li>
+          </ul>
+          <div class="languages">
+            <h4 class="Contact-us">Contact Us</h4>
+            <ul id="contact-links">
+              <li>
+                <a class="contact-links1"
+                  >Facebook <i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <div id="v-line"></div>
+              <li>
+                <a class="contact-links2"
+                  >Instagram <i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </li>
+              <div id="v-line"></div>
+              <li>
+                <a class="contact-links3"
+                  >Twitter <i class="fa-brands fa-square-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <button type="button" class="footer-btn">
+        <a href="/Home.html">About us</a>
+      </button>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/7031694be7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assessmentProgress.js"></script>
+  </body>
+</html>

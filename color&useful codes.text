@@ -1,0 +1,119 @@
+#496B85 #E2E1CC text color #FFAE21 background #223341
+
+<script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      document.getElementById('navbar').style.padding = '30px 10px';
+      document.getElementById('logo').style.fontSize = '25px';
+    } else {
+      document.getElementById('navbar').style.padding = '80px 10px';
+      document.getElementById('logo').style.fontSize = '35px';
+    }
+  }
+
+  let counter = 1;
+  //------------------------------slider javascript
+  setInterval(function () {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 4) {
+      counter = 1;
+    }
+  }, 3000);
+</script>
+filter: invert(80%) sepia(30%) saturate(11207%) hue-rotate(0deg)
+brightness(95%) contrast(150%);
+
+ <p class="para">
+              Powerlifting is composed of three lifts: the squat, bench press,
+              and deadlift. Anyone who has ever worked out at a gym has either
+              done bench presses or at least seen someone do them. Benches are
+              so popular as you can handle greater weights in the bench press
+              than any other upper body exercise. And they are a great exercise
+              for chest, shoulder, and triceps development. But the other two
+              lifts are not quite as popular, but they should be! Squats are the
+              best exercise there is for developing leg and hip strength while
+              deadlifts utilize just about every muscle in the body, so they
+              develop total body strength. In fact, performing just the three
+              powerlifts is about all one needs for a sound training program,
+              and no other exercises will provide the strength and muscular
+              gains that the three powerlifts provide. The page Proper
+              Performance of the Powerlifts explains details in this regard, so
+              it will not be repeated here. And for pics of yours truly
+              performing the powerlifts, see APF PA States Powerlifting
+              Championships - 2006 – Pictures. But it will be said here, if you
+              are not incorporating these three lifts in your training program
+              then you are not making the strength and muscular size gains that
+              you could be. And of course, if you are thinking of competing in a
+              powerlifting contest, you need to be performing the powerlifts in
+              training.
+            </p>
+
+              <p class="para-2">
+              They say you can’t chase two rabbits. To that I say: shut up, I
+              will do what I want! Power building is all about chasing two
+              rabbit.<br />
+              Essentially, power building is the process of building muscle size
+              at the same time as building muscle strength and giving neither
+              particular importance over the other.<br />
+              As people become more and more interested in performance, the idea
+              of getting stronger has become increasingly popular.
+              <br />Meanwhile, simply building muscle size for the sake of
+              appearances has started to fall out of favour. But here’s the
+              problem: people still want to look strong! While you can pretend
+              you don’t care what you look like at all, we all know you’re
+              lying! This is a problem, seeing as generally the training methods
+              involved in building strength are considered contrary to those
+              used to build size. <br />Powerbuilding thus presents something of
+              a challenge, in that your training has to be optimized for two
+              separate (albeit related) goals. In this post, I’ll be looking at
+              how powerbuilding works and at what the best way to train size and
+              strength at the same time might be. At the same time, I’ll also be
+              looking at some of the shortcomings of traditional methods and
+              suggesting a few new ones of my own.
+            </p>
+
+
+              <p class="para-2 ">
+            Calisthenics, also called Street Workout, gained worldwide
+            reputation after 2008 video of Hannibal for King went viral on
+            YouTube. Since then, increasingly more people have trained it as
+            well as national and international competitions have emerged. It
+            derives its name from two Greek words kálos which means beauty and
+            sthénos which means strength. Calisthenics is a discipline in which
+            you train your whole body using only bodyweight exercises. You have
+            probably seen people doing gravity-defying gymnastic figures such as
+            Front Lever and Planche or dynamic acrobatic skills on the bars such
+            as Muscle Up. This is the sole idea of Calisthenics – to perform
+            workouts with nothing else but your own body.
+          </p>
+
+
+           <p class="para-2">
+            If you’re trying to develop an aesthetic body, a great first step is
+            to get a visual image of how you want to look. A good idea is to
+            find bodybuilders or athletes that are similar in height to you.
+            They should have a physique like the one you want to develop. Do you
+            want an aesthetic bodybuilding physique? You might want an aesthetic
+            physique with a little less muscle. Regardless, you will need to
+            work on your proportions, symmetry, balance, and conditioning. This
+            means a small waist, a good V-taper, and quads big enough to make
+            the knees look small. Also, the quads should have a good outer
+            sweep. And, don’t forget the calves! For example, Samir Bannout was
+            well-known for his aesthetics and proportions. Some may say Bannout
+            has an artistic physique. He is 5’8” and competes around 198lbs.
+            Looking at his physique, you may feel it has more flow and pleasing
+            lines than, say, Frank Zane. Finding examples of an aesthetic body
+            that is inspiring to you is a powerful motivator to help you create
+            your own aesthetic physique? Study the physique so you can create a
+            clear mental image and train accordingly to bring to life what you
+            see in your mind.
+          </p>
