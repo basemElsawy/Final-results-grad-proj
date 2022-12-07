@@ -7,6 +7,7 @@
   box-sizing: border-box;
   border: none;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -15,10 +16,12 @@ body {
   --background-clr: #223341;
   --txt-clr: #ffae21;
 }
+
 /* =========================HEADER SECTION-----NAVBAR=============== */
 .Orange-txt {
   color: #ffae21;
 }
+
 .header {
   height: 100px;
   display: flex;
@@ -31,26 +34,31 @@ body {
   z-index: 1000;
   transition: 0.3s ease;
 }
+
 .header img {
   filter: invert(100%);
   position: absolute;
   bottom: -20%;
   right: 47%;
 }
+
 .hlf {
   font-weight: bolder;
   color: #ffae21;
 }
+
 .logo {
   font-size: 2.5rem;
   margin-left: 2rem;
   transition: 0.5s ease;
 }
+
 .navbar {
   margin-right: 2rem;
   display: flex;
   transition: 0.3s ease;
 }
+
 .navbar li {
   font-size: 1.2rem;
   margin-top: 16px;
@@ -58,17 +66,20 @@ body {
   margin-right: 15px;
   list-style: none;
 }
+
 .navbar a {
   text-decoration: none;
   color: white;
   transition: 0.5s ease;
 }
+
 .navbar a:hover,
 .logo:hover {
   color: #ffae21;
   transform: scale(1.1);
   cursor: pointer;
 }
+
 /* ===================== Main section ------ About us-============== */
 
 .about-us {
@@ -80,6 +91,7 @@ body {
   margin-top: 5px;
   /* margin-bottom: 30px; */
 }
+
 .background-img {
   background-image: url(barbell.jpg);
   width: 100%;
@@ -89,14 +101,16 @@ body {
   background-color: #223341;
   position: relative;
 }
+
 .overlay-clr {
-  background-color: #22334180;
+  background-color: #22334196;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
 }
+
 .headings {
   position: absolute;
   top: 80%;
@@ -108,6 +122,7 @@ body {
 .about-container {
   background-color: #223341;
 }
+
 .para-1 {
   margin-top: 0px;
   text-align: center;
@@ -139,15 +154,18 @@ body {
   background-color: white;
   transform: translateY(30px);
 }
+
 .first-img {
   width: 100%;
   height: 500px;
   border-radius: 10px 10px 0px 0px;
 }
+
 .heading {
   text-align: center;
   font-weight: bolder;
 }
+
 #p-lifting-header {
   position: absolute;
   text-align: center;
@@ -161,6 +179,7 @@ body {
   width: 20%;
   background-color: #2233419f;
 }
+
 .con {
   width: 500px;
   height: 550px;
@@ -185,12 +204,14 @@ body {
   padding: 10px;
   border-radius: 0px 0px 0px 10px;
 }
+
 .Bodybuilding-section {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .white-bg-grid {
   background-color: white;
   color: #223341;
@@ -206,6 +227,7 @@ body {
   margin-left: -3px;
   margin-top: -5px;
 }
+
 .para-2 {
   width: 500px;
 }
@@ -247,25 +269,24 @@ body {
   display: flex;
   color: white;
   height: auto;
-  width: 90%;
+  width: 100%;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
   padding: 50px;
   z-index: -1;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   flex-direction: column;
 }
+
 .linear-gradient {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    120deg,
-    rgba(0, 0, 0, 0.8) 10%,
-    #30689679 30%,
-    #223341 40%
-  );
+  background: linear-gradient(120deg,
+      rgba(0, 0, 0, 0.8) 10%,
+      #30689679 30%,
+      #223341 40%);
   background-position: 100% 100%;
 
   background-size: 300% 300%;
@@ -276,11 +297,13 @@ body {
   z-index: -1;
   border-radius: 10px;
 }
+
 .background-animation {
   animation: backgroundColor 1s ease;
 
   animation-fill-mode: forwards;
 }
+
 .para-content-PL {
   display: flex;
   font-size: 0.8rem;
@@ -291,9 +314,11 @@ body {
   z-index: 10;
   gap: 20px;
 }
+
 .powerlifting-para {
   width: 100%;
 }
+
 .bodyBuilding-para {
   /* background-color: var(--background-clr); */
 
@@ -310,9 +335,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .fa-solid {
   color: #ffae21;
 }
+
 .slide p {
   text-align: center;
   font-size: 2rem;
@@ -322,6 +349,7 @@ body {
   border-radius: 0px 0px 15px 15px;
   margin: 1px;
 }
+
 .slider {
   width: 800px;
   height: 600px;
@@ -356,6 +384,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .manual-btn {
   cursor: pointer;
   z-index: 1;
@@ -364,6 +393,7 @@ body {
   border-radius: 10px;
   transition: 1s;
 }
+
 .manual-btn:not(:last-child) {
   margin-right: 40px;
 }
@@ -372,19 +402,19 @@ body {
   background: #ffae21;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
   margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
   margin-left: -40%;
 }
 
-#radio4:checked ~ .first {
+#radio4:checked~.first {
   margin-left: -60%;
 }
 
@@ -395,6 +425,7 @@ body {
   justify-content: center;
   margin-top: 460px;
 }
+
 .navigation-auto div {
   border: 3px solid #223341;
   padding: 5px;
@@ -408,18 +439,22 @@ body {
   margin-top: 3px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 {
   background: #ffae21;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+
+#radio2:checked~.navigation-auto .auto-btn2 {
   background: #ffae21;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+
+#radio3:checked~.navigation-auto .auto-btn3 {
   background: #ffae21;
 }
-#radio4:checked ~ .navigation-auto .auto-btn4 {
+
+#radio4:checked~.navigation-auto .auto-btn4 {
   background: #ffae21;
 }
+
 /* --------------------------------------------------------------=====================COACHS SECTION=====================---------------------------------- */
 
 .section-header {
@@ -433,13 +468,16 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
+
 .card {
   border: none;
   margin-bottom: 100px;
 }
+
 .card img {
   border-radius: 10px 10px 0px 0px;
 }
+
 .coach-section {
   display: flex;
   justify-content: space-evenly;
@@ -457,42 +495,6 @@ body {
 }
 
 /* ---------------==========================SPORT SECTION==================--------------- */
-.sport-section {
-  margin-bottom: 100px;
-  margin-top: 50px;
-  display: flex;
-  transform: translateX(35px);
-  justify-content: center;
-}
-
-.section-seperator {
-  text-align: center;
-  opacity: 0.7;
-}
-.sport-section a > img {
-  transition: 0.5s ease;
-}
-.sport-section a {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
-  transition: 0.5s ease;
-  text-decoration: none;
-  color: #1f3b5392;
-  font-weight: bold;
-}
-.sport-section a:hover {
-  color: #ffae21;
-}
-.power-link {
-  margin-left: 20px;
-}
-.sport-section a > img:hover {
-  filter: invert(80%) sepia(30%) saturate(11207%) hue-rotate(0deg)
-    brightness(95%) contrast(150%);
-  transform: scale(1.1);
-  color: #ffae21;
-}
 
 /* -----------===================FOOTER SECTION============------------ */
 
@@ -518,11 +520,13 @@ footer {
   margin-right: 10px;
   justify-content: center;
 }
+
 .Contact-us {
   text-align: center;
   margin-top: 100px;
 }
-.footer-content ul > li {
+
+.footer-content ul>li {
   margin-right: 35px;
   list-style: none;
 }
@@ -535,6 +539,7 @@ footer {
   opacity: 0.5;
   transition: 0.5s ease;
 }
+
 .footer-content a:hover {
   color: #ffae21;
   opacity: 1;
@@ -563,6 +568,7 @@ footer {
   right: 10px;
   background-color: #1f3c53;
 }
+
 .footer-btn a {
   text-decoration: none;
   color: white;
@@ -570,6 +576,7 @@ footer {
   font-size: 1rem;
   transition: 0.3s ease;
 }
+
 .footer-btn a:hover {
   color: #ffae21;
   cursor: pointer;
@@ -591,6 +598,7 @@ footer {
   margin-bottom: 200px;
   /* border-radius: 10px; */
 }
+
 .content-container img {
   width: 75%;
   height: 500px;
@@ -600,6 +608,7 @@ footer {
   border: 5px solid #37526780;
   box-shadow: 0px 30px 50px 0px black;
 }
+
 .content-div {
   display: flex;
   flex-direction: column;
@@ -631,6 +640,7 @@ footer {
   margin: auto;
   text-align: justify;
 }
+
 #para-start {
   width: 50%;
   font-weight: bolder;
@@ -644,11 +654,13 @@ footer {
   align-items: center;
   /* height: 300px; */
 }
+
 .article-lifting {
   text-align: justify;
   margin-right: 100px;
   z-index: 1;
 }
+
 .section-image {
   position: relative;
 }
@@ -656,6 +668,7 @@ footer {
 .section-image img {
   border-radius: 10px 0px 0px 10px;
 }
+
 .image-header {
   position: absolute;
   bottom: 10px;
@@ -667,16 +680,19 @@ footer {
   width: 1em;
   /* height: 500px; */
 }
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 2px 2px 5px var(--background-clr);
   /* border-radius: 10px; */
   /* margin-block: 100px; */
   background-color: var(--background-clr);
 }
+
 ::-webkit-scrollbar-thumb {
   background: #244662;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #32495d;
 }
@@ -686,12 +702,13 @@ footer {
   color: white;
   background-color: var(--background-clr);
   padding: 20px;
-  margin-left: 32rem;
+
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin-bottom: 50px;
+  margin: 0px auto 50px;
   border-radius: 0px 0px 10px 10px;
 }
+
 .easy-start a {
   color: white;
   text-decoration: none;
@@ -703,10 +720,12 @@ footer {
   color: var(--txt-clr);
   cursor: pointer;
 }
+
 .slider-section {
   display: flex;
   justify-content: space-between;
 }
+
 .sliderTxt-container {
   font-size: 1.5rem;
   width: 75%;
@@ -736,7 +755,7 @@ footer {
 }
 
 .section-coach {
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   margin: 200px auto;
   height: auto;
@@ -785,10 +804,12 @@ footer {
 .coach-card img {
   border-radius: 10px 10px 0px 0px;
 }
+
 .coach-card:nth-child(1) {
   /* margin-bottom: 50px; */
   transition-delay: 400ms;
 }
+
 .coach-card:nth-child(2) {
   /* margin-top: 50px; */
   transition: 600ms;
@@ -818,11 +839,13 @@ footer {
   color: white;
   text-decoration: none;
 }
+
 .content-container a:hover {
   color: #ffae21;
   cursor: pointer;
   box-shadow: 0px 25px 35px 0px #1f3b5372;
 }
+
 .no-slide {
   opacity: 0;
 }
@@ -838,21 +861,25 @@ footer {
     opacity: 0;
     transform: translateY(-50px);
   }
+
   90% {
     z-index: -1;
   }
+
   100% {
     opacity: 1;
     z-index: 1;
     transform: translateY(60px);
   }
 }
+
 .no-top-slide {
   z-index: -1;
   opacity: 0;
   transform: translateY(-50px);
   transition: 0.8s ease;
 }
+
 .top-slide {
   z-index: 1;
   opacity: 1;
@@ -868,17 +895,20 @@ footer {
     background-position: 0% 0%;
   }
 }
+
 .bodybuilding-header {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 30px;
 }
+
 .main-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
+
 .bodybuilding-content {
   display: flex;
   justify-content: space-evenly;
@@ -888,6 +918,7 @@ footer {
 .Bodybuilding-section {
   margin-bottom: 100px;
 }
+
 .img {
   border-radius: 50%;
   border: 10px solid var(--background-clr);
@@ -918,17 +949,21 @@ footer {
   left: 35%;
   color: white;
 }
+
 .no-opacity {
   opacity: 0;
 }
+
 .appear-onslide {
   animation: appear-onslide 1s ease-in-out;
   animation-fill-mode: forwards;
 }
+
 @keyframes appear-onslide {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -950,9 +985,136 @@ footer {
     opacity: 0;
     filter: blur(10px);
   }
+
   100% {
     margin-top: 0px;
     opacity: 1;
     filter: blur(0px);
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  object-fit: cover;
+  position: relative;
+  background-color: #1f3c53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img-wrapper {
+  width: 100%;
+  height: 95%;
+
+}
+
+#image-wrap1 {
+  background-image: url(pictures/pexels-victor-freitas-1092878.jpg);
+  background-size: cover;
+  background-position: 100%;
+
+}
+
+
+
+#image-wrap3 {
+  background-image: url(barbell.jpg);
+  background-size: cover;
+  background-position: 100%;
+
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+}
+
+.swiper-pagination {
+
+
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  height: 30px;
+  width: 50px;
+
+
+
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+.pagni {
+  position: absolute;
+  bottom: 30px;
+  left: 52%;
+}
+
+.article-wrapper {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: justify;
+  width: 90%;
+  margin: 50px;
+  margin-bottom: 150px;
+  /* max-width: 50%; */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+
+}
+
+.article-wrapper img {
+  filter: invert(100%);
+  opacity: 0.8;
+
+}
+
+#sign-up-btn {
+  font-weight: bolder;
+  padding: 10px 20px;
+  outline: 1px solid var(--txt-clr);
+  border-radius: 5px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#sign-up-btn:hover {
+  color: var(--background-clr);
+}
+
+#sign-up-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--txt-clr);
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s ease;
+  border-radius: 5px;
+
+}
+
+#sign-up-btn:hover::before {
+  width: 100%;
+
 }

@@ -115,18 +115,18 @@ let scrollFunction = () => {
     logo.style.transform = 'scale(1.2)';
     header.style.boxShadow = 'none';
   }
-  if (
-    document.body.scrollTop > 750 ||
-    document.documentElement.scrollTop > 750
-  ) {
-    header.style.borderRadius = '0px 0px 10px 10px';
-    header.style.marginRight = '10px';
-    header.style.marginLeft = '10px';
-  } else {
-    header.style.borderRadius = '0px 0px 0px 0px';
-    header.style.marginRight = '0px';
-    header.style.marginLeft = '0px';
-  }
+  // if (
+  //   document.body.scrollTop > 750 ||
+  //   document.documentElement.scrollTop > 750
+  // ) {
+  //   header.style.borderRadius = '0px 0px 10px 10px';
+  //   header.style.marginRight = '10px';
+  //   header.style.marginLeft = '10px';
+  // } else {
+  //   header.style.borderRadius = '0px 0px 0px 0px';
+  //   header.style.marginRight = '0px';
+  //   header.style.marginLeft = '0px';
+  // }
   if (document.documentElement.scrollTop > 4900) {
     header.style.marginRight = '0px';
     header.style.marginLeft = '0px';
@@ -150,3 +150,25 @@ setInterval(() => {
     counter = 1;
   }
 }, 5000);
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
