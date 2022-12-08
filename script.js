@@ -154,7 +154,7 @@ setInterval(() => {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   // If we need pagination
   pagination: {
