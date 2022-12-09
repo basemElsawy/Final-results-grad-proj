@@ -103,7 +103,7 @@ body {
 }
 
 .overlay-clr {
-  background-color: #223341ba;
+  background-color: #223341eb;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -867,6 +867,7 @@ footer {
     z-index: -1;
     opacity: 0;
     transform: translateY(-50px);
+    filter: blur(5%);
   }
 
   90% {
@@ -878,6 +879,7 @@ footer {
     z-index: 1;
     transform: translateY(60px);
     border-radius: 10px;
+    filter: blur(0%);
   }
 }
 
@@ -1176,4 +1178,56 @@ footer {
 .button:hover::before {
   width: 100%;
   z-index: -1;
+}
+
+.slider-3 {
+  margin: 150px 50px;
+  display: flex;
+  gap: 200px;
+  width: 100%;
+}
+
+#locator-btn {
+  text-decoration: none;
+  outline: 2px solid var(--txt-clr);
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#locator-btn:hover {
+  color: var(--background-clr);
+}
+
+#locator-btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #ffae21;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+
+}
+
+#locator-btn:hover::before {
+  width: 100%;
+}
+
+.inside-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+#slider-img-3 {
+  filter: invert(100%);
+  opacity: 0.7;
 }

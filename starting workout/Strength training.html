@@ -1,1005 +1,806 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workout Area</title>
-    <link href="workoutStyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="header&footer.css" />
-    <link rel="stylesheet" href="StrengthTrainingStyle.css" />
-    <script
-      src="https://kit.fontawesome.com/7031694be7.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="strengthBehavior.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">Pocket-<span class="Orange-txt hlf">Coach</span></div>
 
-      <img
-        src="pictures/muscle.png"
-        width="100px"
-        height="100px"
-        alt="muscle"
-        class="muscle-img"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workout Area</title>
+  <link href="workoutStyle.css" rel="stylesheet" />
+  <link rel="stylesheet" href="header&footer.css" />
+  <link rel="stylesheet" href="StrengthTrainingStyle.css" />
+  <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
+  <script src="strengthBehavior.js" defer></script>
+</head>
 
-      <ul class="navbar">
-        <li><a href="/merchandise page/Merch.Html">Merchandise</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="/Home.html">About us</a></li>
-      </ul>
-    </header>
-    <main>
-      <section class="first-img">
-        <div class="heading-img">
-          <figure class="figure-img">
-            <img
-              src="pictures/Workout area.jpg"
-              alt=""
-              width="100%"
-              height="100%"
-            />
-            <div class="background-clr"></div>
-          </figure>
-          <div class="first-heading">
-            <h1>Workout <span class="Orange-txt">Area</span></h1>
-            <span>Get ready the real talk is about to start.</span>
-          </div>
+<body>
+  <header class="header">
+    <div class="logo">Pocket-<span class="Orange-txt hlf">Coach</span></div>
+
+    <img src="pictures/muscle.png" width="100px" height="100px" alt="muscle" class="muscle-img" />
+
+    <ul class="navbar">
+      <li><a href="/merchandise page/Merch.Html">Merchandise</a></li>
+      <li><a href="/Home.html">About us</a></li>
+      <li><a href="#">Logout</a></li>
+      <li><a id="Profile" href="#">Profile</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="first-img">
+      <div class="heading-img">
+        <figure class="figure-img">
+          <img src="pictures/Workout area.jpg" alt="" width="100%" height="100%" />
+          <div class="background-clr"></div>
+        </figure>
+        <div class="first-heading">
+          <h1>Workout <span class="Orange-txt">Area</span></h1>
+          <span>Get ready the real talk is about to start.</span>
         </div>
-      </section>
-      <section class="button-section">
-        <div class="button-container">
-          <button class="guide-btn clicked">
-            Workout-<span class="Orange-txt">area</span>
-          </button>
-          <button class="guide-btn">Detailed Programs</button>
-          <button class="guide-btn">Client Details</button>
-        </div>
-      </section>
+      </div>
+    </section>
+    <section class="button-section">
+      <div class="button-container">
+        <button class="guide-btn clicked">
+          Workout-<span class="Orange-txt">area</span>
+        </button>
+        <button class="guide-btn">Detailed Programs</button>
+        <button class="guide-btn">Client Details</button>
+      </div>
+    </section>
 
-      <section class="workout-section section hidden active">
-        <div class="section-header">
-          <h1 class="strength-heading">
-            Strength <span class="Orange-txt">Training</span>
-          </h1>
-          <img
-            src="pictures/powerliftinggg.jpg"
-            alt="power"
-            width="50%"
-            height="200px"
-          />
-        </div>
-        <!-- ---------------=================== First Exercises ================--------------- -->
-        <section class="must-do-exercises">
-          <div class="must-do not-selected">
-            <div class="muscles-selector">
-              <img
-                src="pictures/man-goes-in-for-sports-with-dumbbells-in-his-hands-royalty-free-image-1611590448_.jfif"
-                class="image-select"
-                width="100%"
-                height="200"
-                alt="core"
-              />
-              <h3 class="topic">Core muscles</h3>
-              <span class="describe"
-                >Mandatory exercises for core stability</span
-              >
-              <button type="button" title="button-work" class="more-exercises">
-                Click here
-              </button>
-            </div>
-            <div class="muscles-containing">
-              <div class="muscles">
-                <div class="muscles-first">
-                  <h2>Core Exercise's</h2>
-                  <span
-                    >Make sure you warm up your core before you start
-                    lifting</span
-                  >
-                </div>
-                <h3 class="head">Mcgill big three for core stability</h3>
-                <div class="organize">
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">Bird dog</h4>
-                      <span
-                        >One of the many good exercises for your core muscle
-                        since it engages crossing core muscles together you can
-                        perform this exercise before you start the lift 30
-                        seconds isometric and 30 seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/vzU5xrs1gMQ?autoplay=1&controls=0&mute=1"
-                      title="Bird Dog"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">The curl up</h4>
-                      <span
-                        >The curl up is a good exercise for both abdominus major
-                        and also the obliques you can perform this exercise
-                        before you start the lift 30 seconds isometric and 30
-                        seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/pUiJ6EIjIjw?autoplay=1&controls=0&mute=1"
-                      title="Abdominal Curl Up"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">Side planks</h4>
-                      <span>
-                        side planks are good exercises for your core muscle
-                        since it engages obliques wrapping your lower back
-                        around with stablity together you can perform this
-                        exercise before you start the lift 30 seconds isometric
-                        and 30 seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/_R389Jk0tIo?autoplay=1&controls=0&mute=1"
-                      title="Side Plank"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <button class="turn-off" type="submit" title="turn-off">
-                  Close
-                </button>
-              </div>
-            </div>
+    <section class="workout-section section hidden active">
+      <div class="section-header">
+        <h1 class="strength-heading">
+          Strength <span class="Orange-txt">Training</span>
+        </h1>
+        <img src="pictures/powerliftinggg.jpg" alt="power" width="50%" height="200px" />
+      </div>
+      <!-- ---------------=================== First Exercises ================--------------- -->
+      <section class="must-do-exercises">
+        <div class="must-do not-selected">
+          <div class="muscles-selector">
+            <img src="pictures/man-goes-in-for-sports-with-dumbbells-in-his-hands-royalty-free-image-1611590448_.jfif"
+              class="image-select" width="100%" height="200" alt="core" />
+            <h3 class="topic">Core muscles</h3>
+            <span class="describe">Mandatory exercises for core stability</span>
+            <button type="button" title="button-work" class="more-exercises">
+              Click here
+            </button>
           </div>
-
-          <div class="must-do not-selected">
-            <div class="muscles-selector">
-              <img
-                src="pictures/rowing machine.jpg"
-                class="image-select"
-                width="100%"
-                height="200"
-                alt="core"
-              />
-              <h3 class="topic">Cardio Exercises</h3>
-              <span class="describe"
-                >Some cardiovascular system exercises for your heart.</span
-              >
-              <button type="button" title="button-work" class="more-exercises">
-                Click here
-              </button>
-            </div>
-            <div class="muscles-containing">
-              <div class="muscles">
-                <div class="muscles-first">
-                  <h2>Core Exercise's</h2>
-                  <span
-                    >Make sure you warm up your core before you start
-                    lifting</span
-                  >
-                </div>
-                <h3 class="head">Mcgill big three for core stability</h3>
-                <div class="organize">
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">Bird dog</h4>
-                      <span
-                        >One of the many good exercises for your core muscle
-                        since it engages crossing core muscles together you can
-                        perform this exercise before you start the lift 30
-                        seconds isometric and 30 seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/vzU5xrs1gMQ?autoplay=1&controls=0&mute=1"
-                      title="Bird Dog"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">The curl up</h4>
-                      <span
-                        >The curl up is a good exercise for both abdominus major
-                        and also the obliques you can perform this exercise
-                        before you start the lift 30 seconds isometric and 30
-                        seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/pUiJ6EIjIjw?autoplay=1&controls=0&mute=1"
-                      title="Abdominal Curl Up"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">Side planks</h4>
-                      <span
-                        >side planks are good exercises for your core muscle
-                        since it engages obliques wrapping your lower back
-                        around with stablity together you can perform this
-                        exercise before you start the lift 30 seconds isometric
-                        and 30 seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/_R389Jk0tIo?autoplay=1&controls=0&mute=1"
-                      title="Side Plank"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <button class="turn-off" type="submit" title="turn-off">
-                  Close
-                </button>
+          <div class="muscles-containing">
+            <div class="muscles">
+              <div class="muscles-first">
+                <h2>Core Exercise's</h2>
+                <span>Make sure you warm up your core before you start
+                  lifting</span>
               </div>
-            </div>
-          </div>
-          <div class="must-do not-selected">
-            <div class="muscles-selector">
-              <img
-                src="pictures/young-strong-sweaty-focused-fit-muscular-man-with-royalty-free-image-1662644257.jpg"
-                class="image-select"
-                width="100%"
-                height="200"
-                alt="core"
-              />
-              <h3 class="topic">Warm ups</h3>
-              <span class="describe"
-                >Important warm up movments for each lift.</span
-              >
-              <button type="button" title="button-work" class="more-exercises">
-                Click here
-              </button>
-            </div>
-            <div class="muscles-containing">
-              <div class="muscles">
-                <div class="muscles-first">
-                  <h2>Core Exercise's</h2>
-                  <span
-                    >Make sure you warm up your core before you start
-                    lifting</span
-                  >
-                </div>
-                <h3 class="head">Mcgill big three for core stability</h3>
-                <div class="organize">
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">Bird dog</h4>
-                      <span
-                        >One of the many good exercises for your core muscle
-                        since it engages crossing core muscles together you can
-                        perform this exercise before you start the lift 30
-                        seconds isometric and 30 seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/vzU5xrs1gMQ?autoplay=1&controls=0&mute=1"
-                      title="Bird Dog"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
+              <h3 class="head">Mcgill big three for core stability</h3>
+              <div class="organize">
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">Bird dog</h4>
+                    <span>One of the many good exercises for your core muscle
+                      since it engages crossing core muscles together you can
+                      perform this exercise before you start the lift 30
+                      seconds isometric and 30 seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
                   </div>
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">The curl up</h4>
-                      <span
-                        >The curl up is a good exercise for both abdominus major
-                        and also the obliques you can perform this exercise
-                        before you start the lift 30 seconds isometric and 30
-                        seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/pUiJ6EIjIjw?autoplay=1&controls=0&mute=1"
-                      title="Abdominal Curl Up"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <div class="exercise-details">
-                    <div class="exercise-inform">
-                      <h4 class="chosen-exercise exercise-name">Side planks</h4>
-                      <span
-                        >side planks are good exercises for your core muscle
-                        since it engages obliques wrapping your lower back
-                        around with stablity together you can perform this
-                        exercise before you start the lift 30 seconds isometric
-                        and 30 seconds dynamic
-                      </span>
-                      <br />
-                      <button class="add-schedule">Add to favorites</button>
-                    </div>
-                    <iframe
-                      width="400"
-                      height="200"
-                      src="https://www.youtube.com/embed/_R389Jk0tIo?autoplay=1&controls=0&mute=1"
-                      title="Side Plank"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <button class="turn-off" type="submit" title="turn-off">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- -----------========================== DEADLIFT ==========================---------------------- -->
-        <div class="exercises-container">
-          <div class="exercises-info">
-            <div class="exercises">
-              <div class="exercise-detail">
-                <h2>Deadlift</h2>
-                <p>
-                  The deadlift is an exercise that engages the whole body and
-                  not just your upper or lower body you need to stop thinking
-                  that deadlifts are a lower back exercise <br />
-                  deadlifts are one of the unique exercises that has many
-                  variations and is used by many sports to increase the strength
-                  of invidiuals it uses literally every muscle i your body
-                  starting from the placement of your toes to stiffness of your
-                  core muscles to the strength of your upper back muscles.
-                </p>
-              </div>
-
-              <div class="exercise-img">
-                <img
-                  class="img"
-                  src="pictures/deadlift.jpg"
-                  alt="deadlift"
-                  width="60%"
-                  height="60%"
-                />
-                <button class="more-info" type="button">
-                  More Info <i class="fa-solid fa-arrow-down"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="collapse-container">
-            <div class="inside-collapse">
-              <h2 class="header-collapse">Rules for a good deadlift</h2>
-              <div class="the-rules">
-                <div class="rules">
-                  1-A good deadlift is when you complete the lift and lock your
-                  upper back upright and keep that position untill the judge
-                  tell you to let go of the weight not before that.
-                </div>
-                <div class="rules">
-                  2-Also a good deadlift when you brace your core enough to lift
-                  the weight with your core muscles.
-                </div>
-                <div class="rules">
-                  3-Moving the weight fast effeciently and accurately is
-                  mandatory and to do that there are many aspects you should
-                  keep in mind before adding weights to your deadlift
-                </div>
-              </div>
-              <br />
-              <hr />
-              <br />
-              <h2 class="stance-description">The two stances of deadlifts</h2>
-              <div class="rule-videos">
-                <div class="sumo-stance main-lift-container">
-                  <h3 class="chosen-main-exercise">Sumo deadlift</h3>
-                  <iframe
-                    width="100%"
-                    height="80%"
-                    src="https://www.youtube.com/embed/HBmLwb9IcaI?autoplay=1&controls=0&mute=1"
-                    title="Movement Demo - The Sumo Deadlift"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; ; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <button class="add-schedule-main">add to main lift</button>
-                </div>
-                <div class="conventional-stance main-lift-container">
-                  <h3 class="chosen-main-exercise">conventional deadlift</h3>
-                  <iframe
-                    width="100%"
-                    height="80%"
-                    src="https://www.youtube.com/embed/1nvAUJVmFZY?autoplay=1&controls=0&mute=1"
-                    title="Movement Demo - The Conventional Deadlift"
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/vzU5xrs1gMQ?autoplay=1&controls=0&mute=1" title="Bird Dog"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <button class="add-schedule-main">add to main lift</button>
+                    allowfullscreen></iframe>
                 </div>
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">The curl up</h4>
+                    <span>The curl up is a good exercise for both abdominus major
+                      and also the obliques you can perform this exercise
+                      before you start the lift 30 seconds isometric and 30
+                      seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/pUiJ6EIjIjw?autoplay=1&controls=0&mute=1"
+                    title="Abdominal Curl Up" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">Side planks</h4>
+                    <span>
+                      side planks are good exercises for your core muscle
+                      since it engages obliques wrapping your lower back
+                      around with stablity together you can perform this
+                      exercise before you start the lift 30 seconds isometric
+                      and 30 seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/_R389Jk0tIo?autoplay=1&controls=0&mute=1" title="Side Plank"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <button class="turn-off" type="submit" title="turn-off">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="must-do not-selected">
+          <div class="muscles-selector">
+            <img src="pictures/rowing machine.jpg" class="image-select" width="100%" height="200" alt="core" />
+            <h3 class="topic">Cardio Exercises</h3>
+            <span class="describe">Some cardiovascular system exercises for your heart.</span>
+            <button type="button" title="button-work" class="more-exercises">
+              Click here
+            </button>
+          </div>
+          <div class="muscles-containing">
+            <div class="muscles">
+              <div class="muscles-first">
+                <h2>Core Exercise's</h2>
+                <span>Make sure you warm up your core before you start
+                  lifting</span>
+              </div>
+              <h3 class="head">Mcgill big three for core stability</h3>
+              <div class="organize">
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">Bird dog</h4>
+                    <span>One of the many good exercises for your core muscle
+                      since it engages crossing core muscles together you can
+                      perform this exercise before you start the lift 30
+                      seconds isometric and 30 seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/vzU5xrs1gMQ?autoplay=1&controls=0&mute=1" title="Bird Dog"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">The curl up</h4>
+                    <span>The curl up is a good exercise for both abdominus major
+                      and also the obliques you can perform this exercise
+                      before you start the lift 30 seconds isometric and 30
+                      seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/pUiJ6EIjIjw?autoplay=1&controls=0&mute=1"
+                    title="Abdominal Curl Up" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">Side planks</h4>
+                    <span>side planks are good exercises for your core muscle
+                      since it engages obliques wrapping your lower back
+                      around with stablity together you can perform this
+                      exercise before you start the lift 30 seconds isometric
+                      and 30 seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/_R389Jk0tIo?autoplay=1&controls=0&mute=1" title="Side Plank"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <button class="turn-off" type="submit" title="turn-off">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="must-do not-selected">
+          <div class="muscles-selector">
+            <img src="pictures/young-strong-sweaty-focused-fit-muscular-man-with-royalty-free-image-1662644257.jpg"
+              class="image-select" width="100%" height="200" alt="core" />
+            <h3 class="topic">Warm ups</h3>
+            <span class="describe">Important warm up movments for each lift.</span>
+            <button type="button" title="button-work" class="more-exercises">
+              Click here
+            </button>
+          </div>
+          <div class="muscles-containing">
+            <div class="muscles">
+              <div class="muscles-first">
+                <h2>Core Exercise's</h2>
+                <span>Make sure you warm up your core before you start
+                  lifting</span>
+              </div>
+              <h3 class="head">Mcgill big three for core stability</h3>
+              <div class="organize">
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">Bird dog</h4>
+                    <span>One of the many good exercises for your core muscle
+                      since it engages crossing core muscles together you can
+                      perform this exercise before you start the lift 30
+                      seconds isometric and 30 seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/vzU5xrs1gMQ?autoplay=1&controls=0&mute=1" title="Bird Dog"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">The curl up</h4>
+                    <span>The curl up is a good exercise for both abdominus major
+                      and also the obliques you can perform this exercise
+                      before you start the lift 30 seconds isometric and 30
+                      seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/pUiJ6EIjIjw?autoplay=1&controls=0&mute=1"
+                    title="Abdominal Curl Up" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="exercise-details">
+                  <div class="exercise-inform">
+                    <h4 class="chosen-exercise exercise-name">Side planks</h4>
+                    <span>side planks are good exercises for your core muscle
+                      since it engages obliques wrapping your lower back
+                      around with stablity together you can perform this
+                      exercise before you start the lift 30 seconds isometric
+                      and 30 seconds dynamic
+                    </span>
+                    <br />
+                    <button class="add-schedule">Add to favorites</button>
+                  </div>
+                  <iframe width="400" height="200"
+                    src="https://www.youtube.com/embed/_R389Jk0tIo?autoplay=1&controls=0&mute=1" title="Side Plank"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <button class="turn-off" type="submit" title="turn-off">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------========================== DEADLIFT ==========================---------------------- -->
+      <div class="exercises-container">
+        <div class="exercises-info">
+          <div class="exercises">
+            <div class="exercise-detail">
+              <h2>Deadlift</h2>
+              <p>
+                The deadlift is an exercise that engages the whole body and
+                not just your upper or lower body you need to stop thinking
+                that deadlifts are a lower back exercise <br />
+                deadlifts are one of the unique exercises that has many
+                variations and is used by many sports to increase the strength
+                of invidiuals it uses literally every muscle i your body
+                starting from the placement of your toes to stiffness of your
+                core muscles to the strength of your upper back muscles.
+              </p>
+            </div>
+
+            <div class="exercise-img">
+              <img class="img" src="pictures/deadlift.jpg" alt="deadlift" width="60%" height="60%" />
+              <button class="more-info" type="button">
+                More Info <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse-container">
+          <div class="inside-collapse">
+            <h2 class="header-collapse">Rules for a good deadlift</h2>
+            <div class="the-rules">
+              <div class="rules">
+                1-A good deadlift is when you complete the lift and lock your
+                upper back upright and keep that position untill the judge
+                tell you to let go of the weight not before that.
+              </div>
+              <div class="rules">
+                2-Also a good deadlift when you brace your core enough to lift
+                the weight with your core muscles.
+              </div>
+              <div class="rules">
+                3-Moving the weight fast effeciently and accurately is
+                mandatory and to do that there are many aspects you should
+                keep in mind before adding weights to your deadlift
+              </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <h2 class="stance-description">The two stances of deadlifts</h2>
+            <div class="rule-videos">
+              <div class="sumo-stance main-lift-container">
+                <h3 class="chosen-main-exercise">Sumo deadlift</h3>
+                <iframe width="100%" height="80%"
+                  src="https://www.youtube.com/embed/HBmLwb9IcaI?autoplay=1&controls=0&mute=1"
+                  title="Movement Demo - The Sumo Deadlift" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; ; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <button class="add-schedule-main">add to main lift</button>
+              </div>
+              <div class="conventional-stance main-lift-container">
+                <h3 class="chosen-main-exercise">conventional deadlift</h3>
+                <iframe width="100%" height="80%"
+                  src="https://www.youtube.com/embed/1nvAUJVmFZY?autoplay=1&controls=0&mute=1"
+                  title="Movement Demo - The Conventional Deadlift" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <button class="add-schedule-main">add to main lift</button>
+              </div>
+            </div>
+          </div>
+          <button class="close-btn" type="button">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+        <!-- ------------------=============== ACCESSORIES EXERCISES===========--------------- -->
+
+        <!-- -----------===============Categorie collapse ============-------------->
+        <div class="exercise-categorie">
+          <div class="guide">
+            <div class="article">
+              <h2>Deadlift Accessories</h2>
+              <p>
+                as shown in the description and the overview you need to have
+                a strong back muscle in order to create enough stiffness in
+                your upper back for a good repitition deadlift.
+              </p>
+            </div>
+            <div class="image">
+              <img src="pictures/trening-4_1.jpg" width="100%" height="100%" alt="" />
+            </div>
+          </div>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="categorie-collapse">
+          <div class="categorie-inside">
+            <div class="collapse-header">
+              <h2>Accessories to master your deadlift</h2>
+              <span>Of course to master your deadlift you need to deadlift more
+                but these exercises are here to strengthen the muscles you use
+                in a deadlift</span>
+            </div>
+            <h3 class="head">List of accessorie exercises</h3>
+            <div class="organize">
+              <div class="exercise-details">
+                <div class="exercise-inform">
+                  <h4 class="chosen-exercise exercise-name">Pendlay-rows</h4>
+                  <span>Pendlay rows are really good for explosive power in
+                    pulling the bar off the ground this exercise can be
+                    performed in 2 ways the sumo stance and the conventional
+                    stance you can do this exercise with a mediocre weight and
+                    execute it in sets of 5 by 5 reps and rest for 1 min and
+                    30 secs between sets.
+                  </span>
+                  <br />
+                  <button class="add-schedule">Add to favorites</button>
+                </div>
+                <iframe width="400" height="200"
+                  src="https://www.youtube.com/embed/ezrZnmjZTR4?autoplay=1&controls=0&mute=1" title="Pendlay Row"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="exercise-details">
+                <div class="exercise-inform">
+                  <h4 class="chosen-exercise exercise-name">
+                    Snatch grip deadlifts
+                  </h4>
+                  <span>Snatch grip deadlift is the perfect exercise for upper
+                    back strength works best when pulling the lats towards you
+                    and create enough stiffness in your core before performing
+                    the lift you can perform the exercise in sets of 5 by 5
+                    reps and rest for 1 min and 30 secs between sets
+                  </span>
+                  <br />
+                  <button class="add-schedule">Add to favorites</button>
+                </div>
+                <iframe width="400" height="200"
+                  src="https://www.youtube.com/embed/0Ah-ol5EGlo?autoplay=1&controls=0&mute=1"
+                  title="Snatch Grip Deadlift" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="exercise-details">
+                <div class="exercise-inform">
+                  <h4 class="chosen-exercise">Single arm dumbbell-rows</h4>
+                  <span>A single arm is mandatory for strength in your arm
+                    invidually and its good for building muscles in your lats
+                    and upper back you can perform this exercise in 3 or 4
+                    sets by 10 or 12 reps and rest 30 to 45 secs between sets
+                  </span>
+                  <br />
+                  <button class="add-schedule">Add to favorites</button>
+                </div>
+                <iframe width="400" height="200"
+                  src="https://www.youtube.com/embed/xl1YiqQY2vA?autoplay=1&controls=0&mute=1"
+                  title="Single Arm Dumbbell Row" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <button class="close-categorie" type="button">Close</button>
+        </div>
+        <!-- -----------===============Categorie collapse ======----------->
+
+        <!-- -----------===============Categorie collapse ============---------->
+
+        <!-- ------------------=====================================================  BENCH PRESS=================------------------------------- -->
+
+        <div class="exercises">
+          <div class="exercise-detail">
+            <h2>Bench-Press</h2>
+            <p>
+              Bench press is the master of all the pressing exercises its the
+              true strength test to your upper body since in advanced levels
+              of bench pressing you start putting shear loads on your arms and
+              your chest muscles resulting in producing muscles thickness and
+              a massive looking shoulder and upper bench press is one of the
+              main lifts in powerlifting it has rules to make the lift correct
+              and also adding more weight does give you more advantage in the
+              competition
+            </p>
+          </div>
+
+          <div class="exercise-img">
+            <img class="img" src="pictures/bench press.jpg" alt="deadlift" width="60%" height="60%" />
+            <button class="more-info" type="button">
+              More Info <i class="fa-solid fa-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+        <div class="collapse-container">
+          <div class="inside-collapse">
+            <h2 class="header-collapse">Rules for a good bench press</h2>
+            <div class="the-rules">
+              <div class="rules">
+                1-A good bench-press is when you complete the lift and lock
+                your elbow above your chest and keep that position untill the
+                judge tell you to let go of the weight not before that.
+              </div>
+              <div class="rules">
+                2-Also a good bench-press occurs when you engage your core
+                enough to push the weight off your chest.
+              </div>
+              <div class="rules">
+                3-Moving the weight fast effeciently and accurately is
+                mandatory and to do that there are many aspects you should
+                keep in mind before adding weights to your bench-press
+              </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <h2 class="stance-description">
+              The correct stance for bench pressing
+            </h2>
+            <div class="rule-videos">
+              <div class="main-lift-container">
+                <h3 class="chosen-main-exercise">
+                  Bench press correct stance
+                </h3>
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/wzq57DB5Ppg"
+                  title="Movement Demo - The Bench Press" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <button class="add-schedule-main">Add to main lift</button>
               </div>
             </div>
             <button class="close-btn" type="button">
               <i class="fa-solid fa-arrow-up"></i>
             </button>
           </div>
-          <!-- ------------------=============== ACCESSORIES EXERCISES===========--------------- -->
+        </div>
+        <!-- -------------------------------========================== BENCH PRESS CATEGORIE-COLLAPSE=====================----------------- -->
 
-          <!-- -----------===============Categorie collapse ============-------------->
-          <div class="exercise-categorie">
-            <div class="guide">
-              <div class="article">
-                <h2>Deadlift Accessories</h2>
-                <p>
-                  as shown in the description and the overview you need to have
-                  a strong back muscle in order to create enough stiffness in
-                  your upper back for a good repitition deadlift.
-                </p>
-              </div>
-              <div class="image">
-                <img
-                  src="pictures/trening-4_1.jpg"
-                  width="100%"
-                  height="100%"
-                  alt=""
-                />
-              </div>
-            </div>
-            <button class="learn-more">Learn More</button>
-          </div>
-          <div class="categorie-collapse">
-            <div class="categorie-inside">
-              <div class="collapse-header">
-                <h2>Accessories to master your deadlift</h2>
-                <span
-                  >Of course to master your deadlift you need to deadlift more
-                  but these exercises are here to strengthen the muscles you use
-                  in a deadlift</span
-                >
-              </div>
-              <h3 class="head">List of accessorie exercises</h3>
-              <div class="organize">
-                <div class="exercise-details">
-                  <div class="exercise-inform">
-                    <h4 class="chosen-exercise exercise-name">Pendlay-rows</h4>
-                    <span
-                      >Pendlay rows are really good for explosive power in
-                      pulling the bar off the ground this exercise can be
-                      performed in 2 ways the sumo stance and the conventional
-                      stance you can do this exercise with a mediocre weight and
-                      execute it in sets of 5 by 5 reps and rest for 1 min and
-                      30 secs between sets.
-                    </span>
-                    <br />
-                    <button class="add-schedule">Add to favorites</button>
-                  </div>
-                  <iframe
-                    width="400"
-                    height="200"
-                    src="https://www.youtube.com/embed/ezrZnmjZTR4?autoplay=1&controls=0&mute=1"
-                    title="Pendlay Row"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="exercise-details">
-                  <div class="exercise-inform">
-                    <h4 class="chosen-exercise exercise-name">
-                      Snatch grip deadlifts
-                    </h4>
-                    <span
-                      >Snatch grip deadlift is the perfect exercise for upper
-                      back strength works best when pulling the lats towards you
-                      and create enough stiffness in your core before performing
-                      the lift you can perform the exercise in sets of 5 by 5
-                      reps and rest for 1 min and 30 secs between sets
-                    </span>
-                    <br />
-                    <button class="add-schedule">Add to favorites</button>
-                  </div>
-                  <iframe
-                    width="400"
-                    height="200"
-                    src="https://www.youtube.com/embed/0Ah-ol5EGlo?autoplay=1&controls=0&mute=1"
-                    title="Snatch Grip Deadlift"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="exercise-details">
-                  <div class="exercise-inform">
-                    <h4 class="chosen-exercise">Single arm dumbbell-rows</h4>
-                    <span
-                      >A single arm is mandatory for strength in your arm
-                      invidually and its good for building muscles in your lats
-                      and upper back you can perform this exercise in 3 or 4
-                      sets by 10 or 12 reps and rest 30 to 45 secs between sets
-                    </span>
-                    <br />
-                    <button class="add-schedule">Add to favorites</button>
-                  </div>
-                  <iframe
-                    width="400"
-                    height="200"
-                    src="https://www.youtube.com/embed/xl1YiqQY2vA?autoplay=1&controls=0&mute=1"
-                    title="Single Arm Dumbbell Row"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <button class="close-categorie" type="button">Close</button>
-          </div>
-          <!-- -----------===============Categorie collapse ======----------->
-
-          <!-- -----------===============Categorie collapse ============---------->
-
-          <!-- ------------------=====================================================  BENCH PRESS=================------------------------------- -->
-
-          <div class="exercises">
-            <div class="exercise-detail">
-              <h2>Bench-Press</h2>
+        <div class="exercise-categorie">
+          <div class="guide">
+            <div class="article">
+              <h2>Bench-Press Accessories</h2>
               <p>
-                Bench press is the master of all the pressing exercises its the
-                true strength test to your upper body since in advanced levels
-                of bench pressing you start putting shear loads on your arms and
-                your chest muscles resulting in producing muscles thickness and
-                a massive looking shoulder and upper bench press is one of the
-                main lifts in powerlifting it has rules to make the lift correct
-                and also adding more weight does give you more advantage in the
-                competition
+                as shown in the description and the overview you need both a
+                strong back and a strong chest muscle to be able to perform a
+                correct bench-press also your core muscles need to be stiff as
+                much as possible.
               </p>
             </div>
-
-            <div class="exercise-img">
-              <img
-                class="img"
-                src="pictures/bench press.jpg"
-                alt="deadlift"
-                width="60%"
-                height="60%"
-              />
-              <button class="more-info" type="button">
-                More Info <i class="fa-solid fa-arrow-down"></i>
-              </button>
+            <div class="image">
+              <img src="pictures/chest muscles.jpg" width="100%" height="100%" alt="" />
             </div>
           </div>
-          <div class="collapse-container">
-            <div class="inside-collapse">
-              <h2 class="header-collapse">Rules for a good bench press</h2>
-              <div class="the-rules">
-                <div class="rules">
-                  1-A good bench-press is when you complete the lift and lock
-                  your elbow above your chest and keep that position untill the
-                  judge tell you to let go of the weight not before that.
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="categorie-collapse">
+          <div class="categorie-inside">
+            <div class="collapse-header">
+              <h2>Accessories to master your deadlift</h2>
+              <span>Of course to master your deadlift you need to deadlift more
+                but these exercises are here to strengthen the muscles you use
+                in a deadlift</span>
+            </div>
+            <h3 class="head">List of accessorie exercises</h3>
+            <div class="organize">
+              <div class="exercise-details">
+                <div class="exercise-inform">
+                  <h4 class="chosen-exercise">Pendlay-rows</h4>
+                  <span>Pendlay rows are really good for explosive power in
+                    pulling the bar off the ground this exercise can be
+                    performed in 2 ways the sumo stance and the conventional
+                    stance you can do this exercise with a mediocre weight and
+                    execute it in sets of 5 by 5 reps and rest for 1 min and
+                    30 secs between sets.
+                  </span>
+                  <br />
+                  <button class="add-schedule">Add to favorites</button>
                 </div>
-                <div class="rules">
-                  2-Also a good bench-press occurs when you engage your core
-                  enough to push the weight off your chest.
-                </div>
-                <div class="rules">
-                  3-Moving the weight fast effeciently and accurately is
-                  mandatory and to do that there are many aspects you should
-                  keep in mind before adding weights to your bench-press
-                </div>
+                <iframe width="400" height="200"
+                  src="https://www.youtube.com/embed/ezrZnmjZTR4?autoplay=1&controls=0&mute=1" title="Pendlay Row"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
               </div>
-              <br />
-              <hr />
-              <br />
-              <h2 class="stance-description">
-                The correct stance for bench pressing
-              </h2>
-              <div class="rule-videos">
-                <div class="main-lift-container">
-                  <h3 class="chosen-main-exercise">
-                    Bench press correct stance
-                  </h3>
-                  <iframe
-                    width="100%"
-                    height="80%"
-                    src="https://www.youtube.com/embed/wzq57DB5Ppg"
-                    title="Movement Demo - The Bench Press"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <button class="add-schedule-main">Add to main lift</button>
+              <div class="exercise-details">
+                <div class="exercise-inform">
+                  <h4 class="chosen-exercise">Snatch grip deadlifts</h4>
+                  <span>Snatch grip deadlift is the perfect exercise for upper
+                    back strength works best when pulling the lats towards you
+                    and create enough stiffness in your core before performing
+                    the lift you can perform the exercise in sets of 5 by 5
+                    reps and rest for 1 min and 30 secs between sets
+                  </span>
+                  <br />
+                  <button class="add-schedule">Add to favorites</button>
                 </div>
+                <iframe width="400" height="200"
+                  src="https://www.youtube.com/embed/0Ah-ol5EGlo?autoplay=1&controls=0&mute=1"
+                  title="Snatch Grip Deadlift" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
               </div>
-              <button class="close-btn" type="button">
-                <i class="fa-solid fa-arrow-up"></i>
-              </button>
+              <div class="exercise-details">
+                <div class="exercise-inform">
+                  <h4 class="chosen-exercise">Single arm dumbbell-rows</h4>
+                  <span>A single arm is mandatory for strength in your arm
+                    invidually and its good for building muscles in your lats
+                    and upper back you can perform this exercise in 3 or 4
+                    sets by 10 or 12 reps and rest 30 to 45 secs between sets
+                  </span>
+                  <br />
+                  <button class="add-schedule">Add to favorites</button>
+                </div>
+                <iframe width="400" height="200"
+                  src="https://www.youtube.com/embed/xl1YiqQY2vA?autoplay=1&controls=0&mute=1"
+                  title="Single Arm Dumbbell Row" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
             </div>
           </div>
-          <!-- -------------------------------========================== BENCH PRESS CATEGORIE-COLLAPSE=====================----------------- -->
+          <button class="close-categorie" type="button">Close</button>
+        </div>
 
-          <div class="exercise-categorie">
-            <div class="guide">
-              <div class="article">
-                <h2>Bench-Press Accessories</h2>
-                <p>
-                  as shown in the description and the overview you need both a
-                  strong back and a strong chest muscle to be able to perform a
-                  correct bench-press also your core muscles need to be stiff as
-                  much as possible.
-                </p>
-              </div>
-              <div class="image">
-                <img
-                  src="pictures/chest muscles.jpg"
-                  width="100%"
-                  height="100%"
-                  alt=""
-                />
-              </div>
-            </div>
-            <button class="learn-more">Learn More</button>
-          </div>
-          <div class="categorie-collapse">
-            <div class="categorie-inside">
-              <div class="collapse-header">
-                <h2>Accessories to master your deadlift</h2>
-                <span
-                  >Of course to master your deadlift you need to deadlift more
-                  but these exercises are here to strengthen the muscles you use
-                  in a deadlift</span
-                >
-              </div>
-              <h3 class="head">List of accessorie exercises</h3>
-              <div class="organize">
-                <div class="exercise-details">
-                  <div class="exercise-inform">
-                    <h4 class="chosen-exercise">Pendlay-rows</h4>
-                    <span
-                      >Pendlay rows are really good for explosive power in
-                      pulling the bar off the ground this exercise can be
-                      performed in 2 ways the sumo stance and the conventional
-                      stance you can do this exercise with a mediocre weight and
-                      execute it in sets of 5 by 5 reps and rest for 1 min and
-                      30 secs between sets.
-                    </span>
-                    <br />
-                    <button class="add-schedule">Add to favorites</button>
-                  </div>
-                  <iframe
-                    width="400"
-                    height="200"
-                    src="https://www.youtube.com/embed/ezrZnmjZTR4?autoplay=1&controls=0&mute=1"
-                    title="Pendlay Row"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="exercise-details">
-                  <div class="exercise-inform">
-                    <h4 class="chosen-exercise">Snatch grip deadlifts</h4>
-                    <span
-                      >Snatch grip deadlift is the perfect exercise for upper
-                      back strength works best when pulling the lats towards you
-                      and create enough stiffness in your core before performing
-                      the lift you can perform the exercise in sets of 5 by 5
-                      reps and rest for 1 min and 30 secs between sets
-                    </span>
-                    <br />
-                    <button class="add-schedule">Add to favorites</button>
-                  </div>
-                  <iframe
-                    width="400"
-                    height="200"
-                    src="https://www.youtube.com/embed/0Ah-ol5EGlo?autoplay=1&controls=0&mute=1"
-                    title="Snatch Grip Deadlift"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="exercise-details">
-                  <div class="exercise-inform">
-                    <h4 class="chosen-exercise">Single arm dumbbell-rows</h4>
-                    <span
-                      >A single arm is mandatory for strength in your arm
-                      invidually and its good for building muscles in your lats
-                      and upper back you can perform this exercise in 3 or 4
-                      sets by 10 or 12 reps and rest 30 to 45 secs between sets
-                    </span>
-                    <br />
-                    <button class="add-schedule">Add to favorites</button>
-                  </div>
-                  <iframe
-                    width="400"
-                    height="200"
-                    src="https://www.youtube.com/embed/xl1YiqQY2vA?autoplay=1&controls=0&mute=1"
-                    title="Single Arm Dumbbell Row"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            <button class="close-categorie" type="button">Close</button>
+        <!-- -----------===============Categorie collapse ======----------->
+
+        <!-- ==--------------------------------------============================================= SQUATS ================--------------------------------- -->
+        <div class="exercises">
+          <div class="exercise-detail">
+            <h2>squats</h2>
+            <p>
+              The squat is an exercise that engages the whole body and not
+              just your lower body you need to stop thinking that squats are a
+              lower back exercise <br />
+              squats are one of the unique exercises that has many variations
+              and is used by many sports to increase the strength of
+              invidiuals it uses literally every muscle in your body starting
+              from the placement of your toes to stiffness of your core
+              muscles to the strength of your upper back muscles.
+            </p>
           </div>
 
-          <!-- -----------===============Categorie collapse ======----------->
-
-          <!-- ==--------------------------------------============================================= SQUATS ================--------------------------------- -->
-          <div class="exercises">
-            <div class="exercise-detail">
-              <h2>squats</h2>
-              <p>
-                The squat is an exercise that engages the whole body and not
-                just your lower body you need to stop thinking that squats are a
-                lower back exercise <br />
-                squats are one of the unique exercises that has many variations
-                and is used by many sports to increase the strength of
-                invidiuals it uses literally every muscle in your body starting
-                from the placement of your toes to stiffness of your core
-                muscles to the strength of your upper back muscles.
-              </p>
-            </div>
-
-            <div class="exercise-img">
-              <img
-                class="img"
-                src="pictures/squatss.jpg"
-                alt="deadlift"
-                width="60%"
-                height="60%"
-              />
-              <button class="more-info" type="button">
-                More Info <i class="fa-solid fa-arrow-down"></i>
-              </button>
-            </div>
-          </div>
-          <div class="collapse-container">
-            <div class="inside-collapse">
-              <h2 class="header-collapse">Rules for a good squat</h2>
-              <div class="the-rules">
-                <div class="rules">
-                  1-A good squat is when you complete the lift going below your
-                  knee level and keeping your back stiff and upright as much as
-                  possible and keep pushing the ground untill you reach the
-                  starting position.
-                </div>
-                <div class="rules">
-                  2-Also a good deadlift when you brace your core enough to lift
-                  the weight with your core muscles.
-                </div>
-                <div class="rules">
-                  3-Moving the weight fast effeciently and accurately is
-                  mandatory and to do that there are many aspects you should
-                  keep in mind before adding weights to your squat
-                </div>
-              </div>
-              <br />
-              <hr />
-
-              <br />
-              <h2 class="stance-description">The two stances of squats</h2>
-              <div class="rule-videos">
-                <div class="highbar-stance main-lift-container">
-                  <h3 class="chosen-main-exercise">
-                    high-bar stance
-                    <span class="small-txt"
-                      >Recommended for weightlifting athletes.</span
-                    >
-                  </h3>
-                  <iframe
-                    width="100%"
-                    height="80%"
-                    src="https://www.youtube.com/embed/2bkidbmb8Tk"
-                    title="Movement Demo - Safety Squat Bar Box Squats"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <button class="add-schedule-main">Add to main lift</button>
-                </div>
-                <div class="lowbar-stance main-lift-container">
-                  <h3 class="chosen-main-exercise">
-                    low-bar stance
-                    <span class="small-txt"
-                      >Recommended for strength athletes.</span
-                    >
-                  </h3>
-                  <iframe
-                    width="100%"
-                    height="80%"
-                    src="https://www.youtube.com/embed/2bkidbmb8Tk"
-                    title="Movement Demo - Safety Squat Bar Box Squats"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <button class="add-schedule-main">Add to main lift</button>
-                </div>
-              </div>
-              <button class="close-btn" type="button">
-                <i class="fa-solid fa-arrow-up"></i>
-              </button>
-            </div>
+          <div class="exercise-img">
+            <img class="img" src="pictures/squatss.jpg" alt="deadlift" width="60%" height="60%" />
+            <button class="more-info" type="button">
+              More Info <i class="fa-solid fa-arrow-down"></i>
+            </button>
           </div>
         </div>
-      </section>
+        <div class="collapse-container">
+          <div class="inside-collapse">
+            <h2 class="header-collapse">Rules for a good squat</h2>
+            <div class="the-rules">
+              <div class="rules">
+                1-A good squat is when you complete the lift going below your
+                knee level and keeping your back stiff and upright as much as
+                possible and keep pushing the ground untill you reach the
+                starting position.
+              </div>
+              <div class="rules">
+                2-Also a good deadlift when you brace your core enough to lift
+                the weight with your core muscles.
+              </div>
+              <div class="rules">
+                3-Moving the weight fast effeciently and accurately is
+                mandatory and to do that there are many aspects you should
+                keep in mind before adding weights to your squat
+              </div>
+            </div>
+            <br />
+            <hr />
 
-      <section class="workout-schedule section hidden">
-        <div class="section-container">
-          <div class="section-mssg">
-            <span
-              >selected favorite <span class="Orange-txt"> workouts </span>will
-              be added in this list</span
-            >
-          </div>
-          <div class="container-header">
-            <h3>Selected favourites</h3>
-          </div>
-          <div class="favorites-container">
-            <div class="fav-content" id="accessorie-lifts">
-              <h4 class="fav-content-header">Accessorie Lifts</h4>
+            <br />
+            <h2 class="stance-description">The two stances of squats</h2>
+            <div class="rule-videos">
+              <div class="highbar-stance main-lift-container">
+                <h3 class="chosen-main-exercise">
+                  high-bar stance
+                  <span class="small-txt">Recommended for weightlifting athletes.</span>
+                </h3>
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/2bkidbmb8Tk"
+                  title="Movement Demo - Safety Squat Bar Box Squats" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <button class="add-schedule-main">Add to main lift</button>
+              </div>
+              <div class="lowbar-stance main-lift-container">
+                <h3 class="chosen-main-exercise">
+                  low-bar stance
+                  <span class="small-txt">Recommended for strength athletes.</span>
+                </h3>
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/2bkidbmb8Tk"
+                  title="Movement Demo - Safety Squat Bar Box Squats" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <button class="add-schedule-main">Add to main lift</button>
+              </div>
             </div>
-            <div class="fav-content" id="main-lifts">
-              <h4 class="fav-content-header">Main Lifts</h4>
-            </div>
+            <button class="close-btn" type="button">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
           </div>
         </div>
-      </section>
-      <section class="client-details section hidden">
-        <div class="bg-clr">
-          <div class="user-img">
-            <img
-              class="default-user"
-              src="pictures/user profile.jpg"
-              alt="user"
-              width="100px"
-              height="100px"
-            />
-            <div>
-              <button class="edit-change" type="submit">Change</button>
-              <button class="edit-change">Edit</button>
-            </div>
-            <button type="submit" class="print-form">Print</button>
+      </div>
+    </section>
+
+    <section class="workout-schedule section hidden">
+      <div class="section-container">
+        <div class="section-mssg">
+          <span>selected favorite <span class="Orange-txt"> workouts </span>will
+            be added in this list</span>
+        </div>
+        <div class="container-header">
+          <h3>Selected favourites</h3>
+        </div>
+        <div class="favorites-container">
+          <div class="fav-content" id="accessorie-lifts">
+            <h4 class="fav-content-header">Accessorie Lifts</h4>
           </div>
-          <div class="details-container">
-            <div class="containing-details">
-              <div class="inside-details">
-                <h3 class="detail-header">Full Name</h3>
-                <hr class="header-sep" />
-                <span class="details first-name">First Name: Basem</span>
-                <span class="details middle-name">Middle Name: Mohamed</span>
-                <span class="details last-name">Last Name: Elsawy</span>
-              </div>
-              <span class="v-row"></span>
-              <div class="inside-details">
-                <h3 class="detail-header">Details</h3>
-                <hr class="header-sep" />
-                <span class="details age">Age: 24</span>
-                <span class="details weight">Weight: 95kg</span>
-                <span class="details height">height: 1.80 m</span>
-              </div>
-            </div>
-
-            <div class="containing-details">
-              <div class="inside-details">
-                <h3 class="detail-header">Bmi and Bmr</h3>
-                <hr class="header-sep" />
-                <span class="details">Bmr: 1900 cal</span>
-                <span class="details">Bmi: 24.5</span>
-              </div>
-              <span class="v-row"></span>
-              <div class="inside-details">
-                <h3 class="detail-header">Detailed Information</h3>
-                <hr class="header-sep" />
-                <span class="details"
-                  >My fitness goal is to be the fittest in my field</span
-                >
-
-                <span class="details"
-                  >Any past injuries: Yes(fracture front tibia)</span
-                >
-
-                <span class="details">chronic diseases: No</span>
-              </div>
-            </div>
-            <a href="/assessment page/Assessment.html" class="re-assess"
-              >Re-Test</a
-            >
+          <div class="fav-content" id="main-lifts">
+            <h4 class="fav-content-header">Main Lifts</h4>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <section class="footer-section">
-        <div class="footer-content">
-          <ul id="footer-links">
-            <li><a class="footer-link1">Refrences</a></li>
+      </div>
+    </section>
+    <section class="client-details section hidden">
+      <div class="bg-clr">
+        <div class="user-img">
+          <img class="default-user" src="pictures/user profile.jpg" alt="user" width="100px" height="100px" />
+          <div>
+            <button class="edit-change" type="submit">Change</button>
+            <button class="edit-change">Edit</button>
+          </div>
+          <button type="submit" class="print-form">Print</button>
+        </div>
+        <div class="details-container">
+          <div class="containing-details">
+            <div class="inside-details">
+              <h3 class="detail-header">Full Name</h3>
+              <hr class="header-sep" />
+              <span class="details first-name">First Name: Basem</span>
+              <span class="details middle-name">Middle Name: Mohamed</span>
+              <span class="details last-name">Last Name: Elsawy</span>
+            </div>
             <span class="v-row"></span>
-            <li><a class="footer-link2">User profile</a></li>
+            <div class="inside-details">
+              <h3 class="detail-header">Details</h3>
+              <hr class="header-sep" />
+              <span class="details age">Age: 24</span>
+              <span class="details weight">Weight: 95kg</span>
+              <span class="details height">height: 1.80 m</span>
+            </div>
+          </div>
+
+          <div class="containing-details">
+            <div class="inside-details">
+              <h3 class="detail-header">Bmi and Bmr</h3>
+              <hr class="header-sep" />
+              <span class="details">Bmr: 1900 cal</span>
+              <span class="details">Bmi: 24.5</span>
+            </div>
             <span class="v-row"></span>
-            <li><a class="footer-link3">Merchandise</a></li>
+            <div class="inside-details">
+              <h3 class="detail-header">Detailed Information</h3>
+              <hr class="header-sep" />
+              <span class="details">My fitness goal is to be the fittest in my field</span>
+
+              <span class="details">Any past injuries: Yes(fracture front tibia)</span>
+
+              <span class="details">chronic diseases: No</span>
+            </div>
+          </div>
+          <a href="/assessment page/Assessment.html" class="re-assess">Re-Test</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-section">
+      <div class="footer-content">
+        <ul id="footer-links">
+          <li><a class="footer-link1">Refrences</a></li>
+          <span class="v-row"></span>
+          <li><a class="footer-link2">User profile</a></li>
+          <span class="v-row"></span>
+          <li><a class="footer-link3">Merchandise</a></li>
+        </ul>
+        <div class="languages">
+          <h4 class="Contact-us">Contact Us</h4>
+          <ul id="contact-links">
+            <li>
+              <a class="contact-links1">Facebook <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <div id="v-line"></div>
+            <li>
+              <a class="contact-links2">Instagram <i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <div id="v-line"></div>
+            <li>
+              <a class="contact-links3">Twitter <i class="fa-brands fa-square-twitter"></i></a>
+            </li>
           </ul>
-          <div class="languages">
-            <h4 class="Contact-us">Contact Us</h4>
-            <ul id="contact-links">
-              <li>
-                <a class="contact-links1"
-                  >Facebook <i class="fa-brands fa-facebook"></i
-                ></a>
-              </li>
-              <div id="v-line"></div>
-              <li>
-                <a class="contact-links2"
-                  >Instagram <i class="fa-brands fa-square-instagram"></i
-                ></a>
-              </li>
-              <div id="v-line"></div>
-              <li>
-                <a class="contact-links3"
-                  >Twitter <i class="fa-brands fa-square-twitter"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </section>
-      <button type="button" class="footer-btn"><a href="#">About us</a></button>
-    </footer>
-    <script src="workoutBehavior.js"></script>
-    <script
-      src="https://kit.fontawesome.com/7031694be7.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      </div>
+    </section>
+    <button type="button" class="footer-btn"><a href="#">About us</a></button>
+  </footer>
+  <script src="workoutBehavior.js"></script>
+  <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
