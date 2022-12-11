@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Locator</title>
+    <link rel="stylesheet" href="locatorStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Pocket-<span class="Orange-txt">Coach</span> </h1>
+        <a class="head-lnk" href="/Home.html">Back to Homepage</a>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="gym-list">
+                <h2>Nearby list</h2>
+
+            </div>
+            <div class="gym-map" id="map"></div>
+        </div>
+    </main>
+
+
+    <footer></footer>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="locatorBehavior.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjkgreFyNmzletYXX3Cl_FVXldQQK62rE&callback=initMap&v=weekly"></script>
+</body>
+
+</html>
