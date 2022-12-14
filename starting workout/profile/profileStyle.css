@@ -235,7 +235,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
 
 }
 
@@ -247,13 +247,14 @@ body {
 }
 
 .info-body {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     align-items: center;
     justify-items: center;
     font-size: 1.2rem;
-    font-weight: bolder;
+    font-weight: bolder; */
+    /* width: 100%; */
 
 }
 
@@ -271,4 +272,81 @@ body {
 .edit-data:hover {
     color: var(--text-clr);
     cursor: pointer;
+}
+
+.t-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-body {
+    width: 100%;
+}
+
+table {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    padding: 10px;
+
+
+}
+
+
+th {
+    text-align: left;
+}
+
+.change-btn {
+    background: var(--light-backg);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+
+.change-btn:hover {
+    color: var(--text-clr);
+}
+
+.change-btn::after {
+    content: "\2192";
+    margin-left: -10px;
+    transition: 0.5s ease;
+    opacity: 0;
+
+}
+
+.change-btn:hover::after {
+    content: "\2192";
+    margin-left: 5px;
+    opacity: 1;
+}
+
+.body-container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(2, 60%);
+    grid-template-rows: repeat(2, 200px);
+    gap: 5%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info button {
+    font-size: 1rem;
 }
