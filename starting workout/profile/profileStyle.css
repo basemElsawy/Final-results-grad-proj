@@ -414,3 +414,25 @@ p {
 .precentage::after {
     content: "\0025";
 }
+
+#achievements-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#logos-container {
+    width: 100%;
+}
