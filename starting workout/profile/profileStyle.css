@@ -243,7 +243,7 @@ body {
 .info-header {
     background: var(--background-clr);
     color: white;
-    padding: 10px;
+    padding: 10px 30px;
     border-radius: 10px;
 }
 
@@ -354,11 +354,11 @@ th {
     display: flex;
     flex-direction: column;
     color: white;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-between;
     align-items: center;
     text-align: justify;
-    height: 200px;
+    height: auto;
     padding: 0px;
     background-color: var(--light-backg);
     padding: 20px;
@@ -428,12 +428,15 @@ p {
 .achievements {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: auto;
 
 
 }
+
+
 
 #logos-container {
     width: 100%;
@@ -449,10 +452,10 @@ p {
 }
 
 .logo-header {
-    background-color: #1a344aa1;
+    box-shadow: 0 0 5px 0 black, 0 5px 0 0 var(--light-backg);
     border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
+
+    padding: 10px 30px;
     margin-bottom: 10px;
 }
 
@@ -469,7 +472,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 150px;
     margin: auto;
     text-align: center;
 
@@ -528,8 +531,16 @@ p {
     border: none;
     outline: none;
     cursor: pointer;
+    margin: 20px;
+
+
+
 }
 
 .logo-btn:active {
     transform: scale(0.9);
+}
+
+.hidden {
+    display: none;
 }
