@@ -118,7 +118,7 @@ body {
     width: 100%;
     background-color: var(--light-backg);
     transition: 0.3s ease;
-    z-index: 1;
+    z-index: 100000;
 
 }
 
@@ -419,9 +419,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100%;
+    height: auto;
 }
 
 .achievements {
@@ -431,8 +432,101 @@ p {
     align-items: center;
     width: 100%;
 
+
 }
 
 #logos-container {
     width: 100%;
+}
+
+
+.small-container {
+    display: none;
+}
+
+.achievements:hover {
+    display: flex;
+}
+
+.logo-header {
+    background-color: #1a344aa1;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.select {
+    font-weight: bolder;
+    margin-top: 20px;
+    background-color: var(--light-backg);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 1;
+
+}
+
+.select:hover {
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    right: 5px;
+}
+
+
+.select:hover::after {
+    content: "\25BC";
+    opacity: 1;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+
+
+
+}
+
+
+.select-para {
+    text-align: justify;
+    padding: 30px;
+    color: white;
+    background-color: var(--light-backg);
+    margin: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.7s ease;
+
+    font-size: 1.2rem;
+    height: 0px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.achievements:hover .select-para {
+    opacity: 1;
+    height: 300px;
+}
+
+.logo-btn {
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.logo-btn:active {
+    transform: scale(0.9);
 }
