@@ -105,7 +105,7 @@ body {
     border-radius: 10px;
     overflow-x: hidden;
     overflow-y: auto;
-    outline: 10px solid var(--background-clr);
+    /* outline: 10px solid var(--background-clr); */
     position: relative;
 
 }
@@ -541,6 +541,153 @@ p {
     transform: scale(0.9);
 }
 
-.hidden {
+.list-of-goals {
+    background-color: var(--background-clr);
+    width: 100%;
+    color: white;
+    height: auto;
+    border-radius: 10px;
+}
+
+.list-of-goals h3 {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.goals-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.goals-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.goals-body-inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* background-color: #ffad31; */
+
+}
+
+.goals-body-inside p {
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.goals-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.goals-container hr {
+    width: 100%;
+    padding: 1px;
+    margin: 5%;
+    background-color: white;
+    border: none;
+}
+
+.goals-body-inside form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.goals-body-inside form input {
     display: none;
+}
+
+.add-vid {
+    outline: 1px solid #ffad31;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 30px;
+    transition: 0.5s all;
+
+}
+
+.add-vid:hover {
+    cursor: pointer;
+    color: var(--background-clr);
+    background-color: #ffad31;
+
+}
+
+.add-vid::after {
+    content: "\002B";
+    position: absolute;
+    top: 5px;
+    margin: 5px;
+    right: 7px;
+    transition: 0.5s ease;
+}
+
+.add-vid:hover::after {
+    content: "\002B";
+    transform: rotate(180deg);
+}
+
+
+.goals-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.goals-table tr>td {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.goals-table tr>td>input {
+    width: 90px;
+    margin-left: 5%;
+}
+
+.goals-table tr>th {
+    text-align: center;
+}
+
+.goals-body tr {
+    width: 100%;
+
+
+}
+
+.submit-btn {
+    color: white;
+    border: none;
+    outline: none;
+    background-color: var(--background-clr);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.submit-btn:hover {
+    color: var(--text-clr);
+    cursor: pointer;
 }
