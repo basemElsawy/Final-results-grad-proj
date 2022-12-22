@@ -31,7 +31,8 @@
                 </div>
                 <div class="inside-content-hdr">
                     <div></div>
-                    <h2>Basem Mohamed El-sawy</h2>
+                    <h2><span class="name">Basem</span> <span class="name">Mohamed</span> <span class="name Orange-txt">
+                            El-sawy</span> <span class="name invisible"></span> </h2>
 
                 </div>
             </div>
@@ -50,7 +51,7 @@
 
 
                             <tr class="t-row">
-                                <td>Basem</td>
+                                <td class="personal-data">Basem</td>
                                 <td><button class="change-btn">Change</button></td>
 
                             </tr>
@@ -66,7 +67,7 @@
 
 
                             <tr class="t-row">
-                                <td>Mohamed</td>
+                                <td class="personal-data">Mohamed</td>
                                 <td><button class="change-btn">Change</button></td>
 
                             </tr>
@@ -82,7 +83,7 @@
 
 
                             <tr class="t-row">
-                                <td>Elsawy</td>
+                                <td class="personal-data">Elsawy</td>
                                 <td><button class="change-btn">Change</button></td>
 
                             </tr>
@@ -98,7 +99,7 @@
 
 
                             <tr class="t-row">
-                                <td>24</td>
+                                <td class="personal-data Age-data">24</td>
                                 <td><button class="change-btn">Change</button></td>
 
                             </tr>
@@ -212,7 +213,7 @@
                                 <div class="goals-body-inside">
                                     <h4>snatches</h4>
                                     <br>
-                                    <img src="pictures/weightlifting achieved.png" width="70" height="70" alt="">
+                                    <img src="pictures/weightlifting achieved.png" width="80" height="80" alt="">
                                     <p>You wanna document your snatch numbers here and add the videos of your
                                         achievements</p>
                                     <form action="url">
@@ -261,7 +262,7 @@
                                 <div class="goals-body-inside">
                                     <h4>Clean and jerks</h4>
                                     <br>
-                                    <img src="pictures/clean and jerk.png" width="70" height="70" alt="">
+                                    <img src="pictures/clean and jerk.png" width="80" height="80" alt="">
                                     <p>You wanna document your clean and jerk numbers here and add the videos of your
                                         achievements</p>
                                     <form action="url">
@@ -269,10 +270,42 @@
                                         <input class="video-input" type="file" id="clean-jerk-numbers">
                                     </form>
 
-                                    <table>
-                                        <thead>
-                                            <th colspan="4">Clean and Jerk</th>
-                                        </thead>
+                                    <table class="goals-table">
+
+                                        <tr>
+
+                                            <th>Snatches</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>
+                                                <label for="lift-num">Lift number</label> <input type="number"
+                                                    id="lift-num">
+                                            </td>
+
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lift-name">Pr you broke</label> <input type="text"
+                                                    id="lift-name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="date-achieved">Date</label> <input type="date"
+                                                    id="date-achieved">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button class="submit-btn">Submit</button>
+                                            </td>
+                                        </tr>
+
                                     </table>
 
                                 </div>
@@ -283,26 +316,238 @@
 
                             </div>
                         </div>
+                        <button class="Go-back">Go back</button>
                     </div>
                     <div class="list-of-goals hidden">
                         <div class="goals-container">
-                            <h3>Bodybuilding achievements</h3>
-                            <img src="" alt="">
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
+                            <div class="goals-header">
+                                <h3>Weightlifting achievements</h3>
+                                <img src="pictures/weightlifting master.png" width="100px" height="90px" alt="">
+                            </div>
+                            <hr>
+                            <div class="goals-body">
+
+                                <div class="goals-body-inside">
+                                    <h4>snatches</h4>
+                                    <br>
+                                    <img src="pictures/weightlifting achieved.png" width="80" height="80" alt="">
+                                    <p>You wanna document your snatch numbers here and add the videos of your
+                                        achievements</p>
+                                    <form action="url">
+                                        <label for="snatch-numbers" class="add-vid">
+                                            <span>add video</span>
+                                        </label> <input class="video-input" type="file" id="snatch-numbers">
+                                    </form>
+                                    <table class="goals-table">
+
+                                        <tr>
+
+                                            <th>Snatches</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>
+                                                <label for="lift-num">Lift number</label> <input type="number"
+                                                    id="lift-num">
+                                            </td>
+
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lift-name">Pr you broke</label> <input type="text"
+                                                    id="lift-name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="date-achieved">Date</label> <input type="date"
+                                                    id="date-achieved">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button class="submit-btn">Submit</button>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <div class="goals-body-inside">
+                                    <h4>Clean and jerks</h4>
+                                    <br>
+                                    <img src="pictures/clean and jerk.png" width="80" height="80" alt="">
+                                    <p>You wanna document your clean and jerk numbers here and add the videos of your
+                                        achievements</p>
+                                    <form action="url">
+                                        <label for="clean-jerk-numbers" class="add-vid"> <span>add video</span> </label>
+                                        <input class="video-input" type="file" id="clean-jerk-numbers">
+                                    </form>
+
+                                    <table class="goals-table">
+
+                                        <tr>
+
+                                            <th>Snatches</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>
+                                                <label for="lift-num">Lift number</label> <input type="number"
+                                                    id="lift-num">
+                                            </td>
+
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lift-name">Pr you broke</label> <input type="text"
+                                                    id="lift-name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="date-achieved">Date</label> <input type="date"
+                                                    id="date-achieved">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button class="submit-btn">Submit</button>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+
+                                </div>
+
+                                <div class="goals-footer">
+
+                                </div>
+
                             </div>
                         </div>
+                        <button class="Go-back">Go back</button>
                     </div>
                     <div class="list-of-goals hidden">
                         <div class="goals-container">
-                            <h3>Powerlifting achievements</h3>
-                            <img src="" alt="">
-                            <div>
-                                <img src="" alt="">
-                                <img src="" alt="">
-                                <img src="" alt="">
+                            <div class="goals-header">
+                                <h3>Weightlifting achievements</h3>
+                                <img src="pictures/weightlifting master.png" width="100px" height="90px" alt="">
+                            </div>
+                            <hr>
+                            <div class="goals-body">
+
+                                <div class="goals-body-inside">
+                                    <h4>snatches</h4>
+                                    <br>
+                                    <img src="pictures/weightlifting achieved.png" width="80" height="80" alt="">
+                                    <p>You wanna document your snatch numbers here and add the videos of your
+                                        achievements</p>
+                                    <form action="url">
+                                        <label for="snatch-numbers" class="add-vid">
+                                            <span>add video</span>
+                                        </label> <input class="video-input" type="file" id="snatch-numbers">
+                                    </form>
+                                    <table class="goals-table">
+
+                                        <tr>
+
+                                            <th>Snatches</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>
+                                                <label for="lift-num">Lift number</label> <input type="number"
+                                                    id="lift-num">
+                                            </td>
+
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lift-name">Pr you broke</label> <input type="text"
+                                                    id="lift-name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="date-achieved">Date</label> <input type="date"
+                                                    id="date-achieved">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button class="submit-btn">Submit</button>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <div class="goals-body-inside">
+                                    <h4>Clean and jerks</h4>
+                                    <br>
+                                    <img src="pictures/clean and jerk.png" width="80" height="80" alt="">
+                                    <p>You wanna document your clean and jerk numbers here and add the videos of your
+                                        achievements</p>
+                                    <form action="url">
+                                        <label for="clean-jerk-numbers" class="add-vid"> <span>add video</span> </label>
+                                        <input class="video-input" type="file" id="clean-jerk-numbers">
+                                    </form>
+
+                                    <table class="goals-table">
+
+                                        <tr>
+
+                                            <th>Snatches</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>
+                                                <label for="lift-num">Lift number</label> <input type="number"
+                                                    id="lift-num">
+                                            </td>
+
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lift-name">Pr you broke</label> <input type="text"
+                                                    id="lift-name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="date-achieved">Date</label> <input type="date"
+                                                    id="date-achieved">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button class="submit-btn">Submit</button>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+
+                                </div>
+
+                                <div class="goals-footer">
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
