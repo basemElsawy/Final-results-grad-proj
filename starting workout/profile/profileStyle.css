@@ -341,7 +341,7 @@ th {
 
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
     gap: 1rem;
 
 
@@ -758,4 +758,50 @@ p {
 
 .invisible {
     display: none;
+}
+
+.Add-more {
+    background-color: var(--light-backg);
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s ease;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+
+}
+
+.Add-more::after {
+    content: "\002B";
+    margin-left: 10px;
+    transition: 0.3s ease;
+    transform: rotate(0deg);
+}
+
+.Add-more:hover::after {
+    content: "\002B";
+    transform: rotate(180deg);
+
+}
+
+.Add-more:hover {
+    color: var(--light-backg);
+    background-color: var(--text-clr);
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+.edit-btn:hover {
+    color: var(--text-clr);
+    cursor: pointer;
+
 }

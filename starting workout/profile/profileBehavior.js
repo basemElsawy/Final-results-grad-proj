@@ -6,7 +6,9 @@ const progSection = document.getElementById('info-prog');
 const precentages = document.querySelectorAll('.precentage');
 
 
-//-=-----------------------========== 
+//-=-----------------------========== second section variables ===-------
+const secondBodyContainer = document.querySelector('.body-container');
+const editBtn = document.querySelectorAll('.edit-btn');
 
 
 
