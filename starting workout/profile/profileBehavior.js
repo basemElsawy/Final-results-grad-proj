@@ -11,6 +11,7 @@ const secondBodyContainer = document.querySelector('#description');
 const editBtn = document.querySelectorAll('.edit-btn');
 const infoHeadLn = document.querySelectorAll('.info-headline');
 const infoArticle = document.querySelectorAll('.info-article')
+const removeBtn = document.querySelectorAll('.remove');
 
 
 //-----------============= first section variables ===========---------
@@ -26,191 +27,36 @@ const addMore = document.querySelector('.Add-more');
 
 //------------============ achievments variables=========-------------
 const logoBtn = document.querySelectorAll('.logo-btn');
-const goalsContainer = document.getElementById('.achievements-container');
+const goalsContainer = document.getElementById('achievements-container');
 const achievmentsClass = document.querySelectorAll('.achievements')
 const goalsList = document.querySelectorAll('.list-of-goals');
 const names = document.querySelectorAll('.name')
+
 
 // ----------------========== global variables ===========-------------
 var message = document.createElement('p');
 
 
-
-//-----------------------------=============ADD MORE FUNMCTIONALITY ===========---------
-
-addMore.addEventListener('click', () => {
-    let bodyContainerNewDiv = document.createElement('div');
-    bodyContainerNewDiv.classList.add('info');
-    bodyContainer.append(bodyContainerNewDiv);
-    let insideLabel = document.createElement('label');
-    let secondLabel = document.createElement('label');
-    let newInputEl = document.createElement('input');
-    insideLabel.setAttribute('for', 'newInputEl')
-    newInputEl.setAttribute('id', 'newInputEl');
-    secondLabel.setAttribute('for', 'text-area');
-    secondLabel.textContent = 'whats on your mind';
-    let textAreaEl = document.createElement('textarea');
-    textAreaEl.setAttribute('id', 'text-area');
-    textAreaEl.style.width = '200px'
-    textAreaEl.style.height = '100px'
-    document.querySelector('.body-container').style.filter = 'blur(10px)';
-    insideLabel.textContent = 'Description header'
-    insideLabel.style.fontWeight = 'bold';
-
-    let thirdNewDiv = document.createElement('div');
-    thirdNewDiv.classList.add('second-container-newDiv');
-    secondBodyContainer.append(thirdNewDiv);
-    thirdNewDiv.append(insideLabel);
-    thirdNewDiv.append(newInputEl);
-    thirdNewDiv.append(secondLabel);
-    thirdNewDiv.append(textAreaEl);
-
-    let submitBtn = document.createElement('button');
-    submitBtn.classList.add('submit-text');
-    submitBtn.textContent = 'Submit';
-
-    thirdNewDiv.append(submitBtn);
-    document.querySelector('.body-container').style.filter = 'blur(10px)';
-    let newHeadLn = document.createElement('h3');
-    newHeadLn.classList.add('info-headline');
-    let newArticle = document.createElement('p');
-    newArticle.classList.add('infoArticle')
-    let newEditBtn = document.createElement('button');
-    newEditBtn.classList.add('edit-btn');
-    newEditBtn.textContent = 'Edit';
-    bodyContainerNewDiv.append(newHeadLn);
-    bodyContainerNewDiv.append(newArticle);
-    bodyContainerNewDiv.append(newEditBtn);
-    editBtn.forEach((btn, idx) => {
-        btn.addEventListener('click', () => {
-            let secondNewDiv = document.createElement('div');
-            secondNewDiv.classList.add('second-container-newDiv');
-            document.getElementById('select-two').classList.add('over-lay')
-            let insideLabel = document.createElement('label');
-            let secondLabel = document.createElement('label');
-            insideLabel.textContent = 'Description header'
-            insideLabel.style.fontWeight = 'bold';
-
-            let newInputEl = document.createElement('input');
-            insideLabel.setAttribute('for', 'newInputEl')
-            newInputEl.setAttribute('id', 'newInputEl');
-            secondLabel.setAttribute('for', 'text-area');
-            secondLabel.textContent = 'whats on your mind';
-            let textAreaEl = document.createElement('textarea');
-            textAreaEl.setAttribute('id', 'text-area');
-            textAreaEl.style.width = '200px'
-            textAreaEl.style.height = '100px'
-
-            let submitBtn = document.createElement('button');
-            submitBtn.classList.add('submit-text');
-            submitBtn.textContent = 'Submit';
-
-            document.querySelector('.body-container').style.filter = 'blur(10px)';
-            secondNewDiv.style.zIndex = '100';
-            secondBodyContainer.append(secondNewDiv);
-            secondNewDiv.append(insideLabel);
-            secondNewDiv.append(newInputEl);
-            secondNewDiv.append(secondLabel);
-            secondNewDiv.append(textAreaEl);
-            secondNewDiv.append(submitBtn);
-            submitBtn.addEventListener('click', () => {
-                if (newInputEl.value && textAreaEl.value) {
-                    infoHeadLn[idx].textContent = newInputEl.value
-                    infoArticle[idx].textContent = textAreaEl.value
-                    submitBtn.parentElement.remove();
-                    document.querySelector('#select-two').classList.remove('over-lay');
-                    document.querySelector('.body-container').style.filter = 'blur(0px)';
-
-                }
-                else {
-
-                    message.textContent = 'please enter your new details';
-
-                    secondNewDiv.append(message)
-
-                }
-            })
-
-        })
-    })
-    submitBtn.addEventListener('click', () => {
-
-        if (newInputEl.value && textAreaEl.value) {
-            newHeadLn.textContent = newInputEl.value
-            newArticle.textContent = textAreaEl.value
-            submitBtn.parentElement.remove();
-            document.querySelector('#select-two').classList.remove('over-lay');
-            document.querySelector('.body-container').style.filter = 'blur(0px)';
-
-        }
-        else {
-
-            message.textContent = 'please enter your new details';
-
-            thirdNewDiv.append(message)
-
-        }
-    })
+//---------------------=============== achievements functionality==============----------------
 
 
-
-})
-
-
-// ------------------========= second container functionality =========-=----------
-editBtn.forEach((btn, idx) => {
+logoBtn.forEach((btn, idx) => {
     btn.addEventListener('click', () => {
-        let secondNewDiv = document.createElement('div');
-        secondNewDiv.classList.add('second-container-newDiv');
-        document.getElementById('select-two').classList.add('over-lay')
-        let insideLabel = document.createElement('label');
-        let secondLabel = document.createElement('label');
-        insideLabel.textContent = 'Description header'
-        insideLabel.style.fontWeight = 'bold';
-
-        let newInputEl = document.createElement('input');
-        insideLabel.setAttribute('for', 'newInputEl')
-        newInputEl.setAttribute('id', 'newInputEl');
-        secondLabel.setAttribute('for', 'text-area');
-        secondLabel.textContent = 'whats on your mind';
-        let textAreaEl = document.createElement('textarea');
-        textAreaEl.setAttribute('id', 'text-area');
-        textAreaEl.style.width = '200px'
-        textAreaEl.style.height = '100px'
-
-        let submitBtn = document.createElement('button');
-        submitBtn.classList.add('submit-text');
-        submitBtn.textContent = 'Submit';
-
-        document.querySelector('.body-container').style.filter = 'blur(10px)';
-        secondNewDiv.style.zIndex = '100';
-        secondBodyContainer.append(secondNewDiv);
-        secondNewDiv.append(insideLabel);
-        secondNewDiv.append(newInputEl);
-        secondNewDiv.append(secondLabel);
-        secondNewDiv.append(textAreaEl);
-        secondNewDiv.append(submitBtn);
-        submitBtn.addEventListener('click', () => {
-            if (newInputEl.value && textAreaEl.value) {
-                infoHeadLn[idx].textContent = newInputEl.value
-                infoArticle[idx].textContent = textAreaEl.value
-                submitBtn.parentElement.remove();
-                document.querySelector('#select-two').classList.remove('over-lay');
-                document.querySelector('.body-container').style.filter = 'blur(0px)';
-
-            }
-            else {
-
-                message.textContent = 'please enter your new details';
-
-                secondNewDiv.append(message)
-
-            }
-        })
-
+        goalsContainer.style.display = 'none';
+        goalsList[idx].classList.add('active');
     })
 })
 
+
+
+
+
+
+removeBtn.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        removeBtn[idx].parentElement.remove();
+    })
+})
 
 
 
@@ -285,6 +131,208 @@ changeBtn.forEach((btn, idx) => {
     })
 })
 
+
+
+// ------------------========= second container functionality =========-=----------
+editBtn.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        let secondNewDiv = document.createElement('div');
+        secondNewDiv.classList.add('second-container-newDiv');
+        document.getElementById('select-two').classList.add('over-lay')
+        let insideLabel = document.createElement('label');
+        let secondLabel = document.createElement('label');
+        insideLabel.textContent = 'Description header'
+        insideLabel.style.fontWeight = 'bold';
+
+        let newInputEl = document.createElement('input');
+        insideLabel.setAttribute('for', 'newInputEl')
+        newInputEl.setAttribute('id', 'newInputEl');
+        secondLabel.setAttribute('for', 'text-area');
+        secondLabel.textContent = 'whats on your mind';
+        let textAreaEl = document.createElement('textarea');
+        textAreaEl.setAttribute('id', 'text-area');
+        textAreaEl.style.width = '200px'
+        textAreaEl.style.height = '100px'
+
+        let submitBtn = document.createElement('button');
+        submitBtn.classList.add('submit-text');
+        submitBtn.textContent = 'Submit';
+
+        document.querySelector('.body-container').style.filter = 'blur(10px)';
+        secondNewDiv.style.zIndex = '100';
+        secondBodyContainer.append(secondNewDiv);
+        secondNewDiv.append(insideLabel);
+        secondNewDiv.append(newInputEl);
+        secondNewDiv.append(secondLabel);
+        secondNewDiv.append(textAreaEl);
+        secondNewDiv.append(submitBtn);
+
+
+        submitBtn.addEventListener('click', () => {
+            if (newInputEl.value && textAreaEl.value) {
+                infoHeadLn[idx].textContent = newInputEl.value
+                infoArticle[idx].textContent = textAreaEl.value
+                submitBtn.parentElement.remove();
+                document.querySelector('#select-two').classList.remove('over-lay');
+                document.querySelector('.body-container').style.filter = 'blur(0px)';
+
+            }
+            else {
+
+                message.textContent = 'please enter your new details';
+
+                secondNewDiv.append(message)
+
+            }
+
+
+
+        })
+
+    })
+})
+
+
+//-----------------------------=============ADD MORE FUNMCTIONALITY ===========---------
+addMore.addEventListener('click', () => {
+    let bodyContainerNewDiv = document.createElement('div');
+    bodyContainerNewDiv.classList.add('info');
+    bodyContainer.append(bodyContainerNewDiv);
+    let insideLabel = document.createElement('label');
+    let secondLabel = document.createElement('label');
+    let newInputEl = document.createElement('input');
+    insideLabel.setAttribute('for', 'newInputEl')
+    newInputEl.setAttribute('id', 'newInputEl');
+    secondLabel.setAttribute('for', 'text-area');
+    secondLabel.textContent = 'whats on your mind';
+    let textAreaEl = document.createElement('textarea');
+    textAreaEl.setAttribute('id', 'text-area');
+    textAreaEl.style.width = '200px'
+    textAreaEl.style.height = '100px'
+    document.querySelector('.body-container').style.filter = 'blur(10px)';
+    insideLabel.textContent = 'Description header'
+    insideLabel.style.fontWeight = 'bold';
+
+    let thirdNewDiv = document.createElement('div');
+    thirdNewDiv.classList.add('second-container-newDiv');
+    secondBodyContainer.append(thirdNewDiv);
+    thirdNewDiv.append(insideLabel);
+    thirdNewDiv.append(newInputEl);
+    thirdNewDiv.append(secondLabel);
+    thirdNewDiv.append(textAreaEl);
+
+    let submitBtn = document.createElement('button');
+    submitBtn.classList.add('submit-text');
+    submitBtn.textContent = 'Submit';
+
+    thirdNewDiv.append(submitBtn);
+    document.querySelector('.body-container').style.filter = 'blur(10px)';
+    var newHeadLn = document.createElement('h3');
+    newHeadLn.classList.add('info-headline');
+    var newArticle = document.createElement('p');
+    newArticle.classList.add('infoArticle')
+    let newEditBtn = document.createElement('button');
+    newEditBtn.classList.add('edit-btn');
+    newEditBtn.textContent = 'Edit';
+    bodyContainerNewDiv.append(newHeadLn);
+    bodyContainerNewDiv.append(newArticle);
+    bodyContainerNewDiv.append(newEditBtn);
+    let remove = document.createElement('button');
+    remove.innerHTML = '&#215'
+    remove.classList.add('remove');
+    remove.classList.add('remove-btn-cl');
+    bodyContainerNewDiv.append(remove);
+    document.getElementById('select-two').classList.add('over-lay');
+    thirdNewDiv.style.zIndex = '100';
+
+    submitBtn.addEventListener('click', () => {
+
+        if (newInputEl.value && textAreaEl.value) {
+            newHeadLn.textContent = newInputEl.value
+            newArticle.textContent = textAreaEl.value
+            submitBtn.parentElement.remove();
+            document.querySelector('#select-two').classList.remove('over-lay');
+            document.querySelector('.body-container').style.filter = 'blur(0px)';
+
+        }
+        else {
+
+            message.textContent = 'please enter your new details';
+
+            thirdNewDiv.append(message)
+
+        }
+
+
+        newEditBtn.onclick = () => {
+            let secondNewDiv = document.createElement('div');
+            secondNewDiv.classList.add('second-container-newDiv');
+            document.getElementById('select-two').classList.add('over-lay')
+            let insideLabel = document.createElement('label');
+            let secondLabel = document.createElement('label');
+            insideLabel.textContent = 'Description header'
+            insideLabel.style.fontWeight = 'bold';
+
+            let newInputEl = document.createElement('input');
+            insideLabel.setAttribute('for', 'newInputEl')
+            newInputEl.setAttribute('id', 'newInputEl');
+            secondLabel.setAttribute('for', 'text-area');
+            secondLabel.textContent = 'whats on your mind';
+            let textAreaEl = document.createElement('textarea');
+            textAreaEl.setAttribute('id', 'text-area');
+            textAreaEl.style.width = '200px'
+            textAreaEl.style.height = '100px'
+
+            let submitBtn = document.createElement('button');
+            submitBtn.classList.add('submit-text');
+            submitBtn.textContent = 'Submit';
+
+            document.querySelector('.body-container').style.filter = 'blur(10px)';
+            secondNewDiv.style.zIndex = '100';
+            secondBodyContainer.append(secondNewDiv);
+            secondNewDiv.append(insideLabel);
+            secondNewDiv.append(newInputEl);
+            secondNewDiv.append(secondLabel);
+            secondNewDiv.append(textAreaEl);
+            secondNewDiv.append(submitBtn);
+
+
+            submitBtn.addEventListener('click', () => {
+                if (newInputEl.value && textAreaEl.value) {
+                    newHeadLn.textContent = newInputEl.value
+                    newArticle.textContent = textAreaEl.value
+                    submitBtn.parentElement.remove();
+                    document.querySelector('#select-two').classList.remove('over-lay');
+                    document.querySelector('.body-container').style.filter = 'blur(0px)';
+
+                }
+                else {
+
+                    message.textContent = 'please enter your new details';
+
+                    secondNewDiv.append(message)
+
+                }
+
+
+
+            })
+
+        }
+        remove.onclick = () => {
+            remove.parentElement.remove();
+        }
+    })
+
+
+
+
+
+
+
+
+
+})
 
 
 // -----------------========== scroll-functionality========---------

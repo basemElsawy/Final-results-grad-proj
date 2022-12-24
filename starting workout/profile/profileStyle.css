@@ -571,7 +571,7 @@ p {
 
 .goals-body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
 }
@@ -845,4 +845,26 @@ p {
 
 textarea {
     resize: none;
+}
+
+.info {
+    position: relative;
+}
+
+.remove {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+
+}
+
+.remove:hover {
+    color: red;
+    cursor: pointer;
 }
