@@ -1231,3 +1231,59 @@ footer {
   filter: invert(100%);
   opacity: 0.7;
 }
+
+#aesth {
+  border-radius: 0px 10px 10px 10px;
+  border: none;
+}
+
+#aesthetic-img {
+  position: relative;
+  border: none;
+  background-color: none;
+  border-radius: 0%;
+  border-radius: 0px 10px 10px 10px;
+
+}
+
+#aesthetic-img::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-color: #223341;
+  position: absolute;
+  top: -80px;
+  left: -70px;
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 0px 10px 10px 10px;
+
+}
+
+#calith {
+  border-radius: 10px 10px 0px 10px;
+  border: none;
+
+}
+
+#calisthenic-img {
+  position: relative;
+  border: none;
+  background-color: none;
+  border-radius: 10px 10px 0px 10px;
+
+}
+
+#calisthenic-img::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-color: #223341;
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 10px 10px 0px 10px;
+
+}

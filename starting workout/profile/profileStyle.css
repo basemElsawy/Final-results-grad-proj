@@ -571,8 +571,9 @@ p {
 
 .goals-body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    gap: 0px;
+
 
 }
 
@@ -867,4 +868,11 @@ textarea {
 .remove:hover {
     color: red;
     cursor: pointer;
+}
+
+
+
+.grid-container {
+    display: flex;
+
 }

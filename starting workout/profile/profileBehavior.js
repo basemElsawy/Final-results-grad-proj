@@ -31,10 +31,36 @@ const goalsContainer = document.getElementById('achievements-container');
 const achievmentsClass = document.querySelectorAll('.achievements')
 const goalsList = document.querySelectorAll('.list-of-goals');
 const names = document.querySelectorAll('.name')
+const goBackBtn = document.querySelectorAll('.Go-back');
 
+
+//--------------============= IMAGE FILE READER VARIABLES=========--------------
+const imageInput = document.getElementById('Img-input');
+const profileImg = document.querySelector('.profile-image');
+
+//----------=============== VIDEO FILE READER VARIABLES ==========--------------
+const snatchVidIn = document.getElementById('snatch-numbers');
+
+
+
+const weightliftingContainer = document.getElementById('weightlifting');
 
 // ----------------========== global variables ===========-------------
 var message = document.createElement('p');
+
+let uploadedImage = '';
+let uploadedVideo = '';
+
+// ----------========== GO BACK FUNCTIONALITY ==========----------------
+
+goBackBtn.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        goalsContainer.style.display = 'flex';
+        goalsList[idx].classList.remove('active');
+    })
+
+})
+
 
 
 //---------------------=============== achievements functionality==============----------------
@@ -360,6 +386,47 @@ mainContent.onscroll = () => {
 }
 
 
+// --------------------============= image FILE READER FUNCTIONALITY ==============----------
+
+imageInput.addEventListener('change', () => {
+    const imageIndex = imageInput.files[0];
+    const reader = new FileReader();
+    profileImg.removeAttribute('src');
+    reader.addEventListener('load', () => {
+        uploadedImage = reader.result;
+        profileImg.setAttribute('src', uploadedImage);
+
+    });
+
+    reader.readAsDataURL(imageIndex);
+});
 
 
+
+// ------------------============= VIDEO FILE READER ================---------------
+
+
+weightliftingContainer.classList.add('grid-container');
+snatchVidIn.addEventListener('change', () => {
+    const videoIndex = snatchVidIn.files[0];
+    const reader = new FileReader();
+    let videoSrc = document.createElement('video')
+    let insideSrc = document.createElement('source');
+
+    reader.addEventListener('load', () => {
+        uploadedVideo = reader.result;
+        insideSrc.setAttribute('src', uploadedVideo);
+    })
+
+
+
+    reader.readAsDataURL(videoIndex);
+    videoSrc.setAttribute('width', '300');
+    videoSrc.setAttribute('controls', '');
+    videoSrc.append(insideSrc);
+    weightliftingContainer.append(videoSrc);
+
+
+
+})
 
