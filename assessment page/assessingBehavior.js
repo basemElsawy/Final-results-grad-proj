@@ -181,9 +181,9 @@ let scrollFunction = () => {
     document.body.scrollTop > 600 ||
     document.documentElement.scrollTop > 600
   ) {
-    header.style.borderRadius = '0px 0px 10px 10px';
-    header.style.marginRight = '10px';
-    header.style.marginLeft = '10px';
+    // header.style.borderRadius = '0px 0px 10px 10px';
+    // header.style.marginRight = '10px';
+    // header.style.marginLeft = '10px';
   } else {
     header.style.borderRadius = '0px 0px 0px 0px';
     header.style.marginRight = '0px';
