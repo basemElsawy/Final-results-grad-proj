@@ -106,14 +106,26 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 let scrollFunction = () => {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 450) {
+    document.querySelector('.muscle-img').style.opacity = '1';
+
     header.style.boxShadow = '0px 2px 40px 2px black';
+
+  }
+  else {
+    document.querySelector('.muscle-img').style.opacity = '0';
+
+    header.style.boxShadow = 'none';
+
+  }
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.style.backgroundColor = '#223341'
     logo.style.transform = 'scale(1)';
     navbar.style.transform = 'scale(1)';
   } else {
     navbar.style.transform = 'scale(1.2)';
     logo.style.transform = 'scale(1.2)';
-    header.style.boxShadow = 'none';
+    header.style.backgroundColor = 'transparent'
   }
   // if (
   //   document.body.scrollTop > 750 ||

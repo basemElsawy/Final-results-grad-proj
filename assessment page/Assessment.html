@@ -25,15 +25,8 @@
   </header>
   <main class="main-content">
     <section class="first-section">
-      <div class="first-container">
-        <form action="">
-          <label for="First-name">First name</label><input placeholder="Your first name" id="First-name"
-            type="text"><label for="Last-name">Last
-            name</label><input placeholder="your last name" id="Last-name" type="text"><label
-            for="Email">Email</label><input placeholder="Ex.mohamed@gmail.com" id="Email" type="email">
-        </form>
-        <button class="start-assesing btn-style">Start assessing</button>
-      </div>
+      <h1>Create your <span class="Orange-txt">account</span></h1>
+      <button class="start btn-style">Start</button>
       <div class="overlay"></div>
     </section>
     <section class="second-section">
@@ -45,12 +38,35 @@
       </div>
 
     </section>
-    <section class="third-section"> </section>
-    <section class="fourth-section"></section>
+    <section class="third-section">
+      <div class="first-container">
+        <form action="">
+          <label for="First-name">First name</label><input placeholder="Your first name" id="First-name" type="text">
+          <label for="Middle-name">Middle name</label><input placeholder="Your first name" id="Middle-name"
+            type="text"><label for="Last-name">Last
+            name</label><input placeholder="your last name" id="Last-name" type="text"><label
+            for="Email">Email</label><input placeholder="Ex.mohamed@gmail.com" id="Email" type="email">
+        </form>
+        <div class="start-assesing">
+          <button class="btn-style">next</button>
+          <button class="skip">skip</button>
+        </div>
+      </div>
+    </section>
+    <section class="fourth-section"> </section>
     <section class="fifth-section"></section>
     <section class="sixth-section"></section>
+    <section class="seventh-section"></section>
   </main>
-
+  <footer class="footer-section">
+    <div class="footer-container">
+      <h1 class="footer-heading"><a href="/Home.html">About us</a></h1>
+      <div>
+        <span>Powered by Pocket-<span class="Orange-txt">Coach</span> for </span>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </footer>
   <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
   <script src="assessingBehavior.js"></script>
 </body>
