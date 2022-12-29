@@ -45,3 +45,133 @@ body {
 }
 
 /* --------------========= Main Body Content style ==========----------------- */
+
+.first-section {
+  background-image: url(pictures/pexels-victor-freitas-1092878.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-block: 120px;
+  background-attachment: fixed;
+
+
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--backgroundClr);
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.btn-style {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.start-assesing {
+  background-color: #264056;
+}
+
+.btn-style:hover {
+  cursor: pointer;
+  color: var(--textClr);
+}
+
+.first-container {
+
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  margin: 0px auto 100px;
+  gap: 100px;
+  backdrop-filter: blur(50px);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(10, 10, 10, 0.399);
+}
+
+.first-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 50px;
+  font-weight: bolder;
+  font-size: 1rem;
+  color: white;
+  place-items: baseline;
+
+
+
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  /* border: 2px solid r(--backgroundClr); */
+
+}
+
+input:focus {
+  border: none;
+  outline: none;
+
+  margin: 0;
+  width: 100%;
+}
+
+.second-section {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+}
+
+.side-bar {
+
+  background-color: #183953;
+
+  padding-block: 50px;
+
+  color: white;
+
+
+}
+
+.side-bar a {
+  color: white;
+
+  padding: 45px;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-decoration: none;
+
+
+}
+
+.side-bar a:hover {
+  border-bottom: 5px solid white;
+  background-color: rgba(255, 255, 255, 0.203);
+  color: var(--textClr);
+}
