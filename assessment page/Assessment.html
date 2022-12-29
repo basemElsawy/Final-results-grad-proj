@@ -15,7 +15,7 @@
   <header class="header">
     <div class="logo">Pocket-<span class="Orange-txt hlf">Coach</span></div>
 
-    <img src="pictures/muscle.png" width="100px" height="100px" alt="muscle" class="muscle-img" />
+    <img src="pictures/muscle.png" width="100px" height="100px" alt="muscle" class="muscle-img not-showing" />
 
     <ul class="navbar">
       <li><a href="/merchandise page/Merch.Html">Merchendise</a></li>
@@ -26,10 +26,11 @@
   <main class="main-content">
     <section class="first-section">
       <h1>Create your <span class="Orange-txt">account</span></h1>
-      <button class="start btn-style">Start</button>
+      <button class="start btn-style"><a href="#second-section">Start</a></button>
       <div class="overlay"></div>
     </section>
-    <section class="second-section">
+
+    <section class="sect-behavior" id="second-section">
       <div class="side-bar">
         <a class="page-links" href="#personal-data">Personal Data</a>
         <a class="page-links" href="#body-assessment">Body Assessment</a>
@@ -38,27 +39,92 @@
       </div>
 
     </section>
-    <section class="third-section">
+    <section class="sect-behavior third-section ">
       <div class="first-container">
         <form action="">
           <label for="First-name">First name</label><input placeholder="Your first name" id="First-name" type="text">
-          <label for="Middle-name">Middle name</label><input placeholder="Your first name" id="Middle-name"
+          <label for="Middle-name">Middle name</label><input placeholder="Your middle name" id="Middle-name"
             type="text"><label for="Last-name">Last
-            name</label><input placeholder="your last name" id="Last-name" type="text"><label
+            name</label><input placeholder="Your last name" id="Last-name" type="text"><label
             for="Email">Email</label><input placeholder="Ex.mohamed@gmail.com" id="Email" type="email">
         </form>
         <div class="start-assesing">
           <button class="btn-style">next</button>
-          <button class="skip">skip</button>
+          <button class="small-btn" id="skip">skip</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">Go back</button>
+
         </div>
       </div>
     </section>
-    <section class="fourth-section"> </section>
-    <section class="fifth-section"></section>
-    <section class="sixth-section"></section>
-    <section class="seventh-section"></section>
+    <section class="sect-behavior  fourth-section not-shown">
+      <div class="first-container">
+        <form action="">
+          <label for="First-name">Height <span class="small-txt">in kg</span></label><input
+            placeholder="Your weight in kg" id="First-name" type="number">
+          <label for="Middle-name">height <span class="small-txt">in metres</span> </label><input
+            placeholder="your height in metres" id="Middle-name" type="number"><label
+            for="Last-name">Gender</label><input placeholder="Gender M/F" maxlength="1" id="Last-name"
+            type="text"><label for="Email">Age</label><input placeholder="Ex.mohamed@gmail.com" id="Email"
+            type="number">
+        </form>
+        <div class="start-assesing">
+          <button class="btn-style">next</button>
+          <button class="small-btn" id="skip">skip</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">Go back</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="sect-behavior  fifth-section not-shown">
+      <div class="first-container">
+        <form action="">
+          <label for="First-name">What is your biggest fitness goal?</label><input placeholder="Answer here"
+            id="First-name" type="text">
+          <label for="Middle-name">Who motivates you?</label><input placeholder="Answer here" id="Middle-name"
+            type="text"><label for="Last-name">do you have any old injuries</label><input placeholder="Answer here"
+            id="Last-name" type="text"><label for="Email">do you have any history with old sports?</label><input
+            placeholder="Ex.mohamed@gmail.com" id="Email" type="email">
+        </form>
+        <div class="start-assesing">
+          <button class="btn-style">next</button>
+          <button class="small-btn" id="skip">skip</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">Go back</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="sect-behavior  sixth-section not-shown">
+      <div class="first-container">
+        <img src="pictures/user profile.jpg" height="100px" width="150px" alt="">
+        <label class="label-img-in" for="img-input">
+          add a picture
+          <input type="file" id="img-input" class="file-Input">
+        </label>
+        <form action="">
+          <label for="First-name">Password</span></label><input placeholder="must be unique" id="First-name"
+            type="password">
+          <label for="Middle-name">Confirm password</label><input placeholder="confirm" id="Middle-name"
+            type="password">
+        </form>
+        <div class="start-assesing">
+          <button class="btn-style">next</button>
+          <button class="small-btn" id="skip">skip</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">Go back</button>
+
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer class="footer-section">
+  <footer class="footer-section hidden">
     <div class="footer-container">
       <h1 class="footer-heading"><a href="/Home.html">About us</a></h1>
       <div>

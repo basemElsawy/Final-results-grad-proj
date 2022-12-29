@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  height: 100px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +40,9 @@ body {
 .header img {
   filter: invert(100%);
   position: absolute;
-  bottom: -20%;
+  bottom: -40%;
   right: 47%;
+  transform: scale(0.8);
 }
 
 .hlf {
@@ -449,19 +450,19 @@ body {
 
 .section-header {
   text-align: center;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   background-color: #223341;
   color: white;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   border-radius: 10px;
   padding: 10px;
 }
 
 .card {
   border: none;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .card img {
@@ -471,7 +472,7 @@ body {
 .coach-section {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .name {
@@ -503,22 +504,22 @@ body {
   color: white;
   height: auto;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   /* border-radius: 10px; */
 }
 
 .content-container p {
   background-color: var(--background-clr);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 
 }
 
 .content-container img {
-  width: 55%;
-  height: 500px;
+  width: 45%;
+  height: 300px;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   /* border-radius: 0px 0px 20px 20px; */
 
 
@@ -527,14 +528,18 @@ body {
 .content-div {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
+  width: 70%;
+  margin: auto;
 }
 
 .content-container p {
   font: 'Work Sans';
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* .content-container a {
@@ -710,7 +715,7 @@ body {
   /* border-radius: 10px; */
   /* margin:; */
   height: auto;
-  margin-bottom: 200px;
+  margin-bottom: 10px;
   background: url(pictures1/ambitious-creative-co-rick-barrett-FL3_5uBVMPI-unsplash.jpg);
   background-color: var(--background-clr);
   background-position: center center;
@@ -825,7 +830,7 @@ body {
   100% {
     opacity: 1;
     z-index: 1;
-    transform: translateY(60px);
+    transform: translateY(30px);
     border-radius: 10px;
     filter: blur(0%);
   }
@@ -1270,10 +1275,10 @@ body {
   transition: 0.3s ease;
 }
 
-.footer {
+.footer-section {
   background-image: url(pictures1/ambitious-creative-co-rick-barrett-FL3_5uBVMPI-unsplash.jpg);
   background-position: center;
-  height: 50vh;
+  height: fit-content;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -1282,12 +1287,75 @@ body {
   padding: 50px;
 }
 
-.footer-section {
-  z-index: 10;
-  position: relative;
+.footer-container {
+  z-index: 1;
   color: white;
-  text-align: center;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  width: 50%;
+  margin: auto;
+  position: relative;
+
+}
+
+.footer-container h1 {
+  color: white;
+  text-decoration: none;
+  font-size: 3.5rem;
+}
+
+.footer-container div {
+  border-top: 3px solid white;
+  width: 100%;
+  text-align: center;
+  padding-block: 30px;
+  opacity: 0.7;
+
+}
+
+.tables-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 150px; */
+  text-align: left;
+}
+
+.tables-container table,
+.tables-container table>tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.tables-container table tbody tr td a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-img {
+  filter: invert(100%);
+}
+
+#tables {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 150px; */
+  text-align: left;
+  border-top: none;
+}
+
+#tables-heading {
+  font-size: 2rem;
 }
