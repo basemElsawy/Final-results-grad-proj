@@ -350,7 +350,7 @@ body {
 
 .slides {
   width: 500%;
-  height: 500px;
+  height: 300px;
   display: flex;
 }
 
@@ -1358,4 +1358,32 @@ body {
 
 #tables-heading {
   font-size: 2rem;
+}
+
+.footer-links {
+  transition: 0.3s all;
+  position: relative;
+}
+
+.footer-links:hover {
+  color: var(--txt-clr);
+  opacity: 1;
+
+}
+
+.footer-links::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.footer-links:hover::after {
+  width: 100%;
+  z-index: 100;
+
 }

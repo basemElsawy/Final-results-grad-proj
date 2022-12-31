@@ -23,16 +23,121 @@ const startBtn = document.querySelector('.start');
 const frstFormSect = document.querySelector('.third-section');
 const secondSection = document.getElementById('second-section');
 const navigationBar = document.querySelector('.side-bar');
+let skipBtn = document.querySelectorAll('.small-btn');
+const goBackBtn = document.querySelectorAll('.goback-btn');
+const navBarBtns = document.querySelectorAll('.page-links');
+const nextBtn = document.querySelectorAll('.next-btn');
+const fourthSect = document.querySelector('.fourth-sect');
+let newBtn = document.createElement('a');
 
-
+newBtn.classList.add('start');
+newBtn.classList.add('btn-style');
+newBtn.textContent = 'Submit';
+newBtn.style.fontSize = '1rem';
+fourthSect.append(newBtn);
+newBtn.setAttribute('href', '/starting workout/WorkoutPage.html');
 
 // -------------======== Variables =======---------------
 
 // -----------============== Forms initiation ========-------------
 
+goBackBtn.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    sections[idx].style.transform = 'translateX(-500px)';
+    sections[idx].style.opacity = '0';
+    let activeBtn = document.querySelector('.clicked');
+
+    activeBtn.classList.remove('clicked');
+    navBarBtns[idx].previousElementSibling.classList.add('clicked');
+    setTimeout(() => {
+      sections[idx].classList.remove('active');
+      sections[idx].previousElementSibling.classList.add('active');
+      sections[idx].previousElementSibling.style.transform = 'translateX(0px)';
+      sections[idx].previousElementSibling.style.opacity = '1';
+
+
+    }
+      , 200)
+  })
+})
+
+
+
+
+nextBtn.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    sections[idx].style.transform = 'translateX(-500px)';
+    sections[idx].style.opacity = '0';
+    let activeBtn = document.querySelector('.clicked');
+
+    activeBtn.classList.remove('clicked');
+    navBarBtns[idx + 1].classList.add('clicked');
+
+
+    setTimeout(() => {
+      sections[idx].classList.remove('active');
+      sections[idx].nextElementSibling.classList.add('active');
+      sections[idx].nextElementSibling.style.transform = 'translateX(0px)';
+      sections[idx].nextElementSibling.style.opacity = '1';
+
+      for (let i in nextBtn) {
+        if (nextBtn[i].parentElement.classList.contains('fourth')) {
+
+          nextBtn[i].style.display = 'none';
+        }
+      }
+    }, 200)
+  }
+  )
+
+})
+
+
+
+for (let i = 0; i < skipBtn.length; i++) {
+  if (skipBtn[i].parentElement.classList.contains('first')) {
+    skipBtn[i].style.display = 'none';
+    goBackBtn[i].style.display = 'none';
+
+
+  }
+  if (skipBtn[i].parentElement.classList.contains('fourth')) {
+    skipBtn[i].style.display = 'none';
+  }
+
+
+}
+navBarBtns.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    let activeBtn = document.querySelector('.clicked');
+    activeBtn.classList.remove('clicked');
+    navBarBtns[idx].classList.add('clicked');
+    // sections[idx].classList.add('active');
+
+
+    document.querySelector('.active').style.transform = 'translateX(-500px)';
+    document.querySelector('.active').style.opacity = '0'
+    setTimeout(() => {
+      document.querySelector('.active').classList.remove('active');
+      sections[idx].classList.add('active');
+      setTimeout(() => {
+        sections[idx].style.opacity = '1';
+        sections[idx].style.transform = 'translateX(0px)'
+
+      }, 100)
+
+    }, 500)
+
+
+  })
+})
+
+
+
+
 
 startBtn.addEventListener('click', () => {
-  frstFormSect.style.display = 'block';
+  frstFormSect.classList.add('active');
   footerSection.classList.remove('hidden');
 
   secondSection.style.opacity = '1';

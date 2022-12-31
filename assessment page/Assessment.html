@@ -26,20 +26,20 @@
   <main class="main-content">
     <section class="first-section">
       <h1>Create your <span class="Orange-txt">account</span></h1>
-      <button class="start btn-style"><a href="#second-section">Start</a></button>
+      <a href="#nav-bar" class="start btn-style">Start</a>
       <div class="overlay"></div>
     </section>
 
-    <section class="sect-behavior" id="second-section">
-      <div class="side-bar">
-        <a class="page-links" href="#personal-data">Personal Data</a>
+    <section id="second-section">
+      <div class="side-bar" id="nav-bar">
+        <a class="page-links clicked" href="#personal-data">Personal Data</a>
         <a class="page-links" href="#body-assessment">Body Assessment</a>
         <a class="page-links" href="#general-question">General question</a>
         <a class="page-links" href="#picture">Personal Picture</a>
       </div>
 
     </section>
-    <section class="sect-behavior third-section ">
+    <section class="sect-behavior not-shown third-section">
       <div class="first-container">
         <form action="">
           <label for="First-name">First name</label><input placeholder="Your first name" id="First-name" type="text">
@@ -48,9 +48,9 @@
             name</label><input placeholder="Your last name" id="Last-name" type="text"><label
             for="Email">Email</label><input placeholder="Ex.mohamed@gmail.com" id="Email" type="email">
         </form>
-        <div class="start-assesing">
-          <button class="btn-style">next</button>
-          <button class="small-btn" id="skip">skip</button>
+        <div class="start-assesing first">
+          <button class="btn-style next-btn">next</button>
+          <button class="small-btn first-skip" id="skip">skip</button>
         </div>
         <div class="go-back">
           <button class="goback-btn small-btn">Go back</button>
@@ -58,7 +58,7 @@
         </div>
       </div>
     </section>
-    <section class="sect-behavior  fourth-section not-shown">
+    <section class="sect-behavior not-shown">
       <div class="first-container">
         <form action="">
           <label for="First-name">Height <span class="small-txt">in kg</span></label><input
@@ -70,7 +70,7 @@
             type="number">
         </form>
         <div class="start-assesing">
-          <button class="btn-style">next</button>
+          <button class="btn-style next-btn">next</button>
           <button class="small-btn" id="skip">skip</button>
         </div>
         <div class="go-back">
@@ -79,7 +79,7 @@
         </div>
       </div>
     </section>
-    <section class="sect-behavior  fifth-section not-shown">
+    <section class="sect-behavior not-shown">
       <div class="first-container">
         <form action="">
           <label for="First-name">What is your biggest fitness goal?</label><input placeholder="Answer here"
@@ -90,7 +90,7 @@
             placeholder="Ex.mohamed@gmail.com" id="Email" type="email">
         </form>
         <div class="start-assesing">
-          <button class="btn-style">next</button>
+          <button class="btn-style next-btn">next</button>
           <button class="small-btn" id="skip">skip</button>
         </div>
         <div class="go-back">
@@ -99,9 +99,9 @@
         </div>
       </div>
     </section>
-    <section class="sect-behavior  sixth-section not-shown">
-      <div class="first-container">
-        <img src="pictures/user profile.jpg" height="100px" width="150px" alt="">
+    <section class="sect-behavior not-shown">
+      <div class="first-container fourth-sect">
+        <img src="pictures/user profile.jpg" height="150px" width="150px" alt="">
         <label class="label-img-in" for="img-input">
           add a picture
           <input type="file" id="img-input" class="file-Input">
@@ -112,8 +112,9 @@
           <label for="Middle-name">Confirm password</label><input placeholder="confirm" id="Middle-name"
             type="password">
         </form>
-        <div class="start-assesing">
-          <button class="btn-style">next</button>
+
+        <div class="start-assesing fourth">
+          <button class="btn-style next-btn">next</button>
           <button class="small-btn" id="skip">skip</button>
         </div>
         <div class="go-back">
@@ -128,7 +129,7 @@
     <div class="footer-container">
       <h1 class="footer-heading"><a href="/Home.html">About us</a></h1>
       <div>
-        <span>Powered by Pocket-<span class="Orange-txt">Coach</span> for </span>
+        <span>Powered by Pocket-<span class="Orange-txt">Coach</span> for fitness industries</span>
       </div>
     </div>
     <div class="overlay"></div>

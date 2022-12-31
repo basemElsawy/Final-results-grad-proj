@@ -105,6 +105,9 @@ body {
 .start {
   font-size: 1.5rem;
   font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  z-index: 10;
 }
 
 
@@ -125,8 +128,8 @@ body {
   /* height: fit-content; */
   max-height: fit-content;
   width: 70%;
-  margin: 20px auto 20px;
-  gap: 50px;
+  margin: 0px auto 10px;
+  gap: 30px;
   color: black;
   /* backdrop-filter: blur(50px); */
   padding: 50px;
@@ -139,7 +142,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   max-width: fit-content;
-  gap: 50px;
+  gap: 30px;
   font-weight: bolder;
   font-size: 1.2rem;
   color: black;
@@ -182,7 +185,9 @@ input:focus {
 
   background-color: #183953;
 
-  padding-block: 50px;
+  height: fit-content;
+  padding: 20px;
+
 
   color: white;
   opacity: 0;
@@ -199,11 +204,12 @@ input:focus {
 .side-bar a {
   color: white;
 
-  padding: 45px;
+  padding: 15px;
   transition: 0.3s ease;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bolder;
   text-decoration: none;
+  margin-right: 20px;
 
 
 }
@@ -349,4 +355,40 @@ input:focus {
   height: 0%;
   z-index: -100000;
   transform: translateY(-500px);
+}
+
+.clicked {
+  border-bottom: 5px solid orange;
+  background-color: rgba(255, 255, 255, 0.016);
+  color: var(--textClr);
+}
+
+.active {
+  display: block;
+  transition: 0.3s ease;
+}
+
+.small-btn {
+  position: relative;
+}
+
+.small-btn:hover {
+  color: #ffae21;
+
+
+}
+
+.small-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ffae21;
+  transition: 0.3s all;
+}
+
+.small-btn:hover::after {
+  width: 100%;
 }
