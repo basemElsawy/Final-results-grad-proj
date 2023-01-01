@@ -1,0 +1,18 @@
+<!-- <div class="sumo-stance main-lift-container">
+              <h3 class="chosen-main-exercise">Sumo deadlift</h3>
+              <iframe width="100%" height="80%"
+                src="https://www.youtube.com/embed/HBmLwb9IcaI?autoplay=1&controls=0&mute=1"
+                title="Movement Demo - The Sumo Deadlift" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; ; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <button class="add-schedule-main">add to main lift</button>
+            </div>
+            <div class="conventional-stance main-lift-container">
+              <h3 class="chosen-main-exercise">conventional deadlift</h3>
+              <iframe width="100%" height="80%"
+                src="https://www.youtube.com/embed/1nvAUJVmFZY?autoplay=1&controls=0&mute=1"
+                title="Movement Demo - The Conventional Deadlift" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <button class="add-schedule-main">add to main lift</button>
+            </div>

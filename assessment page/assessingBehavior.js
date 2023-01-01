@@ -1,7 +1,6 @@
 'use strict';
 
-let firstName = document.getElementById('Firstname');
-let lastName = document.getElementById('Lastname');
+
 let age = document.getElementById('Age');
 let height = document.getElementById('Height');
 let weight = document.getElementById('Weight');
@@ -14,6 +13,9 @@ let header = document.querySelector('.header');
 let logo = document.querySelector('.logo');
 let navbar = document.querySelector('.navbar');
 let logoImg = document.querySelector('.muscle-img');
+let passwordInput = document.getElementById('Password');
+let passwordConfirmInput = document.getElementById('Password-confirm');
+
 
 //----------=========== new elements =======----------
 const sections = document.querySelectorAll('.sect-behavior');
@@ -28,6 +30,14 @@ const goBackBtn = document.querySelectorAll('.goback-btn');
 const navBarBtns = document.querySelectorAll('.page-links');
 const nextBtn = document.querySelectorAll('.next-btn');
 const fourthSect = document.querySelector('.fourth-sect');
+const sectContainers = document.querySelectorAll('.first-container');
+let firstName = document.getElementById('First-name');
+let lastName = document.getElementById('Last-name');
+let middleName = document.getElementById('Middle-name');
+let emailInput = document.getElementById('Email');
+let imgInput = document.getElementById('img-input');
+let imageInside = document.getElementById('imageInside');
+
 let newBtn = document.createElement('a');
 
 newBtn.classList.add('start');
@@ -35,11 +45,48 @@ newBtn.classList.add('btn-style');
 newBtn.textContent = 'Submit';
 newBtn.style.fontSize = '1rem';
 fourthSect.append(newBtn);
-newBtn.setAttribute('href', '/starting workout/WorkoutPage.html');
+
+let errorText = document.createElement('span');
+errorText.textContent = 'This field is mandatory';
+errorText.style.fontFamily = 'Poppins,sans serif'
+errorText.style.fontWeight = 'bolder'
+
+
 
 // -------------======== Variables =======---------------
 
 // -----------============== Forms initiation ========-------------
+
+imgInput.addEventListener('change', (e) => {
+  let uploadedImage = '';
+  const imageIndex = imgInput.files[0];
+  const reader = new FileReader();
+  imageInside.removeAttribute('src');
+  reader.addEventListener('load', () => {
+    uploadedImage = reader.result;
+    imageInside.setAttribute('src', uploadedImage);
+  });
+
+  reader.readAsDataURL(imageIndex);
+});
+
+
+
+
+
+
+
+
+newBtn.addEventListener('click', () => {
+  if (passwordConfirmInput.value && passwordInput.value) {
+    newBtn.setAttribute('href', '/starting workout/WorkoutPage.html');
+  }
+  else {
+
+    fourthSect.append(errorText);
+  }
+})
+
 
 goBackBtn.forEach((btn, idx) => {
   btn.addEventListener('click', () => {
@@ -66,27 +113,33 @@ goBackBtn.forEach((btn, idx) => {
 
 nextBtn.forEach((btn, idx) => {
   btn.addEventListener('click', () => {
-    sections[idx].style.transform = 'translateX(-500px)';
-    sections[idx].style.opacity = '0';
-    let activeBtn = document.querySelector('.clicked');
+    if (firstName.value && lastName.value && middleName.value && emailInput.value) {
+      sections[idx].style.transform = 'translateX(-500px)';
+      sections[idx].style.opacity = '0';
+      let activeBtn = document.querySelector('.clicked');
 
-    activeBtn.classList.remove('clicked');
-    navBarBtns[idx + 1].classList.add('clicked');
+      activeBtn.classList.remove('clicked');
+      navBarBtns[idx + 1].classList.add('clicked');
 
 
-    setTimeout(() => {
-      sections[idx].classList.remove('active');
-      sections[idx].nextElementSibling.classList.add('active');
-      sections[idx].nextElementSibling.style.transform = 'translateX(0px)';
-      sections[idx].nextElementSibling.style.opacity = '1';
+      setTimeout(() => {
+        sections[idx].classList.remove('active');
+        sections[idx].nextElementSibling.classList.add('active');
+        sections[idx].nextElementSibling.style.transform = 'translateX(0px)';
+        sections[idx].nextElementSibling.style.opacity = '1';
 
-      for (let i in nextBtn) {
-        if (nextBtn[i].parentElement.classList.contains('fourth')) {
+        for (let i in nextBtn) {
+          if (nextBtn[i].parentElement.classList.contains('fourth')) {
 
-          nextBtn[i].style.display = 'none';
+            nextBtn[i].style.display = 'none';
+          }
         }
-      }
-    }, 200)
+      }, 200)
+    } else {
+      sectContainers[idx].append(errorText)
+
+    }
+
   }
   )
 
@@ -107,30 +160,38 @@ for (let i = 0; i < skipBtn.length; i++) {
 
 
 }
-navBarBtns.forEach((btn, idx) => {
-  btn.addEventListener('click', () => {
-    let activeBtn = document.querySelector('.clicked');
-    activeBtn.classList.remove('clicked');
-    navBarBtns[idx].classList.add('clicked');
-    // sections[idx].classList.add('active');
+// navBarBtns.forEach((btn, idx) => {
+//   btn.addEventListener('click', () => {
+//     if (firstName.value && lastName.value && middleName.value && emailInput.value) {
+
+//       let activeBtn = document.querySelector('.clicked');
+//       activeBtn.classList.remove('clicked');
+//       navBarBtns[idx].classList.add('clicked');
+//       // sections[idx].classList.add('active');
+//       if (sections[idx].classList.contains('section-four')) {
+//         nextBtn[idx].style.display = 'none';
+//       }
+
+//       document.querySelector('.active').style.transform = 'translateX(-500px)';
+//       document.querySelector('.active').style.opacity = '0'
+//       setTimeout(() => {
+//         document.querySelector('.active').classList.remove('active');
+//         sections[idx].classList.add('active');
+//         setTimeout(() => {
+//           sections[idx].style.opacity = '1';
+//           sections[idx].style.transform = 'translateX(0px)'
+
+//         }, 100)
+
+//       }, 500)
+//     } else {
 
 
-    document.querySelector('.active').style.transform = 'translateX(-500px)';
-    document.querySelector('.active').style.opacity = '0'
-    setTimeout(() => {
-      document.querySelector('.active').classList.remove('active');
-      sections[idx].classList.add('active');
-      setTimeout(() => {
-        sections[idx].style.opacity = '1';
-        sections[idx].style.transform = 'translateX(0px)'
-
-      }, 100)
-
-    }, 500)
+//     }
 
 
-  })
-})
+//   })
+// })
 
 
 

@@ -2,10 +2,11 @@
   --background-clr: #223341;
   --text-Clr: #ffae21;
 }
+
 .exercise-categorie {
   background-color: var(--background-clr);
   width: 75%;
-  margin: auto;
+  margin: 0px auto 30px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@
   z-index: 1;
   position: relative;
 }
+
 .article {
   margin: 50px;
 }
@@ -28,6 +30,7 @@
   align-items: center;
   color: white;
 }
+
 .learn-more {
   background-color: var(--background-clr);
   color: white;
@@ -35,6 +38,7 @@
   font-size: 1rem;
   transition: 0.3s ease;
 }
+
 .learn-more:hover {
   color: var(--text-Clr);
   cursor: pointer;
@@ -47,10 +51,10 @@
 .categorie-collapse {
   width: 70%;
   height: auto;
-  margin: auto;
+
   padding: 20px 10px;
-  margin-bottom: 100px;
-  background-color: var(--background-clr);
+
+
   border-radius: 0px 0px 10px 10px;
   display: flex;
   justify-content: center;
@@ -59,20 +63,24 @@
   transform: translateY(-100px);
   transition: 0.3s ease;
 }
+
 .categorie-inside {
   background-color: white;
   height: auto;
   border-radius: 5px;
   display: none;
 }
+
 .head {
   text-align: center;
   transform: translateX(-200px) translateY(50px);
 }
+
 .collapse-header {
   text-align: center;
   margin-block: 20px;
 }
+
 .organize {
   display: flex;
   justify-content: space-between;
@@ -80,6 +88,7 @@
   margin: 10px;
   flex-direction: column;
 }
+
 .exercise-details {
   display: flex;
   justify-content: space-between;
@@ -87,21 +96,12 @@
   margin: 10px;
   text-align: justify;
 }
+
 .exercise-inform {
   width: 50%;
 }
-.close-categorie {
-  margin-top: 10px;
-  background-color: var(--background-clr);
-  border: none;
-  color: white;
-  transition: 0.3s ease;
-  font-size: 1rem;
-}
-.close-categorie:hover {
-  cursor: pointer;
-  color: #ffae21;
-}
+
+
 
 .must-do-exercises {
   display: flex;
@@ -120,7 +120,8 @@
   transition: 0.2s ease;
   position: relative;
 }
-.must-do > img {
+
+.must-do>img {
   width: 100%;
 }
 
@@ -160,19 +161,23 @@
   color: var(--text-Clr);
   cursor: pointer;
 }
+
 .muscles-first {
   color: black;
 }
 
-.muscles > img {
+.muscles>img {
   border-radius: 10px 10px 0px 0px;
 }
+
 .head {
   color: black;
 }
+
 .not-selected {
   /* display: none; */
 }
+
 .selected {
   width: 75%;
   text-align: center;
@@ -184,25 +189,29 @@
   transition: 0.3s ease;
 }
 
-.selected > img {
+.selected>img {
   color: #2d4a62a9;
   width: 50%;
 }
+
 .muscles-first {
   color: black;
   /* background-color: var(--background-clr); */
   /* border-radius: 10px 10px 0px 0px; */
   width: 100%;
 }
+
 .exercise-details {
   color: black;
 }
+
 .backg-color {
   background-color: white;
 }
+
 .muscles {
   display: none;
-  border: 10px solid var(--background-clr);
+  /* border: 10px solid var(--background-clr); */
   width: 100%;
   margin: auto;
   border-radius: 10px;
@@ -212,6 +221,7 @@
   background-color: white;
   visibility: visible;
 }
+
 .turn-off {
   font-size: 1.5rem;
   border-radius: 20px;
@@ -273,6 +283,7 @@
   color: var(--text-Clr);
   cursor: pointer;
 }
+
 .add-schedule:active,
 .add-schedule-main:active {
   transform: scale(0.98);
@@ -307,15 +318,18 @@
   color: white;
   border-radius: 10px;
 }
+
 .schedule-choice span {
   margin-bottom: 15px;
 }
+
 .btn-schedule-choose {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+
 .btn-schedule-choose {
   padding: 10px;
 }
@@ -329,9 +343,11 @@
   transition: 0.3s ease;
   padding: 10px;
 }
+
 .choose-schedule-btn:hover {
   color: var(--text-Clr);
 }
+
 .welcome-container {
   position: absolute;
   top: 40%;
@@ -349,11 +365,13 @@
   font-size: 1.2rem;
   font-size: bold;
 }
-.welcome-container h2 {
-}
+
+.welcome-container h2 {}
+
 #orange {
   font-size: 1.5rem;
 }
+
 .organize-week-btn {
   background-color: var(--background-clr);
   border: none;
@@ -385,6 +403,7 @@
 .choose-schedule-btn:nth-child(4) {
   border-radius: 0px 10px 10px 0px;
 }
+
 .section-container {
   border: 10px solid var(--background-clr);
   width: 90%;
@@ -397,6 +416,7 @@
   position: relative;
   border-radius: 10px;
 }
+
 .container-header {
   position: absolute;
   top: -1px;
@@ -448,4 +468,44 @@
   color: white;
   font-size: 1.2rem;
   border-radius: 0px 0px 10px 10px;
+}
+
+#benchpress-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 0px;
+  align-items: center;
+  background-image: url(pictures/bench\ press.jpg);
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  background-position: 100%;
+  background-size: cover;
+  height: 60vh;
+  background-attachment: fixed;
+}
+
+.inside-collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#squat-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 0px;
+  align-items: center;
+  background-image: url(pictures/squatss.jpg);
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  background-position: 100%;
+  background-size: cover;
+  height: 60vh;
+  background-attachment: fixed;
 }
