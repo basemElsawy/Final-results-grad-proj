@@ -7,14 +7,7 @@ let logoImg = document.querySelector('.muscle-img');
 let guideBtns = document.querySelectorAll('.guide-btn');
 let sections = document.querySelectorAll('.section');
 //--------========== collapse container variables======-----------
-let moreInfo = document.querySelectorAll('.more-info');
-let collapseMenu = document.querySelectorAll('.collapse-container');
-let insideCollapse = document.querySelectorAll('.inside-collapse');
-let closeArrow = document.querySelectorAll('.close-btn');
-let lrnMore = document.querySelectorAll('.learn-more');
-let closeLrnMore = document.querySelectorAll('.close-categorie');
-let collapseCategorie = document.querySelectorAll('.categorie-collapse');
-let collapseInsideCat = document.querySelectorAll('.categorie-inside');
+
 // --------------------===================== EXERCISES PANEL VARIABLES ================--------------------
 let moreExercsiesBtn = document.querySelectorAll('.more-exercises');
 let closePanel = document.querySelectorAll('.turn-off');

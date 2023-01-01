@@ -104,25 +104,73 @@
 
 
 .must-do-exercises {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   width: 90%;
+  margin: auto;
   z-index: 100;
 }
 
 .must-do {
   background-color: var(--background-clr);
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   height: 270px;
   margin-bottom: 100px;
-  width: 400px;
+  width: 100%;
   transition: 0.2s ease;
   position: relative;
 }
 
-.must-do>img {
-  width: 100%;
+#must-do-0 {
+  background-image: url(pictures/man-goes-in-for-sports-with-dumbbells-in-his-hands-royalty-free-image-1611590448_.jfif);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  transition: 0.3s ease;
+
+}
+
+
+
+#must-do-1 {
+  background-image: url(pictures/rowing.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+
+
+}
+
+.muscles-selector {
+  z-index: 100;
+}
+
+#must-do-2 {
+  background-image: url(pictures/young-strong-sweaty-focused-fit-muscular-man-with-royalty-free-image-1662644257.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+
 }
 
 .topic {
@@ -140,14 +188,19 @@
 .muscles-selector {
   display: flex;
   flex-direction: column;
-  background-color: var(--background-clr);
+  /* background-color: var(--background-clr); */
 
+
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
   border-radius: 10px;
   padding: 10px;
 }
 
 .more-exercises {
-  background-color: var(--background-clr);
+  background-color: transparent;
   border: none;
   font-size: 1.2rem;
   color: white;
@@ -160,6 +213,7 @@
 .more-exercises:hover {
   color: var(--text-Clr);
   cursor: pointer;
+
 }
 
 .muscles-first {
@@ -181,7 +235,7 @@
 .selected {
   width: 75%;
   text-align: center;
-  margin-bottom: 1350px;
+
   border-radius: 30px;
 }
 
@@ -224,13 +278,14 @@
 
 .turn-off {
   font-size: 1.5rem;
-  border-radius: 20px;
-  background-color: var(--background-clr);
+
+  background-color: transparent;
   border: none;
   padding: 10px;
-  color: white;
+  color: black;
   z-index: 10;
   transition: 0.3s ease;
+  position: relative;
 }
 
 .turn-off:hover {
@@ -238,20 +293,38 @@
   cursor: pointer;
 }
 
+.turn-off::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+  background-color: var(--text-Clr);
+  transition: 0.3s ease;
+}
+
+.turn-off:hover::after {
+  width: 100%;
+}
+
 .muscles-containing {
   transition: 0.3s ease-in-out;
   height: 0px;
-  border: 10px solid var(--background-clr);
-  background-color: #223341;
-  z-index: -100;
+
+  /* background-color: #223341; */
+
   width: 75%;
   margin: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transform: translateY(-50px);
+  position: relative;
+  z-index: -100;
+  display: none;
 }
 
 .must-do:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .selected:hover {
@@ -486,14 +559,6 @@
   background-attachment: fixed;
 }
 
-.inside-collapse {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
 #squat-sect {
   display: flex;
   flex-direction: column;
@@ -508,4 +573,90 @@
   background-size: cover;
   height: 60vh;
   background-attachment: fixed;
+}
+
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* margin-block: 200px; */
+  width: 80%;
+  margin: 100px auto 100px;
+}
+
+.collapse-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  justify-self: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.collapse-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  gap: 20px;
+}
+
+.grid-collapse iframe {
+  width: 30vw;
+  height: 50vh;
+}
+
+.grid-collapse {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  justify-self: flex-start;
+
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.grid-collapse div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-to-main {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  transition: 0.3s ease;
+  position: relative;
+  padding: 10px 20px;
+  opacity: 0.5;
+}
+
+.add-to-main:hover {
+  color: #c08113;
+  cursor: pointer;
+
+}
+
+.add-to-main::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #c08113;
+  transition: 0.3s ease;
+
+}
+
+.add-to-main:hover::before {
+  width: 80%;
 }

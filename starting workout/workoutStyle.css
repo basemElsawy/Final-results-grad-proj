@@ -13,6 +13,7 @@
 body {
   font-family: 'Roboto';
   z-index: -1;
+  height: auto;
 }
 
 :root {
@@ -435,34 +436,6 @@ main {
   border-radius: 0px 10px 10px 0px;
 }
 
-.collapse-container {
-  background-color: white;
-  color: black;
-  /* border: 20px solid var(--background-clr); */
-  max-width: 70%;
-  width: 90%;
-  margin: auto;
-  max-height: fit-content;
-
-  padding: 20px;
-  padding-block: 20px;
-  height: auto;
-
-  border-radius: 0px 0px 10px 10px;
-
-  text-align: center;
-  transition: 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 50px;
-  gap: 50px;
-  transition: 1s ease;
-  position: relative;
-  transform: translateY(-100px);
-  opacity: 1;
-}
 
 
 

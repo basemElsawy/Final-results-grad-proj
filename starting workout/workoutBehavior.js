@@ -8,9 +8,8 @@ let guideBtns = document.querySelectorAll('.guide-btn');
 let sections = document.querySelectorAll('.section');
 //--------========== collapse container variables======-----------
 let moreInfo = document.querySelectorAll('.more-info');
-let collapseMenu = document.querySelectorAll('.collapse-container');
-let insideCollapse = document.querySelectorAll('.inside-collapse');
-let closeArrow = document.querySelectorAll('.close-btn');
+
+
 let lrnMore = document.querySelectorAll('.learn-more');
 let closeLrnMore = document.querySelectorAll('.close-categorie');
 let collapseCategorie = document.querySelectorAll('.categorie-collapse');
@@ -68,19 +67,22 @@ moreExercsiesBtn.forEach((btn, idx) => {
   btn.addEventListener('click', () => {
     mustDoExercises[idx].classList.remove('not-selected');
     mustDoExercises[idx].classList.add('selected');
-    images[idx].style.width = '60%';
-    images[idx].style.height = '300px';
-    images[idx].style.marginLeft = '20%';
-    images[idx].style.border = '10px solid #2d4a62a9';
-    images[idx].style.borderRadius = '20px';
+    mustDoExercises[idx].style.gridColumn = '1/10';
+    mustDoExercises[idx].style.width = '100%';
+    musclesContainer[idx].style.width = '100%'
+    musclesContainer[idx].style.gridColumn = '1/10'
+    // musclesContainer[idx].style.marginBottom = '1200px';
     musclesPanel[idx].style.height = 'auto';
     musclesPanel[idx].style.visibitliy = 'visible';
     musclesPanel[idx].style.transform = 'translateY(0px)';
     musclesPanel[idx].style.margin = 'auto';
     musclesContainer[idx].style.height = 'auto';
-    musclesContainer[idx].style.transform = 'translateY(0px)';
-    musclesContainer[idx].style.margin = 'auto';
+
+
     setTimeout(() => {
+
+      musclesContainer[idx].style.display = 'block';
+
       musclesPanel[idx].style.display = 'block';
     }, 200);
 
@@ -97,18 +99,17 @@ closePanel.forEach((btn, idx) => {
     musclesPanel[idx].style.height = '0px';
     musclesContainer[idx].style.height = '0px';
     musclesContainer[idx].style.transform = 'translateY(-50px)';
-    musclesPanel[idx].style.visibitliy = 'hidden';
-    musclesPanel[idx].style.transform = 'translateY(-2300px)';
-    images[idx].style.height = '200px';
+    musclesPanel[idx].style.visibitly = 'hidden';
 
+
+    mustDoExercises[idx].style.gridColumn = 'auto';
+    mustDoExercises[idx].style.width = '100%';
+
+    musclesPanel[idx].style.display = 'none';
+    musclesContainer[idx].style.display = 'none';
     setTimeout(() => {
-      musclesPanel[idx].style.display = 'none';
-      // musclesContainer[idx].style.display = 'none';
     }, 1000);
-    images[idx].style.borderRadius = '0px';
-    images[idx].style.width = '100%';
-    images[idx].style.marginLeft = '0%';
-    images[idx].style.border = 'none';
+
 
     document.querySelector('.selected').classList.add('not-selected');
     document.querySelector('.selected').classList.remove('selected');
@@ -136,21 +137,8 @@ closeLrnMore.forEach((btn, idx) => {
   });
 });
 
-moreInfo.forEach((btn, idx) => {
-  btn.addEventListener('click', () => {
-    collapseMenu[idx].style.transform = 'translateY(0px)';
-    insideCollapse[idx].style.display = 'block';
-    collapseMenu[idx].style.marginBottom = '30px';
-  });
-});
 
-closeArrow.forEach((btn, idx) => {
-  btn.addEventListener('click', () => {
-    collapseMenu[idx].style.transform = 'translateY(-100px)';
-    insideCollapse[idx].style.display = 'none';
-    collapseMenu[idx].style.marginBottom = '30px';
-  });
-});
+
 //--------------=========== WORKOUT PAGE FUNCTIONALITY ====----------------
 
 //-------------------========== SCROLLING FUNCTIONALITY ===========-----------
