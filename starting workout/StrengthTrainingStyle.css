@@ -6,7 +6,7 @@
 .exercise-categorie {
   /* background-color: var(--background-clr); */
   width: 75%;
-  margin: 0px auto 30px;
+  margin: 100px auto 100px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,7 @@
   font-size: 1rem;
   transition: 0.3s ease;
   padding: 40px 20px;
+  font-weight: bolder;
 }
 
 .learn-more:hover {
@@ -139,6 +140,7 @@
   color: white;
   height: 270px;
   margin-bottom: 100px;
+
   width: 100%;
   transition: 0.2s ease;
   position: relative;
@@ -615,7 +617,7 @@
 
 
 .collapse-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -623,6 +625,10 @@
   /* margin-block: 200px; */
   width: 80%;
   margin: 100px auto 100px;
+  opacity: 0;
+  height: 0px;
+  transition: 1s all;
+  transform: translateY(-100px);
 }
 
 .collapse-info {
@@ -697,4 +703,36 @@
 
 .add-to-main:hover::before {
   width: 80%;
+}
+
+#squats-cat {
+  background-image: url(pictures/squats.jpg);
+}
+
+#bench-cat {
+  background-image: url(pictures/chest\ muscles.jpg);
+}
+
+.collapse-animate {
+  animation: coll-animate 1.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coll-animate {
+  0% {
+    display: flex;
+    transform: translateY(-100px);
+
+  }
+
+  25% {
+    height: auto;
+    transform: translateY(50px);
+
+  }
+
+
+  100% {
+    opacity: 1;
+  }
 }

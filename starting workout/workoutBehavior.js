@@ -8,8 +8,8 @@ let guideBtns = document.querySelectorAll('.guide-btn');
 let sections = document.querySelectorAll('.section');
 //--------========== collapse container variables======-----------
 let moreInfo = document.querySelectorAll('.more-info');
-
-
+let collapseContainer = document.querySelectorAll('.collapse-container');
+let closeBtn = document.querySelectorAll('.close-btn');
 let lrnMore = document.querySelectorAll('.learn-more');
 let closeLrnMore = document.querySelectorAll('.close-categorie');
 let collapseCategorie = document.querySelectorAll('.categorie-collapse');
@@ -254,3 +254,30 @@ addMainToFavs.forEach((btn, idx) => {
 });
 
 // tableContainerAll.insertAdjacentHTML('afterbegin', table);
+
+moreInfo.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    collapseContainer[idx].style.display = 'flex';
+    setTimeout(() => {
+      collapseContainer[idx].style.transform = 'translateY(0px)';
+      setTimeout(() => {
+        collapseContainer[idx].style.height = '800px';
+        collapseContainer[idx].style.opacity = '1';
+      }, 200)
+    }, 300)
+  })
+
+})
+
+closeBtn.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    collapseContainer[idx].style.opacity = '0';
+    setTimeout(() => {
+      collapseContainer[idx].style.height = '0px';
+      collapseContainer[idx].style.transform = 'translateY(-100px)'
+      setTimeout(() => {
+        collapseContainer[idx].style.display = 'none';
+      }, 500)
+    }, 200)
+  })
+})
