@@ -6,8 +6,8 @@
 .exercise-categorie {
   /* background-color: var(--background-clr); */
   width: 75%;
-  margin: 100px auto 100px;
-  height: auto;
+  margin: 100px auto 0px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,11 +19,58 @@
   position: relative;
 }
 
+.exercise-categorie::after {
+  content: "Lift";
+  position: absolute;
+  right: -250px;
+  height: 90%;
+  width: 200px;
+  background-color: #223341;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffae31;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding: 20px;
+  background-image: url(pictures/deadlift.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: #223341;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+.exercise-categorie::before {
+  content: "Dead";
+  position: absolute;
+  left: -250px;
+  height: 90%;
+  width: 200px;
+  background-color: #223341;
+  border-radius: 0px 10px 10px 0px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding: 20px;
+  background-image: url(pictures/deadlift.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: #223341;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
 .article {
   margin: 50px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   width: 50%;
   margin: auto;
   padding: 40px;
@@ -82,7 +129,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  transform: translateY(-100px);
+  transform: translateY(-500px);
   transition: 0.3s ease;
 }
 
@@ -121,6 +168,11 @@
 
 .exercise-inform {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  border-bottom: 1px solid #223341;
 }
 
 
@@ -606,7 +658,7 @@
   width: 100%;
   border-radius: 0px;
   align-items: center;
-  background-image: url(pictures/squatss.jpg);
+  background-image: url(pictures/squats.jpg);
   background-color: var(--background-clr);
   background-blend-mode: overlay;
   background-position: 100%;
@@ -706,7 +758,7 @@
 }
 
 #squats-cat {
-  background-image: url(pictures/squats.jpg);
+  background-image: url(pictures/squatss.jpg);
 }
 
 #bench-cat {
@@ -735,4 +787,100 @@
   100% {
     opacity: 1;
   }
+}
+
+
+#bench-collap::after {
+  content: "Press";
+  position: absolute;
+  right: -250px;
+  height: 90%;
+  width: 200px;
+  background-color: #223341;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffae31;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding: 20px;
+  background-image: url(pictures/bench\ press.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: #223341;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+#bench-collap::before {
+  content: "Bench";
+  position: absolute;
+  left: -250px;
+  height: 90%;
+  width: 200px;
+  background-color: #223341;
+  border-radius: 0px 10px 10px 0px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding: 20px;
+  background-image: url(pictures/bench\ press.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: #223341;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+#squats-collap::after {
+  content: "squat";
+  position: absolute;
+  right: -250px;
+  height: 90%;
+
+  width: 200px;
+  background-color: #223341;
+  /* border-radius: 10px 0px 0px 10px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffae31;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding: 15px;
+  background-image: url(pictures/squats.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: #223341;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+#squats-collap::before {
+  content: "Load";
+  position: absolute;
+  left: -250px;
+  height: 90%;
+  width: 200px;
+  background-color: #223341;
+  /* border-radius: 0px 10px 10px 0px; */
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding: 20px;
+  background-image: url(pictures/squats.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: #223341;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 }

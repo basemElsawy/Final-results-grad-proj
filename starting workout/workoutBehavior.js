@@ -260,11 +260,11 @@ moreInfo.forEach((btn, idx) => {
     collapseContainer[idx].style.display = 'flex';
     setTimeout(() => {
       collapseContainer[idx].style.transform = 'translateY(0px)';
-      setTimeout(() => {
-        collapseContainer[idx].style.height = '800px';
-        collapseContainer[idx].style.opacity = '1';
-      }, 200)
-    }, 300)
+
+      collapseContainer[idx].style.height = '800px';
+      collapseContainer[idx].style.opacity = '1';
+
+    }, 500)
   })
 
 })

@@ -14,6 +14,7 @@ body {
   font-family: 'Roboto';
   z-index: -1;
   height: auto;
+  overflow-x: hidden;
 }
 
 :root {
@@ -361,7 +362,7 @@ main {
   /* margin-bottom: 300px; */
   position: relative;
   z-index: 2;
-  margin-top: 75px;
+  margin-top: 30px;
 }
 
 .exercise-detail {
