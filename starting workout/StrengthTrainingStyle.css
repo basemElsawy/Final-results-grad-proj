@@ -22,9 +22,9 @@
 .exercise-categorie::after {
   content: "Lift";
   position: absolute;
-  right: -250px;
+  right: -190px;
   height: 90%;
-  width: 200px;
+  width: 130px;
   background-color: #223341;
   border-radius: 10px 0px 0px 10px;
   display: flex;
@@ -180,8 +180,8 @@
 .must-do-exercises {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 90%;
+  gap: 50px;
+  width: 80%;
   margin: auto;
   z-index: 100;
 }
@@ -793,9 +793,9 @@
 #bench-collap::after {
   content: "Press";
   position: absolute;
-  right: -250px;
+  right: -190px;
   height: 90%;
-  width: 200px;
+  width: 130px;
   background-color: #223341;
   border-radius: 10px 0px 0px 10px;
   display: flex;
@@ -818,7 +818,7 @@
   position: absolute;
   left: -250px;
   height: 90%;
-  width: 200px;
+  width: 192px;
   background-color: #223341;
   border-radius: 0px 10px 10px 0px;
 
@@ -828,7 +828,7 @@
   color: white;
   font-size: 3.5rem;
   font-weight: bolder;
-  padding: 20px;
+  /* padding: 20px; */
   background-image: url(pictures/bench\ press.jpg);
   background-size: cover;
   background-position: 100%;
@@ -840,10 +840,10 @@
 #squats-collap::after {
   content: "squat";
   position: absolute;
-  right: -250px;
+  right: -190px;
   height: 90%;
 
-  width: 200px;
+  width: 130px;
   background-color: #223341;
   /* border-radius: 10px 0px 0px 10px; */
   display: flex;
@@ -883,4 +883,54 @@
   background-color: #223341;
   background-attachment: fixed;
   background-blend-mode: overlay;
+}
+
+svg {
+  position: absolute;
+  top: 720px;
+  width: 100%;
+  left: 5px;
+  height: 600px;
+  display: inline-block;
+
+}
+
+path {
+
+  transition: 0.3s ease;
+  /* display: ; */
+}
+
+.path {
+  stroke-dashoffset: 2500;
+  stroke-dasharray: 2500;
+  animation: dash 2s ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
+
+}
+
+@keyframes dash {
+  100% {
+
+    stroke-dashoffset: 0;
+  }
+}
+
+#Svg-second {
+  position: absolute;
+  top: 1680px;
+  width: 100%;
+  left: 5px;
+  /* display: none; */
+}
+
+#Svg-third {
+  position: absolute;
+  top: 2620px;
+}
+
+#Svg-fourth {
+  position: absolute;
+  top: 3550px;
 }

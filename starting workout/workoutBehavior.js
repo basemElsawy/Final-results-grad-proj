@@ -43,8 +43,19 @@ let notChosenTable = document.querySelectorAll('.not-chosen');
 let chosenTable = document.querySelector('.chosen');
 let tbodyEl = document.querySelectorAll('tbody');
 let tableContainerAll = document.querySelector('.table-container-all');
-// ---------------------------================= local variables ===============-----------------
+// ---------------------------================= path variables ===============-----------------
+var path = document.querySelector('path');
+var pathLength = path.getTotalLength();
 
+// path.style.strokeDasharray = pathLength + '' + pathLength;
+
+// path.style.strokeDashoffset = pathLength;
+
+// window.addEventListener('scroll', () => {
+//   if (document.documentElement.scrollTop - 400) {
+//     path.style.strokeDashoffset = '0';
+//   }
+// })
 // -----------========= FUNCTIONS & EVENT LISTENERS =======--------
 
 guideBtns.forEach((btn, idx) => {

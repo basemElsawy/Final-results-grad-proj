@@ -24,6 +24,7 @@ body {
 
 main {
   height: auto;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
