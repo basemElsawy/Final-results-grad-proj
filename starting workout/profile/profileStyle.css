@@ -9,8 +9,13 @@
     font-family: 'Roboto';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: auto;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -331,7 +336,9 @@ th {
     opacity: 1;
 }
 
-
+.profile-image {
+    height: 100px;
+}
 
 .body-container {
     display: grid;
