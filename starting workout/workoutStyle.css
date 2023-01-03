@@ -58,7 +58,7 @@ main {
   background-attachment: fixed;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   color: white;
@@ -79,6 +79,10 @@ main {
   animation: slide-down 2s ease;
   animation-fill-mode: forwards;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
 }
 
 @keyframes slide-down {
@@ -694,4 +698,33 @@ hr {
 .close-categorie:hover::after {
   width: 100%;
 
+}
+
+#sportChoice-1 {
+  background-image: url(pictures/powerlifting.jpg);
+
+
+}
+
+#sportChoice-2 {
+  background-image: url(pictures/weightlifting.jpg);
+}
+
+#sportChoice-3 {
+  background-image: url(pictures/bodybuilding.webp);
+}
+
+.sport-choice {
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.sport-choice a {
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: white;
 }

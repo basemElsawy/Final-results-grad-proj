@@ -12,34 +12,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-radius: 10px;
+  /* padding: 10px; */
+  /* border-radius: 10px; */
   text-align: justify;
   z-index: 1;
   position: relative;
+  transition: 0.3s ease;
 }
 
 .exercise-categorie::after {
   content: "Lift";
   position: absolute;
-  right: -190px;
+  right: -195px;
   height: 90%;
-  width: 130px;
+  width: 140px;
   background-color: #223341;
-  border-radius: 10px 0px 0px 10px;
+  /* border-radius: 10px 0px 0px 10px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: #ffae31;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
-  padding: 20px;
+  padding: 10px;
   background-image: url(pictures/deadlift.jpg);
   background-size: cover;
   background-position: 100%;
   background-color: #223341;
   background-attachment: fixed;
   background-blend-mode: overlay;
+  transition: 0.3s ease;
 }
 
 .exercise-categorie::before {
@@ -49,32 +51,35 @@
   height: 90%;
   width: 200px;
   background-color: #223341;
-  border-radius: 0px 10px 10px 0px;
+  /* border-radius: 0px 10px 10px 0px; */
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
-  padding: 20px;
+  padding: 10px;
   background-image: url(pictures/deadlift.jpg);
   background-size: cover;
   background-position: 100%;
   background-color: #223341;
   background-attachment: fixed;
   background-blend-mode: overlay;
+  transition: 0.3s ease;
 }
 
 .article {
   margin: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: justify;
   gap: 20px;
   width: 50%;
   margin: auto;
   padding: 40px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 1.2rem;
 }
 
@@ -94,7 +99,7 @@
   /* background-attachment: fixed; */
   text-align: center;
   color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   width: 100%;
 }
 
@@ -793,16 +798,16 @@
 #bench-collap::after {
   content: "Press";
   position: absolute;
-  right: -190px;
+  right: -210px;
   height: 90%;
-  width: 130px;
+  width: 150px;
   background-color: #223341;
   border-radius: 10px 0px 0px 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: #ffae31;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   padding: 20px;
   background-image: url(pictures/bench\ press.jpg);
@@ -826,7 +831,7 @@
   justify-content: flex-end;
   align-items: center;
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   /* padding: 20px; */
   background-image: url(pictures/bench\ press.jpg);
@@ -840,19 +845,18 @@
 #squats-collap::after {
   content: "squat";
   position: absolute;
-  right: -190px;
+  right: -195px;
   height: 90%;
-
-  width: 130px;
+  width: 150px;
   background-color: #223341;
   /* border-radius: 10px 0px 0px 10px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: #ffae31;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
-  padding: 15px;
+  padding: 10px;
   background-image: url(pictures/squats.jpg);
   background-size: cover;
   background-position: 100%;
@@ -874,9 +878,9 @@
   justify-content: flex-end;
   align-items: center;
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bolder;
-  padding: 20px;
+  padding: 10px;
   background-image: url(pictures/squats.jpg);
   background-size: cover;
   background-position: 100%;
@@ -885,37 +889,9 @@
   background-blend-mode: overlay;
 }
 
-svg {
-  position: absolute;
-  top: 720px;
-  width: 100%;
-  left: 5px;
-  height: 600px;
-  display: inline-block;
 
-}
 
-path {
 
-  transition: 0.3s ease;
-  /* display: ; */
-}
-
-.path {
-  stroke-dashoffset: 2500;
-  stroke-dasharray: 2500;
-  animation: dash 2s ease;
-  animation-fill-mode: forwards;
-  opacity: 1;
-
-}
-
-@keyframes dash {
-  100% {
-
-    stroke-dashoffset: 0;
-  }
-}
 
 #Svg-second {
   position: absolute;
@@ -933,4 +909,54 @@ path {
 #Svg-fourth {
   position: absolute;
   top: 3550px;
+}
+
+
+
+
+
+
+.exercise-categorie:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 30px 10px grey;
+}
+
+.exercise-categorie:hover::before {
+  transform: scale(0.9);
+  filter: blur(10px);
+  background-attachment: fixed;
+  /* border-radius: 20%; */
+}
+
+.exercise-categorie:hover::after {
+  transform: scale(0.9);
+  filter: blur(5px);
+  background-attachment: fixed;
+  /* border-radius: 20%; */
+}
+
+svg {
+  position: absolute;
+  top: 52%;
+  left: 40%;
+  animation: dash 2.5s ease 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+
+path {
+  border-radius: 100px;
+}
+
+@keyframes dash {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
 }
