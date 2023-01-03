@@ -923,7 +923,7 @@
 
 .exercise-categorie:hover::before {
   transform: scale(0.9);
-  filter: blur(10px);
+  filter: blur(5px);
   background-attachment: fixed;
   /* border-radius: 20%; */
 }

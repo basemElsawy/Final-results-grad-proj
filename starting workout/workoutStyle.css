@@ -728,3 +728,27 @@ hr {
   text-decoration: none;
   color: white;
 }
+
+#muscle-svg {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  height: 30%;
+  width: 30%;
+  animation: dash 2.5s ease 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+}
+
+@keyframes dash {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
