@@ -1,7 +1,7 @@
 'use strict';
 // -------------===========scrolling variables=========---------------
-const spans = document.querySelectorAll('.progress-bar');
-const mainContent = document.querySelector('.main-content');
+const prgoressBars = document.querySelectorAll('.progress-bar');
+const mainContent = document.querySelector('.progress-contain');
 const progSection = document.getElementById('info-prog');
 const precentages = document.querySelectorAll('.precentage');
 
@@ -364,26 +364,39 @@ addMore.addEventListener('click', () => {
 // -----------------========== scroll-functionality========---------
 
 
+// let newObserver = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting <) {
+//             entry.target.style.width = entry.dataset.width;
+//         }
+//     })
+// })
+
+
+// prgoressBars.forEach(prog => {
+//     newObserver.observe(prog);
+// })
+
+
+// window.onscroll = () => {
+//     if (documn) {
+//         console.log('scrolled');
+//         prgoressBars.forEach((prog) => {
+
+//             prog.style.width = prog.dataset.width;
+//         })
+
+//         precentages.forEach((prec) => {
+//             prec.textContent = prec.dataset.precentage;
+//         })
+
+//     };
 
 
 
-mainContent.onscroll = () => {
-    if (mainContent.scrollTop >= progSection.offsetTop - 400) {
-
-        spans.forEach((span) => {
-
-            span.style.width = span.dataset.width;
-        })
-
-        precentages.forEach((prec) => {
-            prec.textContent = prec.dataset.precentage;
-        })
-
-    };
-
-
-
-}
+// }
+let offsettop = mainContent.offsetTop;
+console.log(offsettop);
 
 
 // --------------------============= image FILE READER FUNCTIONALITY ==============----------

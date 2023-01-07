@@ -396,3 +396,26 @@ input:focus {
 .small-btn:hover::after {
   width: 100%;
 }
+
+.start-working {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  display: none;
+}
+
+.user-image {
+  position: relative;
+}
+
+.label-img-in {
+  position: absolute;
+  bottom: 1px;
+  right: 25%;
+  background-color: var(--backgroundClr);
+  border-radius: 60% / 80%;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1;
+
+}

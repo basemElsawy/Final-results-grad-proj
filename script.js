@@ -22,8 +22,6 @@ let bodyBuildingimg = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('img-con-onslide');
-    } else {
-      entry.target.classList.remove('img-con-onslide');
     }
   });
 });
@@ -35,8 +33,6 @@ const bodyBuildingObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('appear-onslide');
-    } else {
-      entry.target.classList.remove('appear-onslide');
     }
   });
 });
@@ -49,8 +45,6 @@ const scrollingInTop = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('top-slide');
-    } else {
-      entry.target.classList.remove('top-slide');
     }
   });
 });
@@ -62,8 +56,6 @@ const observes = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('slide-down');
-    } else {
-      entry.target.classList.remove('slide-down');
     }
   });
 });
@@ -76,8 +68,6 @@ const observing = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('shown');
-    } else {
-      entry.target.classList.remove('shown');
     }
   });
 });
@@ -89,8 +79,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
     }
   });
 });

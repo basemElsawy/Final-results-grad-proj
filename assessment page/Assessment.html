@@ -100,18 +100,20 @@
     </section>
     <section class="sect-behavior section-four not-shown">
       <div class="first-container fourth-sect">
-        <img src="pictures/user profile.jpg" id="imageInside" height="150px" width="150px" alt="">
-        <label class="label-img-in" for="img-input">
-          add a picture
-          <input type="file" id="img-input" class="file-Input">
-        </label>
+        <div class="user-image">
+          <img src="pictures/user profile.jpg" id="imageInside" height="150px" width="150px" alt="">
+          <label class="label-img-in" id="label" for="img-input">
+            Add
+            <input type="file" id="img-input" class="file-Input">
+          </label>
+        </div>
         <form action="">
           <label for="Password">Password</span></label><input placeholder="must be unique" id="Password"
             type="password">
           <label for="Password-confirm">Confirm password</label><input placeholder="confirm" id="Password-confirm"
             type="password">
         </form>
-
+        <a href="/starting workout/WorkoutPage.html" class="btn-style start-working">Start workingout</a>
         <div class="start-assesing fourth">
           <button class="btn-style next-btn">next</button>
           <button class="small-btn" id="skip">skip</button>

@@ -31,6 +31,7 @@ body {
 .Orange-txt {
   color: var(--text-clr);
 }
+
 .nav-bar {
   font-size: var(--lrg-txt);
   color: white;
@@ -43,6 +44,7 @@ body {
   align-items: baseline;
   justify-content: space-around;
 }
+
 .background-grad {
   width: 100%;
   height: 600vh;
@@ -63,11 +65,13 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     margin: 0;
     opacity: 1;
   }
 }
+
 .lines-section {
   height: 3500px;
   position: absolute;
@@ -85,6 +89,7 @@ body {
   0% {
     color: white;
   }
+
   100% {
     color: var(--text-clr);
   }
@@ -96,6 +101,7 @@ body {
   border-radius: 10px;
   /* border: 1px solid white; */
 }
+
 .image {
   filter: invert(100%);
 }
@@ -106,24 +112,28 @@ body {
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(2) {
   height: 200px;
   transform: rotate(-45deg) translateX(73px) translateY(25px);
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(3) {
   height: 400px;
   transform: rotate(0deg) translateX(140px) translateY(-67px);
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(4) {
   height: 700px;
   transform: rotate(90deg) translateX(-420px) translateY(207px);
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(5) {
   height: 400px;
   transform: rotate(0deg) translateX(-556px) translateY(-770px);
@@ -138,24 +148,28 @@ body {
   border: 1px solid white;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(7) {
   height: 400px;
   transform: rotate(90deg) translateX(-1090px) translateY(74px);
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(8) {
   height: 700px;
   transform: rotate(0deg) translateX(125px) translateY(-1290px);
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(9) {
   height: 700px;
   transform: rotate(90deg) translateX(-1640px) translateY(223px);
   border-radius: 10px;
   /* margin-bottom: 500px; */
 }
+
 .vertical-line:nth-child(10) {
   height: 700px;
   transform: rotate(0deg) translateX(-574px) translateY(-1990px);
@@ -181,6 +195,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .lone-circle {
   top: 1590px;
   left: -285px;
@@ -192,6 +207,7 @@ body {
   left: 125px;
   z-index: 1;
 }
+
 .line-two {
   height: 2px;
   width: 50px;
@@ -206,6 +222,7 @@ body {
   position: absolute;
   top: 380px;
 }
+
 .line-one {
   height: 2px;
   width: 50px;
@@ -216,6 +233,7 @@ body {
   transition: 0.5s all;
   opacity: 0;
 }
+
 .circle-three {
   position: absolute;
   top: 1305px;
@@ -227,10 +245,12 @@ body {
   top: 910px;
   left: 120px;
 }
+
 .circle-five {
   top: 1005px;
   left: -570px;
 }
+
 .line-three {
   height: 2px;
   width: 50px;
@@ -241,6 +261,7 @@ body {
   opacity: 0;
   animation-delay: 200ms;
 }
+
 .line-four {
   position: absolute;
   top: 1607px;
@@ -250,6 +271,7 @@ body {
   transition: 0.5s all;
   opacity: 0;
 }
+
 .line-five {
   height: 2px;
   width: 50px;
@@ -264,10 +286,12 @@ body {
   top: 1595px;
   left: 110px;
 }
+
 .circle-seven {
   top: 2295px;
   left: 110px;
 }
+
 .circle-eight {
   top: 2295px;
   left: -590px;
@@ -300,6 +324,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -318,6 +343,7 @@ body {
   opacity: 0;
   gap: 50px;
 }
+
 .first-main-header {
   position: absolute;
   top: 780px;
@@ -325,10 +351,12 @@ body {
   color: white;
   opacity: 0;
 }
+
 .first-side-header img {
   filter: invert(100%);
   opacity: 0.5;
 }
+
 .second-main-header {
   position: absolute;
   top: 200px;
@@ -346,21 +374,72 @@ body {
   opacity: 0;
   animation-fill-mode: forwards;
 }
+
 .text-to-right {
   animation: text-to-left 1s ease 200ms;
   transform: translateX(-200px);
   opacity: 0;
   animation-fill-mode: forwards;
 }
+
 .first-content-section {
   position: absolute;
   top: 1000px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .first-content-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* height: 100px; */
+    top: 450px;
+
+    transform: translateX(-150px) scale(0.8);
+  }
+}
+
+.strength-libraries:nth-child(1) {
+  background-image: url(pictures/Arnold-Schwarzenegger-3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-clr-light);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.strength-libraries:nth-child(2) {
+  background-image: url(pictures\ used/powerlifting.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-clr-light);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.strength-libraries:nth-child(3) {
+  background-image: url(pictures\ used/weightlftt.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-clr-light);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .strength-libraries {
@@ -414,10 +493,12 @@ body {
     filter: blur(5px);
     transform: translateY(-50px);
   }
+
   50% {
     opacity: 1;
     filter: blur(0px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -429,6 +510,7 @@ body {
     opacity: 0;
     filter: blur(10px);
   }
+
   100% {
     opacity: 1;
     filter: blur(0px);
@@ -440,6 +522,7 @@ body {
     opacity: 0;
     filter: blur(5px);
   }
+
   100% {
     filter: blur(0px);
     opacity: 1;
@@ -447,22 +530,26 @@ body {
     box-shadow: 0px 0px 25px 0px black;
   }
 }
+
 @keyframes text-to-left {
   0% {
     opacity: 0;
     filter: blur(5px);
   }
+
   100% {
     filter: blur(0px);
     opacity: 1;
     transform: translateX(0px);
   }
 }
+
 @keyframes text-to-right {
   0% {
     opacity: 0;
     filter: blur(5px);
   }
+
   100% {
     filter: blur(0px);
     opacity: 1;
@@ -476,6 +563,7 @@ body {
   gap: 30px;
   position: relative;
 }
+
 .second-content {
   height: 100px;
   width: 550px;
@@ -490,14 +578,17 @@ body {
   border-radius: 10px;
   opacity: 0;
 }
+
 .second-content img {
   border-radius: 10px;
 }
+
 .second-content:nth-child(1) {
   position: absolute;
   top: 1530px;
   /* transform: translateX(450px); */
 }
+
 .second-content:nth-child(2) {
   position: absolute;
   top: 1250px;
@@ -516,6 +607,7 @@ body {
     transform: translateX(400px);
     filter: blur(5px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(450px);
@@ -554,6 +646,7 @@ body {
     visibility: hidden;
     opacity: 0;
   }
+
   100% {
     visibility: visible;
     opacity: 0.5;
@@ -566,6 +659,7 @@ body {
   left: 550px;
   color: white;
 }
+
 #logos-header {
   color: white;
   font-size: var(--med-txt);
@@ -599,21 +693,23 @@ body {
   height: 50px;
   position: absolute;
   background-color: white;
-  left: 641px;
+  left: 42%;
   top: 2130px;
   opacity: 0;
   animation-delay: 250ms;
 }
+
 .line-seven {
   width: 2px;
   height: 50px;
   position: absolute;
   background-color: white;
-  left: 641px;
+  left: 42%;
   top: 2450px;
   opacity: 0;
   animation-delay: 450ms;
 }
+
 .merchendise-section {
   position: absolute;
   display: flex;
@@ -626,15 +722,17 @@ body {
   padding: 20px;
   gap: 40px;
   top: 2200px;
-  left: 465px;
+  left: 30%;
   background-color: var(--background-clr-light);
   border-radius: 20px;
   animation-delay: 550ms;
   box-shadow: 0px 0px 25px black;
 }
+
 .merch {
   opacity: 0;
 }
+
 .to-down-animation {
   opacity: 0;
 
@@ -719,6 +817,7 @@ body {
   text-decoration: none;
   transition: 0.5s all;
 }
+
 .assessing-section a:hover {
   color: var(--text-clr);
 }
@@ -732,11 +831,13 @@ body {
   animation: bot-sect-up 1s ease;
   animation-fill-mode: forwards;
 }
+
 @keyframes bot-sect-up {
   0% {
     opacity: 0;
     transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);

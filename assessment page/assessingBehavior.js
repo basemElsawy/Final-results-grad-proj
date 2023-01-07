@@ -79,7 +79,8 @@ imgInput.addEventListener('change', (e) => {
 
 newBtn.addEventListener('click', () => {
   if (passwordConfirmInput.value && passwordInput.value) {
-    newBtn.setAttribute('href', '/starting workout/WorkoutPage.html');
+    newBtn.style.display = 'none';
+    document.querySelector('.start-working').style.display = 'block';
   }
   else {
 

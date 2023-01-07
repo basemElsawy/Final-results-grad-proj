@@ -49,6 +49,7 @@
   margin-right: 2rem;
   display: flex;
   transition: 0.3s ease;
+  align-items: center;
 }
 
 .navbar li {
@@ -190,4 +191,33 @@
 
 #tables-heading {
   font-size: 2rem;
+}
+
+.list-backg {
+  /* background-image: url(pictures/PSKP8694.JPG); */
+  /* display: inline; */
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+#profile-img {
+  /* background-color: white; */
+
+  /* position: absolute; */
+  /* right: 0px; */
+  /* top: 25%; */
+  /* border-radius: 50%; */
+
+
+}
+
+#profile-img img {
+  position: static;
+  opacity: 1;
+  filter: invert(0);
+  border-radius: 50%;
+  outline: 3px solid #ffae31;
+
 }
