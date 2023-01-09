@@ -17,6 +17,7 @@ let removeBtn = document.querySelectorAll('.remove-btn');
 let merchTotal = document.querySelector('.merch-total');
 let fees = document.querySelector('.fees');
 let totalPayment = document.querySelector('.total');
+let cartContainer = document.querySelector('.cart-container');
 //-------------------========== VARIABLES =========----------------
 
 merchCounter.innerText = Number(merchCounter.innerText);
@@ -87,10 +88,10 @@ function feesFunc() {
 // this one was not workig as it loads on the already existing remove btn and assign the event listener ( even before the items were added to the cart )
 /*removeBtn.forEach((btn, idx) => {
   btn.addEventListener('click', () => {
-	  
+    
 console.log ("item clicked for remove ");
-	  
-	  
+    
+    
   });
   });*/
 
@@ -114,25 +115,35 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 let scrollFunction = () => {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 350) {
+    document.querySelector('.muscle-img').style.opacity = '1';
+    header.style.backgroundColor = '#223341'
     header.style.boxShadow = '0px 2px 40px 2px black';
+
+  }
+  else {
+    document.querySelector('.muscle-img').style.opacity = '0';
+    header.style.backgroundColor = 'transparent'
+    header.style.boxShadow = 'none';
+
+  }
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // header.style.boxShadow = '0px 2px 40px 2px black';
     logo.style.transform = 'scale(1)';
     navbar.style.transform = 'scale(1)';
   } else {
     navbar.style.transform = 'scale(1.2)';
     logo.style.transform = 'scale(1.2)';
-    header.style.boxShadow = 'none';
+    // header.style.boxShadow = 'none';
   }
   if (
     document.body.scrollTop > 600 ||
     document.documentElement.scrollTop > 600
   ) {
-    // shoppingCart.style.visibility = 'visible';
-    header.style.borderRadius = '0px 0px 10px 10px';
-    header.style.marginRight = '10px';
-    header.style.marginLeft = '10px';
+    // header.style.borderRadius = '0px 0px 10px 10px';
+    // header.style.marginRight = '10px';
+    // header.style.marginLeft = '10px';
   } else {
-    // shoppingCart.style.visibility = 'hidden';
     header.style.borderRadius = '0px 0px 0px 0px';
     header.style.marginRight = '0px';
     header.style.marginLeft = '0px';
@@ -143,7 +154,9 @@ let scrollFunction = () => {
   ) {
     cartBtn.style.visibility = 'visible';
     shoppingCart.style.visibility = 'visible';
+    cartContainer.style.display = 'inline';
   } else {
+    cartContainer.style.display = 'none';
     cartBtn.style.visibility = 'hidden';
     shoppingCart.style.visibility = 'hidden';
   }
@@ -151,6 +164,7 @@ let scrollFunction = () => {
     document.body.scrollTop > 305 ||
     document.documentElement.scrollTop > 305
   ) {
+
     shoppingCart.style.transform = 'scale(1)';
     shoppingCart.style.borderRadius = '10px 0px 0px 10px';
   } else {

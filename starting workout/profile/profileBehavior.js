@@ -39,17 +39,149 @@ const imageInput = document.getElementById('Img-input');
 const profileImg = document.querySelector('.profile-image');
 
 //----------=============== VIDEO FILE READER VARIABLES ==========--------------
-const snatchVidIn = document.getElementById('snatch-numbers');
+const videoInput = document.querySelectorAll('.video-input');
+let uploadedImage = '';
+let uploadedVideo = '';
 
-
+let addVideoLabel = document.querySelectorAll('.add-vid');
+let submitBtn = document.querySelectorAll('.submit-btn');
 
 const weightliftingContainer = document.getElementById('weightlifting');
+
+
+//-------------================ goals footer ============------------
+let listedGoals = document.querySelectorAll('.goals-footer');
+let openPanelBtn = document.querySelectorAll('.panel-open');
+let insideListed = document.querySelectorAll('.inside-list');
+
+let liftNmbrInput = document.querySelectorAll('.lift-number');
+let prBrokeInput = document.querySelectorAll('.pr-broke');
+let onDateInput = document.querySelectorAll('.on-date');
+let goalsBody = document.querySelectorAll('.goals-body-inside');
+
+let errorMsg = document.createElement('span');
+
+
+submitBtn.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        let liftDetailsDiv = document.createElement('div');
+        let liftNmbrDetail = document.createElement('span');
+        let liftPrBrokedetail = document.createElement('span');
+        let liftOnDateDetail = document.createElement('span');
+
+        liftDetailsDiv.classList.add('lift-details');
+
+        liftNmbrDetail.textContent = liftNmbrInput[idx].value;
+        liftPrBrokedetail.textContent = prBrokeInput[idx].value;
+        liftOnDateDetail.textContent = onDateInput[idx].value;
+
+        liftDetailsDiv.append(liftNmbrDetail, liftPrBrokedetail, liftOnDateDetail)
+        if (liftNmbrInput[idx].value && prBrokeInput[idx].value && onDateInput[idx].value) {
+
+            openPanelBtn[idx].style.display = 'inline';
+        }
+        else {
+            errorMsg.textContent = 'The above is mandatory';
+            goalsBody[idx].append(errorMsg);
+        }
+
+
+
+        insideListed[idx].append(liftDetailsDiv);
+
+
+
+
+
+
+
+    })
+
+})
+
+
+
+
+addVideoLabel.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+
+
+        videoInput.forEach((video) => {
+
+            video.addEventListener('change', () => {
+
+                const videoIndex = video.files[0];
+
+                const reader = new FileReader();
+                let videoSrc = document.createElement('video')
+                let insideSrc = document.createElement('source');
+
+                reader.addEventListener('load', () => {
+                    uploadedVideo = reader.result;
+                    insideSrc.setAttribute('src', uploadedVideo);
+
+                })
+
+
+
+                reader.readAsDataURL(videoIndex);
+                videoSrc.setAttribute('width', '300');
+                videoSrc.setAttribute('controls', '');
+                videoSrc.setAttribute('autoplay', '');
+                videoSrc.setAttribute('type', 'video/mp4')
+                // videoSrc.setAttribute('autoplay', '');
+                videoSrc.append(insideSrc);
+
+                insideListed[idx].append(videoSrc);
+
+
+
+
+
+
+
+
+            }
+
+            )
+        })
+
+
+
+    })
+
+})
+
+
+
+
+
+
+
+openPanelBtn.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        openPanelBtn[idx].innerText = 'Close panel';
+        listedGoals[idx].classList.toggle('active-panel');
+        goBackBtn[idx].disabled = true;
+        openPanelBtn[idx].onclick = () => {
+            if (openPanelBtn[idx].textContent == 'Close panel') {
+                openPanelBtn[idx].textContent = 'Open panel';
+                goBackBtn[idx].disabled = false;
+            }
+        }
+    })
+
+})
+
+
+
+
+
 
 // ----------------========== global variables ===========-------------
 var message = document.createElement('p');
 
-let uploadedImage = '';
-let uploadedVideo = '';
+
 
 // ----------========== GO BACK FUNCTIONALITY ==========----------------
 
@@ -395,8 +527,7 @@ addMore.addEventListener('click', () => {
 
 
 // }
-let offsettop = mainContent.offsetTop;
-console.log(offsettop);
+
 
 
 // --------------------============= image FILE READER FUNCTIONALITY ==============----------
@@ -418,28 +549,4 @@ imageInput.addEventListener('change', () => {
 
 // ------------------============= VIDEO FILE READER ================---------------
 
-
-weightliftingContainer.classList.add('grid-container');
-snatchVidIn.addEventListener('change', () => {
-    const videoIndex = snatchVidIn.files[0];
-    const reader = new FileReader();
-    let videoSrc = document.createElement('video')
-    let insideSrc = document.createElement('source');
-
-    reader.addEventListener('load', () => {
-        uploadedVideo = reader.result;
-        insideSrc.setAttribute('src', uploadedVideo);
-    })
-
-
-
-    reader.readAsDataURL(videoIndex);
-    videoSrc.setAttribute('width', '300');
-    videoSrc.setAttribute('controls', '');
-    videoSrc.append(insideSrc);
-    weightliftingContainer.append(videoSrc);
-
-
-
-})
 

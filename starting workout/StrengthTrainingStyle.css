@@ -939,7 +939,7 @@ svg {
   position: absolute;
   top: 52%;
   left: 40%;
-  animation: dash 2.5s ease 1.5s;
+  animation: dash 2.5s ease-in-out 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
   stroke-dasharray: 2000;

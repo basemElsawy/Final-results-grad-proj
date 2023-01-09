@@ -137,32 +137,9 @@ body {
   margin-left: 2rem;
 }
 
-/* -------------================Section alignment=====-------------- */
-
-.sect-align {
-  background-color: #223341;
-  margin-top: 25px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  color: white;
-  text-align: justify;
-  border-radius: 10px;
-  position: relative;
-}
 
 /* -------------================POWERLIFTING SECTION=====-------------- */
-.vertical-line {
-  height: 500px;
-  width: 5px;
-  background-color: white;
-  transform: translateY(30px);
-}
 
-.first-img {
-  width: 100%;
-  height: 500px;
-  border-radius: 10px 10px 0px 0px;
-}
 
 .heading {
   text-align: center;
@@ -264,6 +241,8 @@ body {
   position: relative;
   display: flex;
   color: white;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
   height: auto;
   width: 100%;
   max-width: -moz-fit-content;
@@ -275,25 +254,8 @@ body {
   flex-direction: column;
 }
 
-.linear-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--background-clr);
-  opacity: 0.8;
-  /* animation-iteration-count: infinite; */
-  /* animation-fill-mode: forwards; */
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  border-radius: 10px;
-}
 
-.background-animation {
-  animation: backgroundColor 0.5s ease;
 
-  animation-fill-mode: forwards;
-}
 
 .para-content-PL {
   display: flex;
@@ -322,24 +284,14 @@ body {
 .slider-section {
   /* margin-top: 5rem;
   margin-bottom: 5rem; */
+  margin-block: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.fa-solid {
-  color: #ffae21;
-}
 
-.slide p {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  background-color: #223341;
-  border-radius: 0px 0px 15px 15px;
-  margin: 1px;
-}
+
 
 .slider {
   width: 800px;
@@ -453,37 +405,25 @@ body {
   /* margin-bottom: 100px; */
   background-color: #223341;
   color: white;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 50%;
+  margin: auto;
   /* margin-bottom: 100px; */
   border-radius: 10px;
   padding: 10px;
 }
 
-.card {
-  border: none;
-  /* margin-bottom: 100px; */
+
+
+.coach-ids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 50%;
 }
 
-.card img {
-  border-radius: 10px 10px 0px 0px;
-}
 
-.coach-section {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0px;
-}
 
-.name {
-  background-color: #223341;
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  padding: 10px;
-  border-radius: 0px 0px 10px 10px;
-  margin-top: 1px;
-}
+
 
 /* ---------------==========================SPORT SECTION==================--------------- */
 
@@ -499,13 +439,8 @@ body {
   max-width: 100%;
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
-  text-align: center;
-  color: white;
-  height: auto;
-  position: relative;
-  margin-bottom: 100px;
-  /* border-radius: 10px; */
+  margin: 50px auto 0px;
+
 }
 
 .content-container p {
@@ -542,18 +477,7 @@ body {
   height: fit-content;
 }
 
-/* .content-container a {
-  margin-bottom: 50px;
-  padding: 20px;
-  background-color: #1f3c53;
-  color: white;
-  border: none;
-  font-size: 2rem;
-  transition: 0.5s ease;
-  text-decoration: none;
-  box-shadow: 0px 0px 0px 0px #1f3c53;
-  border-radius: 0px 0px 20px 20px;
-} */
+
 
 #last-article {
   width: 50%;
@@ -573,7 +497,7 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 300px; */
-  background-image: url(pictures1/weightlifting1.jpg);
+  background-image: url(pictures1/weightlifting\ section-min\ \(2\).jpg);
   width: 100%;
   height: 65vh;
   background-size: cover;
@@ -582,21 +506,13 @@ body {
   background-attachment: fixed;
   position: relative;
   padding-inline: 100px;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
 
 
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #223341;
-  opacity: 0.7;
 
-
-}
 
 .weightlifting-container {
   z-index: 1;
@@ -660,8 +576,9 @@ body {
 
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin: 0px auto 50px;
-  border-radius: 0px 0px 10px 10px;
+  margin: 50px auto 50px;
+  border-radius: 10px;
+
 }
 
 .easy-start a {
@@ -696,18 +613,12 @@ body {
   transition: all 1s;
 }
 
-.show {
-  filter: blur(0px);
-  transform: translateY(0px);
 
-  opacity: 1;
-}
-
-@media (prefers-reduced-motion) {
+/* @media (prefers-reduced-motion) {
   .hide {
     transition: none;
   }
-}
+} */
 
 .section-coach {
   width: 100%;
@@ -716,7 +627,7 @@ body {
   /* margin:; */
   height: auto;
   margin-bottom: 10px;
-  background: url(pictures1/ambitious-creative-co-rick-barrett-FL3_5uBVMPI-unsplash.jpg);
+  background: url(pictures1/weightlifting22.jpg);
   background-color: var(--background-clr);
   background-position: center center;
   background-repeat: no-repeat;
@@ -737,22 +648,7 @@ body {
   margin-top: 250px;
 }
 
-.coach-card {
-  width: 250px;
-  height: auto;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 
-  background-color: #2e4659;
-  /* padding-top: 50px; */
-  border-radius: 10px 10px 10px 10px;
-  z-index: 1;
-  gap: 50px;
-  margin: 20px;
-  /* column-gap: 50px; */
-}
 
 .container-ids {
   display: flex;
@@ -761,9 +657,7 @@ body {
   margin-right: 70px;
 }
 
-.coach-card img {
-  border-radius: 10px 10px 0px 0px;
-}
+
 
 .coach-card:nth-child(1) {
   /* margin-bottom: 50px; */
@@ -789,52 +683,30 @@ body {
 }
 
 .button {
-  margin: auto;
-  background-color: var(--background-clr);
+  margin: 0px auto 100px;
+  background-color: transparent;
+  color: black;
   padding: 10px 20px;
   border-radius: 0px 0px 10px 10px;
-  opacity: 0;
+
   transition: 0.3s ease;
-  color: white;
+
   text-decoration: none;
-  font-size: 1.2rem;
+
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(30px);
+  border-radius: 10px;
+  filter: blur(0%);
 }
 
-.content-container a:hover {
-  color: #ffae21;
-  cursor: pointer;
-  box-shadow: 0px 25px 35px 0px #1f3b5372;
-}
+
 
 .no-slide {
   opacity: 0;
 }
 
-.slide-down {
-  animation: slide-down-animate 0.5s ease 250ms;
-  animation-fill-mode: forwards;
-}
 
-@keyframes slide-down-animate {
-  0% {
-    z-index: -1;
-    opacity: 0;
-    transform: translateY(-50px);
-    filter: blur(5%);
-  }
-
-  90% {
-    z-index: -1;
-  }
-
-  100% {
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(30px);
-    border-radius: 10px;
-    filter: blur(0%);
-  }
-}
 
 .no-top-slide {
   z-index: -1;
@@ -853,11 +725,7 @@ body {
   text-align: center;
 }
 
-@keyframes backgroundColor {
-  100% {
-    background-position: 10% 10%;
-  }
-}
+
 
 .bodybuilding-header {
   text-align: center;
@@ -918,20 +786,7 @@ body {
   opacity: 0;
 }
 
-.appear-onslide {
-  animation: appear-onslide 1s ease-in-out;
-  animation-fill-mode: forwards;
-}
 
-@keyframes appear-onslide {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .img-container {
   margin-top: 50px;
@@ -1121,26 +976,56 @@ body {
   position: relative;
   z-index: 1;
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  z-index: 10;
+  transition-delay: 300ms;
+
+
+
+}
+
+.button:hover {
+  color: white;
 }
 
 .button::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  bottom: 0;
+  left: 0.5px;
+  height: 3px;
   width: 0%;
-  background-color: rgba(255, 255, 255, 0.319);
-  opacity: 0.2;
+  background-color: #ffae21;
+  opacity: 1;
   transition: 0.3s ease;
-  border-radius: 10px;
+  border-radius: 5px;
 
 }
 
 .button:hover::before {
   width: 100%;
   z-index: -1;
+  animation: btn-hover 500ms ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes btn-hover {
+  0% {
+    height: 3px;
+
+  }
+
+  70% {
+    height: 3px;
+  }
+
+
+
+  100% {
+    z-index: -1;
+    height: 100%;
+  }
 }
 
 .slider-3 {
@@ -1276,7 +1161,7 @@ body {
 }
 
 .footer-section {
-  background-image: url(pictures1/ambitious-creative-co-rick-barrett-FL3_5uBVMPI-unsplash.jpg);
+  background-image: url(pictures1/weightlifting22.jpg);
   background-position: center;
   height: fit-content;
   background-size: cover;
@@ -1386,4 +1271,39 @@ body {
   width: 100%;
   z-index: 100;
 
+}
+
+.coach-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--txt-clr);
+
+  height: 200px;
+  color: white;
+  box-shadow: 0px 0px 40px 20px #ffae2109;
+}
+
+#weightlift {
+  background-image: url(pictures1/weightlftt.jpg);
+}
+
+#bodyBuild {
+  background-image: url(pictures1/Arnold-Schwarzenegger-3.webp);
+}
+
+#powerlift {
+  background-image: url(pictures1/powerlifting.jpg);
+}
+
+#nutrition {
+  background-image: url(pictures1/food.jpg);
 }

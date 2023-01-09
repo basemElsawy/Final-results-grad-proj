@@ -9,10 +9,10 @@ let logoImg = document.querySelector('.muscle-img');
 let hiddenTxtElements = document.querySelectorAll('.hide');
 
 let hiddenCards = document.querySelectorAll('.hidden');
-let slide = document.querySelectorAll('.no-slide');
+
 let topSlide = document.querySelectorAll('.no-top-slide');
 let linearBackground = document.querySelector('.linear-gradient');
-let imageContainer = document.querySelectorAll('.img-container');
+let imageContainer = document.querySelectorAll('.scroll-appear');
 let noOpacityText = document.querySelectorAll('.no-opacity');
 // --------------============= VARIABLES ================------------
 let counter = 1;
@@ -52,17 +52,9 @@ topSlide.forEach((el) => {
   scrollingInTop.observe(el);
 });
 
-const observes = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('slide-down');
-    }
-  });
-});
 
-slide.forEach((el) => {
-  observes.observe(el);
-});
+
+
 
 const observing = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -75,17 +67,7 @@ const observing = new IntersectionObserver((entries) => {
 hiddenCards.forEach((el) => {
   observing.observe(el);
 });
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
 
-hiddenTxtElements.forEach((el) => {
-  observer.observe(el);
-});
 
 document.addEventListener('DOMContentLoaded', function (event) {
   window.onscroll = function () {
