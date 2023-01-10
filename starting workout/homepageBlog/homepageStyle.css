@@ -26,4 +26,250 @@ body {
     background-color: var(--background-clr);
     background-blend-mode: overlay;
     background-attachment: fixed;
+
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-60px);
+    }
+}
+
+.second-section {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 70px);
+    background-color: white;
+    box-shadow: 0px 0px 50px 10px #22334146;
+    /* border: px solid var(--background-clr); */
+
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+
+
+    animation: slide-up 1s ease forwards;
+    opacity: 0;
+}
+
+.user-image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid var(--text-Clr);
+}
+
+.user-name {
+    grid-column: 2/span 3;
+
+    grid-row: 1;
+    font-size: 1.2rem;
+
+
+}
+
+
+.search-bar-frm {
+    grid-row: 2;
+    grid-column: 2 / span 3;
+    width: 100%;
+}
+
+.search-bar-frm input {
+    width: 100%;
+}
+
+.posting-btn {
+    grid-column: 4/ span 5;
+    grid-row: 3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--background-clr);
+    color: white;
+    transition: 0.3s ease;
+
+
+}
+
+.posting-btn:hover {
+    color: var(--text-Clr);
+    cursor: pointer;
+}
+
+.uploading-images-vids input {
+    display: none;
+}
+
+.uploading-images-vids {
+    grid-column: 2/span 4;
+    grid-row: 3;
+    font-size: 0.9rem;
+    word-spacing: 10px;
+    /* border-bottom: 2px solid var(--background-clr); */
+}
+
+.search-bar-frm input {
+    height: 50px;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2233412a;
+
+}
+
+.search-bar-frm input:focus {
+    border: none;
+    outline: none;
+    background-color: #2233412a;
+}
+
+.search-bar-frm input::placeholder {
+    font-size: 0.9rem;
+    /* font-weight: bold;
+     */
+    text-align: center;
+}
+
+.third-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-block: 50px;
+
+}
+
+.subsection-one {
+    position: sticky;
+    left: 0;
+    top: 100px;
+    /* bottom: 0; */
+    width: 20%;
+    box-shadow: 0px 0px 50px 10px #22334121;
+    height: 60vh;
+}
+
+.friends-header {
+    width: 100%;
+    text-align: center;
+    background-color: var(--background-clr);
+    color: white;
+    padding: 10px;
+
+}
+
+.friends-menu {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.friend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+
+    margin: auto;
+    transition: 0.3s ease;
+
+}
+
+.friend:hover {
+    cursor: pointer;
+    background-color: #2233412a;
+}
+
+.friend img {
+    border: 4px solid green;
+    border-radius: 50%;
+
+}
+
+.friend:nth-child(4) img {
+    border: 4px solid green;
+    /* border-radius: 50%; */
+
+}
+
+
+
+.status {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.friends-footer {
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+}
+
+.add-friend {
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--background-clr);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.add-friend:hover {
+    color: var(--text-Clr);
+    cursor: pointer;
+}
+
+.btn-style {
+    background: transparent;
+    border: none;
+    position: relative;
+    transition: 0.3s ease;
+
+}
+
+.btn-style:hover {
+    color: var(--text-Clr);
+    cursor: pointer;
+}
+
+
+.btn-style::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--text-Clr);
+    width: 0%;
+    left: 0;
+    transition: 0.3s ease;
+    bottom: 0;
+}
+
+.btn-style:hover::before {
+    width: 100%;
 }
