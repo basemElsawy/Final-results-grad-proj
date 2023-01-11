@@ -52,8 +52,8 @@ main {
 .first-img {
   height: 100vh;
   background-image: url(pictures/Workout\ area.jpg);
-  background-size: cover;
-  background-position: 100%;
+  background-size: 150%;
+  background-position: center;
   background-color: var(--background-clr);
   background-blend-mode: overlay;
   background-attachment: fixed;

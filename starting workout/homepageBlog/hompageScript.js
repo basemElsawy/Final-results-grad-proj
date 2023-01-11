@@ -7,10 +7,37 @@ let logoImg = document.querySelector('.muscle-img');
 let guideBtns = document.querySelectorAll('.guide-btn');
 let sections = document.querySelectorAll('.section');
 // main variables
+let friendsOpenBtn = document.querySelector('.friends-open');
+let subsectionOne = document.querySelector('.subsection-one');
+let plusSign = document.querySelector('.plus');
+let firstSection = document.querySelector('.first-section');
+let footerSection = document.querySelector('.footer-section');
+
+
+window.addEventListener('scroll', () => {
+    firstSection.style.backgroundSize = 160 - + window.pageYOffset / 20 + '%';
+    firstSection.style.opacity = 1 - + window.pageYOffset / 700 + '';
+    footerSection.style.backgroundSize = 50 + + window.pageYOffset / 20 + '%'
+    footerSection.style.opacity = 0 + + window.pageYOffset / 1300 + '';
+})
+
+
+friendsOpenBtn.addEventListener('click', () => {
 
 
 
+    if (friendsOpenBtn.classList.contains('open-btn-animate') && subsectionOne.classList.contains('sub-sect-animate')) {
+        friendsOpenBtn.classList.remove('open-btn-animate');
+        subsectionOne.classList.remove('sub-sect-animate');
+        plusSign.classList.remove('rotate');
+    } else {
+        friendsOpenBtn.classList.add('open-btn-animate');
+        subsectionOne.classList.add('sub-sect-animate');
+        plusSign.classList.add('rotate');
+    }
 
+
+})
 
 
 

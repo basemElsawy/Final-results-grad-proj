@@ -121,13 +121,14 @@
   background-image: url(pictures/squatting.jpg);
   background-position: center;
   height: fit-content;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   position: relative;
   background-color: #223341;
   background-blend-mode: overlay;
   padding: 50px;
   margin-top: 100px;
+  opacity: 0;
 }
 
 .footer-container {
@@ -251,4 +252,25 @@
   height: 40px;
   z-index: 1;
   border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  /* height: 500px; */
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 2px 2px 5px var(--background-clr);
+  /* border-radius: 10px; */
+  /* margin-block: 100px; */
+  background-color: var(--background-clr);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #244662;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #32495d;
 }

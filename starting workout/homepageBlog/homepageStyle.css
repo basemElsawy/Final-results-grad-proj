@@ -20,9 +20,10 @@ body {
 
 .first-section {
     background-image: url(pictures/squatting.jpg);
-    background-size: cover;
-    background-position: 25% 25%;
+    background-size: 160%;
+    background-position: center;
     height: 50vh;
+
     background-color: var(--background-clr);
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -153,13 +154,18 @@ body {
 }
 
 .subsection-one {
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 100px;
-    /* bottom: 0; */
+    bottom: 0px;
     width: 20%;
-    box-shadow: 0px 0px 50px 10px #22334121;
+    box-shadow: 0px 0px 100px 10px #22334121;
     height: 60vh;
+    /* width: ; */
+    transform: translateX(-310px);
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+    /* border-right: 1px solid var(--background-clr); */
 }
 
 .friends-header {
@@ -181,6 +187,7 @@ body {
     justify-content: center;
     padding: 20px;
     gap: 20px;
+    background-color: white;
 
 }
 
@@ -230,6 +237,8 @@ body {
     justify-content: space-between;
     gap: 10px;
     background-color: white;
+    border-bottom: 2px solid var(--background-clr);
+    border-right: 2px solid var(--background-clr);
 }
 
 .add-friend {
@@ -272,4 +281,78 @@ body {
 
 .btn-style:hover::before {
     width: 100%;
+}
+
+.friends-open {
+    position: fixed;
+    top: 350px;
+    margin-left: 0px;
+    background-color: var(--background-clr);
+    padding: 10px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.1rem;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+}
+
+.friends-open:hover {
+    color: var(--text-Clr);
+    cursor: pointer;
+}
+
+.open-btn-animate {
+    animation: open-list 800ms ease-in-out forwards;
+}
+
+@keyframes open-list {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+.sub-sect-animate {
+    animation: open-menu 800ms ease-in-out forwards;
+}
+
+@keyframes open-menu {
+    0% {
+        transform: translateX(-303px);
+    }
+
+
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.plus {
+    transition: 0.8 ease-in-out;
+    rotate: 0deg;
+}
+
+.rotate {
+    animation: rotate 800ms ease-in-out forwards;
+
+
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 45deg;
+        color: red;
+    }
 }
