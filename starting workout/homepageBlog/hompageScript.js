@@ -12,6 +12,7 @@ let subsectionOne = document.querySelector('.subsection-one');
 let plusSign = document.querySelector('.plus');
 let firstSection = document.querySelector('.first-section');
 let footerSection = document.querySelector('.footer-section');
+let secondSection = document.querySelector('.second-section');
 
 
 window.addEventListener('scroll', () => {
@@ -57,12 +58,14 @@ let scrollFunction = () => {
         document.querySelector('.muscle-img').style.opacity = '1';
         header.style.backgroundColor = '#223341'
         header.style.boxShadow = '0px 2px 40px 2px black';
+        document.querySelector('.friends-open').style.display = 'flex';
 
     }
     else {
         document.querySelector('.muscle-img').style.opacity = '0';
         header.style.backgroundColor = 'transparent'
         header.style.boxShadow = 'none';
+        document.querySelector('.friends-open').style.display = 'none';
 
     }
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -78,6 +81,7 @@ let scrollFunction = () => {
         document.body.scrollTop > 600 ||
         document.documentElement.scrollTop > 600
     ) {
+
         // header.style.borderRadius = '0px 0px 10px 10px';
         // header.style.marginRight = '10px';
         // header.style.marginLeft = '10px';
