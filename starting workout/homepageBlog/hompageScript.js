@@ -13,6 +13,37 @@ let plusSign = document.querySelector('.plus');
 let firstSection = document.querySelector('.first-section');
 let footerSection = document.querySelector('.footer-section');
 let secondSection = document.querySelector('.second-section');
+// posting variables
+let fileUploading = document.getElementById('uploading');
+let textInputArea = document.getElementById('main-text');
+let postBtn = document.querySelector('.posting-btn');
+let errMsg = document.createElement('span');
+let secondSect = document.querySelector('.second-section');
+
+
+
+errMsg.classList.add('errMsg');
+
+
+
+
+postBtn.addEventListener('click', () => {
+    if (textInputArea.value || fileUploading.files[0] == true) {
+
+
+        errMsg.remove();
+    }
+    else {
+        errMsg.textContent = 'write something to post';
+        secondSect.append(errMsg);
+    }
+})
+
+
+
+
+
+
 
 
 window.addEventListener('scroll', () => {
@@ -20,6 +51,7 @@ window.addEventListener('scroll', () => {
     firstSection.style.opacity = 1 - + window.pageYOffset / 700 + '';
     footerSection.style.backgroundSize = 50 + + window.pageYOffset / 20 + '%'
     footerSection.style.opacity = 0 + + window.pageYOffset / 1300 + '';
+
 })
 
 
@@ -58,14 +90,14 @@ let scrollFunction = () => {
         document.querySelector('.muscle-img').style.opacity = '1';
         header.style.backgroundColor = '#223341'
         header.style.boxShadow = '0px 2px 40px 2px black';
-        document.querySelector('.friends-open').style.display = 'flex';
+        // document.querySelector('.friends-open').style.display = 'flex';
 
     }
     else {
         document.querySelector('.muscle-img').style.opacity = '0';
         header.style.backgroundColor = 'transparent'
         header.style.boxShadow = 'none';
-        document.querySelector('.friends-open').style.display = 'none';
+        // document.querySelector('.friends-open').style.display = 'none';
 
     }
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
