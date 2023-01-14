@@ -1,4 +1,4 @@
-
+'use strict';
 // header variables
 let header = document.querySelector('.header');
 let logo = document.querySelector('.logo');
@@ -27,17 +27,17 @@ errMsg.classList.add('errMsg');
 
 
 
-postBtn.addEventListener('click', () => {
-    if (textInputArea.value || fileUploading.files[0] == true) {
+// postBtn.addEventListener('click', () => {
+//     if (textInputArea.value || fileUploading.files[0] == true) {
 
 
-        errMsg.remove();
-    }
-    else {
-        errMsg.textContent = 'write something to post';
-        secondSect.append(errMsg);
-    }
-})
+//         errMsg.remove();
+//     }
+//     else {
+//         errMsg.textContent = 'write something to post';
+//         secondSect.append(errMsg);
+//     }
+// })
 
 
 
