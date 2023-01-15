@@ -938,7 +938,7 @@
 svg {
   position: absolute;
   top: 52%;
-  left: 40%;
+  left: 25%;
   animation: dash 2.5s ease-in-out 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -959,4 +959,8 @@ path {
     opacity: 1;
     stroke-dashoffset: 0;
   }
+}
+
+.exercises-container {
+  width: 100%;
 }

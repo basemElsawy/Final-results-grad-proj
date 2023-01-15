@@ -23,6 +23,7 @@
   transform: scale(0.8);
   bottom: -40%;
   right: 46.5%;
+  display: none;
 }
 
 .hlf {

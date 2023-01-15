@@ -135,10 +135,12 @@ let scrollFunction = () => {
     // header.style.boxShadow = '0px 2px 40px 2px black';
     logo.style.transform = 'scale(1)';
     navbar.style.transform = 'scale(1)';
+    document.querySelector('.muscle-img').style.display = 'inline';
   } else {
     navbar.style.transform = 'scale(1.2)';
     logo.style.transform = 'scale(1.2)';
     // header.style.boxShadow = 'none';
+    document.querySelector('.muscle-img').style.display = 'none';
   }
   if (
     document.body.scrollTop > 600 ||
