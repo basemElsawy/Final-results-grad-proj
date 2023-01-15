@@ -1,0 +1,1320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100;200;300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 250px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --background-clr: #223341;
+  --txt-clr: #ffae21;
+}
+
+/* =========================HEADER SECTION-----NAVBAR=============== */
+.Orange-txt {
+  color: #ffae21;
+}
+
+.header {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.header img {
+  filter: invert(100%);
+  position: absolute;
+  bottom: -40%;
+  right: 47%;
+  transform: scale(0.8);
+}
+
+.hlf {
+  font-weight: bolder;
+  color: #ffae21;
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  transition: 0.5s ease;
+}
+
+.navbar {
+  margin-right: 2rem;
+  display: flex;
+  transition: 0.3s ease;
+}
+
+.navbar li {
+  font-size: 1.2rem;
+  margin-top: 16px;
+
+  margin-right: 15px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.navbar a:hover,
+.logo:hover {
+  color: #ffae21;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ===================== Main section ------ About us-============== */
+
+.about-us {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 5px; */
+  /* margin-bottom: 30px; */
+}
+
+.background-img {
+  background-image: url(barbell.jpg);
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+
+  background-color: #223341;
+  position: relative;
+}
+
+.overlay-clr {
+  background-color: #223341eb;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.headings {
+  position: absolute;
+  top: 80%;
+  color: white;
+  z-index: 10;
+  margin-left: 10px;
+}
+
+.about-container {
+  background-color: #223341;
+}
+
+.para-1 {
+  margin-top: 0px;
+  text-align: center;
+  padding: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+
+/* -------------================POWERLIFTING SECTION=====-------------- */
+
+
+.heading {
+  text-align: center;
+  font-weight: bolder;
+}
+
+#p-lifting-header {
+  position: absolute;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  top: 35%;
+  left: 37%;
+
+  padding: 5px;
+  width: 20%;
+  background-color: #2233419f;
+}
+
+.con {
+  width: 500px;
+  height: 550px;
+  font-size: 1rem;
+}
+
+.paragraphs {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 150px;
+  margin-left: 70px;
+}
+
+/* --------==================BODY-BUILDING SECTION========--------- */
+
+.bodybuilding-heading {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  background-color: #223341;
+  padding: 10px;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.white-bg-grid {
+  background-color: white;
+  color: #223341;
+}
+
+.calis-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: 10px;
+  padding: 0;
+  margin-left: -3px;
+  margin-top: -5px;
+}
+
+.para-2 {
+  width: 500px;
+}
+
+.aesth-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 40px; */
+
+  /* margin-top: 10px; */
+  position: relative;
+}
+
+.calisthenics {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  bottom: 52%;
+  left: 30%;
+}
+
+.aesthetics {
+  position: absolute;
+  z-index: 1;
+  /* top: 0; */
+  bottom: 20px;
+  color: white;
+  font-size: 2rem;
+  right: 35%;
+}
+
+.PowerLifting-sect {
+  background-image: url(pictures/forpowerlifting.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  color: white;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  height: auto;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+  padding: 50px;
+  z-index: -1;
+  /* border-radius: 10px; */
+  flex-direction: column;
+}
+
+
+
+
+.para-content-PL {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  z-index: 10;
+  gap: 20px;
+}
+
+.powerlifting-para {
+  width: 100%;
+}
+
+.bodyBuilding-para {
+  /* background-color: var(--background-clr); */
+
+  padding: 20px;
+  /* color: white; */
+  border-radius: 10px;
+}
+
+/* -------------------------=============================SLIDER-SECTION===========------------------ */
+.slider-section {
+  /* margin-top: 5rem;
+  margin-bottom: 5rem; */
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.slider {
+  width: 800px;
+  height: auto;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  cursor: pointer;
+  z-index: 1;
+  border: 3px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #ffae21;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -20%;
+}
+
+#radio3:checked~.first {
+  margin-left: -40%;
+}
+
+#radio4:checked~.first {
+  margin-left: -60%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 3px solid #223341;
+  padding: 5px;
+  border: 10px;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 46px;
+  margin-top: 3px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: #ffae21;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: #ffae21;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: #ffae21;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: #ffae21;
+}
+
+/* --------------------------------------------------------------=====================COACHS SECTION=====================---------------------------------- */
+
+.section-header {
+  text-align: center;
+  /* margin-bottom: 100px; */
+  background-color: #223341;
+  color: white;
+  width: 50%;
+  margin: auto;
+  /* margin-bottom: 100px; */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
+.coach-ids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 50%;
+}
+
+
+
+
+
+/* ---------------==========================SPORT SECTION==================--------------- */
+
+/* -----------===================FOOTER SECTION============------------ */
+
+
+
+.content-container {
+  display: flex;
+  /* background-color: #1f3c53; */
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto 0px;
+
+}
+
+.content-container p {
+  background-color: var(--background-clr);
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.content-container img {
+  width: 45%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  /* border-radius: 0px 0px 20px 20px; */
+
+
+}
+
+.content-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 70%;
+  margin: auto;
+}
+
+.content-container p {
+  font: 'Work Sans';
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+
+
+#last-article {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+}
+
+#para-start {
+  width: 50%;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.Weightlifting-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 300px; */
+  background-image: url(pictures1/weightlifting\ section-min\ \(2\).jpg);
+  width: 100%;
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding-inline: 100px;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+
+
+}
+
+
+
+.weightlifting-container {
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: justify;
+
+  flex-direction: column;
+}
+
+.article-lifting {
+  text-align: justify;
+  margin-right: 100px;
+  z-index: 1;
+}
+
+.section-image {
+  position: relative;
+}
+
+.section-image img {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.image-header {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.5rem;
+  left: 65%;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  /* height: 500px; */
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 2px 2px 5px var(--background-clr);
+  /* border-radius: 10px; */
+  /* margin-block: 100px; */
+  background-color: var(--background-clr);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #244662;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #32495d;
+}
+
+.easy-start {
+  text-align: center;
+  color: white;
+  background-color: var(--background-clr);
+  padding: 20px;
+
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 50px auto 50px;
+  border-radius: 10px;
+
+}
+
+.easy-start a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.easy-start a:hover {
+  color: var(--txt-clr);
+  cursor: pointer;
+}
+
+.slider-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sliderTxt-container {
+  font-size: 1.5rem;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.hide {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100px);
+
+  transition: all 1s;
+}
+
+
+/* @media (prefers-reduced-motion) {
+  .hide {
+    transition: none;
+  }
+} */
+
+.section-coach {
+  width: 100%;
+
+  /* border-radius: 10px; */
+  /* margin:; */
+  height: auto;
+  margin-bottom: 10px;
+  background: url(pictures1/weightlifting22.jpg);
+  background-color: var(--background-clr);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  background-attachment: fixed;
+  justify-content: space-between;
+  background-blend-mode: multiply;
+  position: relative;
+  border: none;
+  padding: 50px;
+}
+
+.coachs-header {
+  text-align: left;
+  font-size: 2rem;
+  color: white;
+  margin-top: 250px;
+}
+
+
+
+.container-ids {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-right: 70px;
+}
+
+
+
+.coach-card:nth-child(1) {
+  /* margin-bottom: 50px; */
+  transition-delay: 400ms;
+}
+
+.coach-card:nth-child(2) {
+  /* margin-top: 50px; */
+  transition: 600ms;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100px);
+  transition: 1s all;
+}
+
+.shown {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0px);
+}
+
+.button {
+  margin: 0px auto 100px;
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 0px 0px 10px 10px;
+
+  transition: 0.3s ease;
+
+  text-decoration: none;
+
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(30px);
+  border-radius: 10px;
+  filter: blur(0%);
+}
+
+
+
+.no-slide {
+  opacity: 0;
+}
+
+
+
+.no-top-slide {
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: 0.8s ease;
+}
+
+.top-slide {
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.head-align {
+  text-align: center;
+}
+
+
+
+.bodybuilding-header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: fit-content;
+}
+
+.bodybuilding-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Bodybuilding-section {
+  margin-bottom: 100px;
+}
+
+.img {
+  border-radius: 50%;
+  border: 10px solid var(--background-clr);
+  /* opacity: 0.9; */
+  background: var(--background-clr);
+  background-size: cover;
+  background-position: 300% 300%;
+}
+
+.img-container {
+  height: 350px;
+  width: 400px;
+  position: relative;
+  background-color: var(--background-clr);
+  border-radius: 50%;
+}
+
+.small-header-1 {
+  position: absolute;
+  bottom: 10px;
+  right: 33%;
+  color: white;
+}
+
+.small-header-2 {
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  color: white;
+}
+
+.no-opacity {
+  opacity: 0;
+}
+
+
+
+.img-container {
+  margin-top: 50px;
+  opacity: 0;
+}
+
+.img-con-onslide {
+  animation: appear-con-onslide 550ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear-con-onslide {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+  /* margin-top: 10px; */
+  object-fit: cover;
+  position: relative;
+  background-color: #1f3c53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-slide {
+  background-image: url(pictures1/nathan-dumlao-jlf9QyI250Y-unsplash.jpg);
+  background-size: cover;
+  background-position: 200% 200%;
+  background-attachment: fixed;
+
+}
+
+.swiper-slide {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 95%;
+
+}
+
+#image-wrap1 {
+  background-image: url(pictures/pexels-victor-freitas-1092878.jpg);
+  background-size: cover;
+  background-position: 200%;
+  height: 100%;
+  background-attachment: fixed;
+
+}
+
+
+
+#image-wrap3 {
+  background-image: url(barbell.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  height: 100%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+}
+
+.swiper-pagination {
+
+
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  height: 70px;
+  width: 100px;
+
+
+
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 30px;
+  height: 5px;
+  border-radius: 0px;
+  background-color: #fff;
+
+}
+
+.pagni {
+  position: absolute;
+  bottom: 30px;
+  left: 52%;
+
+
+}
+
+.article-wrapper {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: justify;
+  width: 90%;
+  margin: 50px;
+  margin-bottom: 150px;
+  /* max-width: 50%; */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 100px;
+
+
+}
+
+.article-wrapper img {
+  filter: invert(100%);
+  opacity: 0.8;
+
+}
+
+#sign-up-btn {
+  font-weight: bolder;
+  padding: 10px 20px;
+  outline: 1px solid var(--txt-clr);
+  border-radius: 5px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#sign-up-btn:hover {
+  color: var(--background-clr);
+}
+
+#sign-up-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--txt-clr);
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s ease;
+  border-radius: 5px;
+
+}
+
+#sign-up-btn:hover::before {
+  width: 100%;
+
+}
+
+.no-top-slide {
+  z-index: 10;
+}
+
+#slider-img-2 {
+  filter: invert(0%);
+  opacity: 1;
+  animation-delay: 600ms;
+}
+
+.slider-2 {
+  margin-bottom: 30px;
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  z-index: 10;
+  transition-delay: 300ms;
+
+
+
+}
+
+.button:hover {
+  color: white;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.5px;
+  height: 3px;
+  width: 0%;
+  background-color: #ffae21;
+  opacity: 1;
+  transition: 0.3s ease;
+  border-radius: 5px;
+
+}
+
+.button:hover::before {
+  width: 100%;
+  z-index: -1;
+  animation: btn-hover 500ms ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes btn-hover {
+  0% {
+    height: 3px;
+
+  }
+
+  70% {
+    height: 3px;
+  }
+
+
+
+  100% {
+    z-index: -1;
+    height: 100%;
+  }
+}
+
+.slider-3 {
+  margin: 150px 50px;
+  display: flex;
+  gap: 200px;
+  width: 100%;
+}
+
+#locator-btn {
+  text-decoration: none;
+  outline: 2px solid var(--txt-clr);
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#locator-btn:hover {
+  color: var(--background-clr);
+}
+
+#locator-btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #ffae21;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+
+}
+
+#locator-btn:hover::before {
+  width: 100%;
+}
+
+.inside-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+#slider-img-3 {
+  filter: invert(100%);
+  opacity: 0.7;
+}
+
+#aesth {
+  border-radius: 0px 10px 10px 10px;
+  border: none;
+}
+
+#aesthetic-img {
+  position: relative;
+  border: none;
+  background-color: none;
+  border-radius: 0%;
+  border-radius: 0px 10px 10px 10px;
+
+}
+
+#aesthetic-img::before {
+  content: "";
+  width: 350px;
+  height: 350px;
+  background-color: #223341;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -1;
+  opacity: 0.6;
+  border-radius: 0px 10px 10px 10px;
+  transition: 0.3s ease;
+
+}
+
+#calith {
+  border-radius: 10px 10px 0px 10px;
+  border: none;
+
+}
+
+#calisthenic-img {
+  position: relative;
+  border: none;
+  background-color: none;
+  border-radius: 10px 10px 0px 10px;
+
+}
+
+#calisthenic-img::after {
+  content: "";
+  width: 350px;
+  height: 350px;
+  background-color: #223341;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 10px 10px 0px 10px;
+  transition: 0.3s ease;
+}
+
+.bodybuilding-content .img,
+.bodybuilding-content .small-header-1,
+.bodybuilding-content .small-header-2,
+.bodybuilding-content .img,
+.bodybuilding-content #calsithenic-img::after,
+.bodybuilding-content .img::before {
+  transition: 0.3s ease;
+}
+
+.bodybuilding-content:hover .img,
+.bodybuilding-content:hover .small-header-1,
+.bodybuilding-content:hover .small-header-2,
+.bodybuilding-content:hover #calisthenic-img::after,
+.bodybuilding-content:hover #aesthetic-img::before {
+  transform: scale(1.1);
+  margin: 5px;
+}
+
+.not-showing {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.footer-section {
+  background-image: url(pictures1/weightlifting22.jpg);
+  background-position: center;
+  height: fit-content;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-color: var(--background-clr);
+  background-blend-mode: multiply;
+  padding: 50px;
+}
+
+.footer-container {
+  z-index: 1;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  width: 50%;
+  margin: auto;
+  position: relative;
+
+}
+
+.footer-container h1 {
+  color: white;
+  text-decoration: none;
+  font-size: 3.5rem;
+}
+
+.footer-container div {
+  border-top: 3px solid white;
+  width: 100%;
+  text-align: center;
+  padding-block: 30px;
+  opacity: 0.7;
+
+}
+
+.tables-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 150px; */
+  text-align: left;
+}
+
+.tables-container table,
+.tables-container table>tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.tables-container table tbody tr td a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-img {
+  filter: invert(100%);
+}
+
+#tables {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 150px; */
+  text-align: left;
+  border-top: none;
+}
+
+#tables-heading {
+  font-size: 2rem;
+}
+
+.footer-links {
+  transition: 0.3s all;
+  position: relative;
+}
+
+.footer-links:hover {
+  color: var(--txt-clr);
+  opacity: 1;
+
+}
+
+.footer-links::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.footer-links:hover::after {
+  width: 100%;
+  z-index: 100;
+
+}
+
+.coach-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--txt-clr);
+
+  height: 200px;
+  color: white;
+  box-shadow: 0px 0px 40px 20px #ffae2109;
+}
+
+#weightlift {
+  background-image: url(pictures1/weightlftt.jpg);
+}
+
+#bodyBuild {
+  background-image: url(pictures1/Arnold-Schwarzenegger-3.webp);
+}
+
+#powerlift {
+  background-image: url(pictures1/powerlifting.jpg);
+}
+
+#nutrition {
+  background-image: url(pictures1/food.jpg);
+}
+
+.heading-to-left {
+  text-align: right;
+  width: 100%;
+}

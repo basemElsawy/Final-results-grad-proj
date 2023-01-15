@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100;200;300&display=swap');
+
+#preload-01 {
+  background: url(pictures/Workout\ area.jpg) no-repeat -9999px -9999px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto';
+  z-index: -1;
+  height: auto;
+  overflow-x: hidden;
+
+}
+
+:root {
+  --background-clr: #223341;
+  --text-Clr: #ffae21;
+}
+
+main {
+  height: auto;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  /* height: 500px; */
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 2px 2px 5px var(--background-clr);
+  /* border-radius: 10px; */
+  background-color: var(--background-clr);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #244e70;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #32495d;
+}
+
+/* ---------------============ styling the first picture ==========---------- */
+.first-img {
+  height: 100vh;
+  background-image: url(pictures/Workout\ area.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.heading-img {
+  position: relative;
+
+}
+
+
+
+
+
+.first-heading {
+  width: 75%;
+  margin: auto;
+  animation: slide-down 2s ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(-100px)
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(100px);
+
+  }
+}
+
+.first-heading span {
+  font-size: 1.5rem;
+}
+
+.first-heading h1>span {
+  font-size: 3rem;
+}
+
+.first-heading h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #223341; */
+  margin-block: 20px;
+}
+
+.guide-btn {
+  /* margin-right: 10px; */
+
+  font-size: 1.2rem;
+  border: none;
+  padding: 1rem;
+  background-color: #223341;
+  color: white;
+  border-radius: 0px;
+  position: relative;
+
+  /* transition: 0.3s ease; */
+}
+
+.guide-btn:nth-child(3) {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.guide-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background-color: var(--text-Clr);
+  width: 0%;
+  transition: 0.3s ease;
+}
+
+.guide-btn:nth-child(3)::before {
+  border-radius: 0px 0px 20px 0px;
+}
+
+
+
+.guide-btn:hover::before {
+  width: 100%;
+}
+
+.guide-btn:hover {
+  cursor: pointer;
+  background-color: #324b5f;
+}
+
+
+
+.guide-btn:focus {
+  background-color: #324b5f;
+}
+
+.sport-choice-container {
+
+  margin: 0px auto 30px;
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+
+  height: 400px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.workout-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sport-choice {
+  width: 300px;
+  height: 350px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-clr);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.sport-choice:hover,
+.sport-choice button:hover {
+  box-shadow: 0px 5px 10px var(--background-clr);
+}
+
+.sport-choice span {
+  padding: 20px 20px;
+  font-size: 1.2rem;
+}
+
+.sport-choice button {
+  padding: 20px;
+  background-color: var(--background-clr);
+  border: none;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 300;
+  transition: 0.5s ease;
+  font-size: 1.2rem;
+  border-radius: 0px 0px 10px 10px;
+  transform: translateY(10px);
+}
+
+.sport-choice img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.sport-choice button:hover {
+  color: #ffae21;
+  cursor: pointer;
+}
+
+.client-details {
+  background-color: var(--background-clr);
+  padding: 10px 20px 10px 20px;
+  height: 700px;
+  width: 70%;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bg-clr {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.re-assess {
+  background-color: var(--background-clr);
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 400;
+  transition: 0.3s ease;
+  width: 25%;
+  margin: auto;
+}
+
+.re-assess:hover {
+  color: var(--text-Clr);
+}
+
+.details {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.edit-change {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  background-color: var(--background-clr);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.user-img div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-img {
+  margin-bottom: 50px;
+}
+
+.default-user {
+  border-radius: 50%;
+  border: 5px solid var(--background-clr);
+}
+
+.print-form {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 10px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #223341;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.edit-change:hover,
+.print-form:hover {
+  color: var(--text-Clr);
+  cursor: pointer;
+}
+
+.clicked {
+  background-color: #324b5f;
+  /* border-bottom: 5px solid var(--text-Clr); */
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: flex;
+
+}
+
+.exercises {
+  background-color: var(--background-clr);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  max-width: 100%;
+  margin: auto;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: fit-content;
+  border-radius: 10px;
+  /* margin-bottom: 300px; */
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+.exercise-detail {
+  width: 40%;
+  text-align: justify;
+}
+
+.exercise-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100px);
+}
+
+.exercise-img img {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.img {
+  width: 80%;
+}
+
+.exercise-img button {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: var(--background-clr);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+
+.exercise-img button:hover {
+  color: var(--text-Clr);
+  cursor: pointer;
+}
+
+.sport-choice button>a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.sport-choice a:hover {
+  color: var(--text-Clr);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+  background-color: var(--background-clr);
+  justify-content: space-between;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.strength-heading {
+  width: 50%;
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 20px;
+}
+
+.section-header img {
+  border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
+.the-rules {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  /* text-align: justify; */
+}
+
+.header-collapse {
+  margin-bottom: 20px;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+}
+
+.rule-videos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.stance-description {
+  margin-block: 20px;
+}
+
+.small-txt {
+  font-size: 0.8rem;
+}
+
+hr {
+  background-color: var(--background-clr);
+  z-index: 100;
+  height: 5px;
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.inside-collapse {
+  display: none;
+}
+
+.containing-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inside-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  text-align: right;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.detail-header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* .v-row {
+  height: 150px;
+  transform: translateY(1px) translateX(10px);
+  width: 4px;
+  border-radius: 10px;
+  opacity: 0.5;
+  background-color: var(--background-clr);
+} */
+
+.header-sep {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.choose-again {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  background-color: var(--background-clr);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+.Remove-Exercise {
+  background-color: var(--background-clr);
+  font-size: 0.7rem;
+  font-weight: bold;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Remove-Exercise:hover {
+  color: var(--text-Clr);
+  cursor: pointer;
+}
+
+.choose-again:hover {
+  color: var(--text-Clr);
+  cursor: pointer;
+}
+
+#workout-btns {
+  margin-bottom: 100px;
+}
+
+#deadlift-sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 0px;
+  align-items: center;
+  background-image: url(pictures/deadlift.jpg);
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  background-position: 100%;
+  background-size: cover;
+  height: 60vh;
+  background-attachment: fixed;
+
+
+}
+
+.more-info {
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.more-info:hover {
+  cursor: pointer;
+  color: var(--text-Clr);
+}
+
+.more-info::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+  background-color: var(--text-Clr);
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.more:hover::after {
+  content: "";
+  width: 100%;
+
+}
+
+.close-btn {
+  width: 50px;
+
+
+
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  color: rgb(114, 9, 9);
+}
+
+.close-btn::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+  background-color: rgb(114, 9, 9);
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+
+.close-btn:hover::after {
+  width: 100%;
+
+}
+
+.close-categorie {
+  width: 50px;
+
+
+
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-categorie:hover {
+  cursor: pointer;
+  color: rgb(114, 9, 9);
+}
+
+.close-categorie::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+  height: 5px;
+  width: 0%;
+  background-color: rgb(114, 9, 9);
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+
+.close-categorie:hover::after {
+  width: 100%;
+
+}
+
+#sportChoice-1 {
+  background-image: url(pictures/powerlifting.jpg);
+
+
+}
+
+#sportChoice-2 {
+  background-image: url(pictures/weightlifting.jpg);
+}
+
+#sportChoice-3 {
+  background-image: url(pictures/bodybuilding.webp);
+}
+
+.sport-choice {
+  background-color: var(--background-clr);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.sport-choice a {
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+#muscle-svg {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  height: 30%;
+  width: 30%;
+  animation: dash 2.5s ease 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+}
+
+@keyframes dash {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}

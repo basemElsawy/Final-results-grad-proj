@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100;200;300&display=swap');
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    rgb(25, 37, 80) 3%,
+    rgb(22, 16, 83) 38%,
+    rgb(1, 22, 84) 68%,
+    rgba(25, 28, 77, 0.51) 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgba(8, 25, 53, 0.804);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 6em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.login-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  height: 250px;
+  gap: 10px;
+}
+.login-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-main i {
+  background-color: #223341;
+  color: white;
+  padding: 10px;
+  height: auto;
+  border-radius: 10px 0px 0px 10px;
+}
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.forgot-password {
+  font-size: 0.7rem;
+  transform: translateY(-10px);
+}
+
+.login-header {
+  background-color: #223341;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.login-header img {
+  filter: invert(100%);
+}
+.not-member {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.not-member a {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.login {
+  background-color: #223341;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  transition: 0.1s all;
+}
+
+.login:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.login:active {
+  transform: scale(0.98);
+}

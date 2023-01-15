@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="responsive.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- ---------------------==============header section==========--------- -->
+  <header class="header">
+    <div class="logo"> بوكت- <span class="Orange-txt hlf"> كوتش </span></div>
+
+    <img src="pictures1/muscle.png" width="100px" height="100px" alt="muscle" class="muscle-img not-showing" />
+
+    <ul class="navbar">
+      <li><a href="merchandise page/Merch.Html">المتجر</a></li>
+      <li><a href="Home.html">ماذا نقدم</a></li>
+      <li><a href="#">تسجيل الدخول</a></li>
+      <li><a id="sign-up-btn" href="assessment page/Assessment.html">انشاء حساب</a></li>
+    </ul>
+  </header>
+
+  <!-- -------------------------------main-section----------------------------- -->
+  <main>
+    <!-- -------------------------------about us-section-------------------------- -->
+
+    <section>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide first-slide">
+            <div class="overlay-clr"></div>
+            <div class="article-wrapper">
+              <div>
+                <h1 class="no-top-slide " class="heading-to-left">ماذا <span class="Orange-txt">نقدم</span></h1>
+                <h2 class="no-top-slide" class="heading-to-left">الفكرة الرئيسية عن هذا الموقع بأكمله...!</h2>
+
+                <p>لماذا بدأت هذا؟ منذ كل مكان تذهب إليه على استعداد
+                  ممارسة الرياضة والحفاظ على نمط حياة صحي وخاصة في بعض الأماكن في
+                  الشرق الأوسط باهظ الثمن حقًا وأن كل مكان على حدة
+                  سيجبرك بشكل غير مباشر على الدفع مقابل مدرب شخصي وأيضًا
+                  لا يقومون بعملهم ناهيك عن مقدار المال الذي يأخذونه منه
+                  لن يتم استدعاء كل "عميل" هنا ولن تضطر إلى الدفع
+                  باستثناء ما يعادل أقل من نصف دولار من العضوية هنا تصبح
+                  شريكك في الصالة الرياضية وأنت حرفيًا تصبح مدربك الخاص
+                  قم أيضًا بإعداد نظامك الغذائي الخاص وكن أخصائي العلاج الطبيعي الخاص بك منذ أن فعلت
+                  جمعت ما يكفي من المواد لرحلتك كما يمكنك اختيار المسارات
+                  إذا كنت تريد أن تبدأ في كمال الأجسام أو رفع الأثقال أو رفع الأثقال
+                  وعاجلاً أم آجلاً سنضيف المزيد من الألعاب الرياضية إلى اللعبة..</p>
+              </div>
+
+              <img src="pictures1/muscle.png" width="300px" height="300px" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay-clr"></div>
+            <div class="img-wrapper" id="image-wrap1">
+            </div>
+
+            <div class="article-wrapper slider-2">
+              <div>
+                <h1 class="no-top-slide ">في جميع أنحاء <span class="Orange-txt">العالم</span></h1>
+                <h2 class="no-top-slide">
+                  يمكن الوصول إليها أينما كنت</h2>
+
+
+              </div>
+
+              <img class="no-top-slide" id="slider-img-2" src="pictures1/image for slider 2.png" width="500px"
+                height="500px" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="overlay-clr"></div>
+
+            <div class="img-wrapper" id="image-wrap3">
+            </div>
+            <div class="article-wrapper slider-3">
+              <div class="inside-wrapper">
+                <h1 class="no-top-slide ">سوف يساعد محدد موقع الصالة الرياضية <span class="Orange-txt">انت</span></h1>
+                <h2 class="no-top-slide">حدد موقع أقرب صالة ألعاب رياضية لموقعك</h2>
+
+                <a href="#locator" class="no-top-slide" id="locator-btn">حدد الان</a>
+              </div>
+
+              <img class="no-top-slide" id="slider-img-3" src="pictures1/locator icon.png" width="500px" height="300px"
+                alt="">
+            </div>
+
+
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+
+      </div>
+    </section>
+
+    <div class="easy-start">
+      <h4>
+        خطوة سريعة <span class="Orange-txt">تخطي</span>
+        إلى الجزء الأخير </h4>
+      <a href="#starting">ابدأ التعلم</a>
+    </div>
+    <!-- -----------------------------------Powerlifting-section--------------------------- -->
+    <section class="PowerLifting-sect ">
+
+      <div class="linear-gradient">
+
+      </div>
+      <h2 class="head-align">باور<span class="Orange-txt"> ليفتنج</span></h2>
+      <hr>
+      <div class="para-content-PL">
+        <div class="content-align">
+          <h3 class="head-align">رفعات <span class="Orange-txt">المسابقات</span> </h3>
+          <p class="para-2 powerlifting-para">
+            يتكون رفع الأثقال من ثلاث مصاعد: تمرين القرفصاء ، جهاز تمرين الضغط ،
+            و deadlift. أي شخص سبق له العمل في صالة الألعاب الرياضية لديه أي منهما
+            القيام بضغوط مقاعد البدلاء أو على الأقل رأيت شخصًا يقوم بها. مقاعد
+            تحظى بشعبية كبيرة حيث يمكنك التعامل مع أوزان أكبر في آلة الضغط على مقاعد البدلاء
+            من أي تمرين آخر للجزء العلوي من الجسم. وهم تمرين رائع
+            لتنمية الصدر والكتف والعضلة ثلاثية الرؤوس. <br> لكن الاثنين الآخرين
+            المصاعد ليست شائعة تمامًا ، لكن يجب أن تكون كذلك! القرفصاء هي
+            أفضل تمرين هناك لتطوير قوة الساق والورك أثناء
+            تستخدم deadlifts كل عضلة في الجسم ، لذلك هم
+            تطوير قوة الجسم الكلية.<br> في الواقع ، أداء الثلاثة فقط
+            كل ما يحتاجه المرء لبرنامج تدريب سليم ،
+            ولن توفر أي تمارين أخرى القوة والعضلات
+            المكاسب التي توفرها الرافعات الثلاثة.<br> الصفحة المناسبة
+            يشرح أداء Powerlifts التفاصيل في هذا الصدد ، لذلك
+            لن يتكرر هنا. <br>
+            ولكن سيقال هنا ، إذا كنت
+            لا تدمج هذه المصاعد الثلاثة في برنامجك التدريبي
+            فأنت لا تجعل القوة والحجم العضلي يكتسبان ذلك
+            يمكن أن تكون.<br> وبالطبع ، إذا كنت تفكر في المنافسة في
+            مسابقة رفع الأثقال ، فأنت بحاجة إلى إجراء عمليات رفع الأثقال فيها
+            تمرين.
+          </p>
+        </div>
+        <div class="content-align">
+          <h3 class="head-align">بناء <span class="Orange-txt">الجسم</span> </h3>
+          <p class="para-2 powerlifting-para">
+            يقولون لا يمكنك مطاردة اثنين من الأرانب. لهذا أقول: اخرس ، أنا
+            سأفعل ما أريد! بناء القوة هو كل شيء عن مطاردة اثنين
+            أرنب.<br />
+            في الأساس ، بناء القوة هو عملية بناء حجم العضلات
+            في نفس الوقت لبناء قوة العضلات وعدم إعطاء أي منهما
+            أهمية خاصة على الآخر.<br />
+            عندما يصبح الناس مهتمين أكثر فأكثر بالأداء ، الفكرة
+            من الحصول على قوة أصبحت شائعة بشكل متزايد.
+            <br />وفي الوقت نفسه ، مجرد بناء حجم العضلات من أجل
+            بدأت المظاهر في التراجع. ولكن هنا
+            المشكلة: لا يزال الناس يريدون أن يظهروا أقوياء! بينما يمكنك التظاهر
+            أنت لا تهتم بالشكل الذي تبدو عليه على الإطلاق ، فنحن جميعًا نعلم أنك على هذا النحو
+            يكذب أو ملقاه! هذه مشكلة ، بالنظر إلى أساليب التدريب بشكل عام
+            المشاركة في بناء القوة تعتبر مخالفة لتلك
+            تستخدم لبناء الحجم. <br />وبالتالي يقدم Powerbuilding شيء من
+            التحدي ، حيث يجب تحسين تدريبك لشخصين
+            أهداف منفصلة (وإن كانت مرتبطة). في هذا المنشور ، سوف ألقي نظرة على
+            كيف يعمل بناء القوة وما هي أفضل طريقة لتدريب الحجم و
+            قد تكون القوة في نفس الوقت. في نفس الوقت ، سأكون كذلك
+            النظر في بعض أوجه القصور في الأساليب التقليدية و
+            أقترح عددًا قليلاً من الأشياء الجديدة الخاصة بي.
+          </p>
+        </div>
+      </div>
+
+    </section>
+    <!-- -----------------------------------BodyBuilding-section--------------------------- -->
+
+    <section class="Bodybuilding-section">
+      <h2 class="bodybuilding-header "> كمال<span class="Orange-txt"> اجسام</span></h2>
+      <div class="main-container">
+        <div class="bodybuilding-content">
+          <div class="img-container scroll-appear" id="aesthetic-img">
+            <img loading="lazy" class="img" id="aesth" src="pictures1/hi res.png" width="100%" height="100%"
+              alt="calisthenics">
+            <h4 class="small-header-1">Calis<span class="Orange-txt">thenics</span> </h4>
+          </div>
+          <div class="scroll-appear">
+            <p class="para-2 bodyBuilding-para">
+              مارين تمارين رياضية ، والتي تسمى أيضًا تمارين الشوارع ، اكتسبت في جميع أنحاء العالم
+              سمعة بعد عام 2008 انتشر فيديو هانيبال للملك كينج
+              موقع YouTube. منذ ذلك الحين ، قام المزيد من الناس بتدريبه على أنه
+              وكذلك ظهرت مسابقات وطنية ودولية. هو - هي
+              اسمها مشتق من كلمتين يونانيتين kálos مما يعني الجمال و
+              sthénos مما يعني القوة. تمارين رياضية هو الانضباط الذي
+              تقوم بتدريب جسمك بالكامل باستخدام تمارين وزن الجسم فقط. لديك
+              ربما رأيت أشخاصًا يقومون بأشكال الجمباز التي تتحدى الجاذبية مثل
+              الرافعة الأمامية والبلانش أو المهارات البهلوانية الديناميكية على القضبان مثل
+              كما العضلات. هذه هي الفكرة الوحيدة لرياضة الجمباز - الأداء
+              التدريبات مع أي شيء آخر غير جسمك.
+            </p>
+
+
+          </div>
+
+
+        </div>
+        <div class="bodybuilding-content">
+          <div class="scroll-appear">
+            <p class="para-2 bodyBuilding-para">
+              إذا كنت تحاول تطوير جسم جمالي ، فإن الخطوة الأولى الرائعة هي
+              للحصول على صورة مرئية للشكل الذي تريده. فكرة جيدة هي
+              ابحث عن لاعبين كمال أجسام أو رياضيين مشابهين لك في الطول.
+              يجب أن يكون لديهم بنية بدنية مثل التي تريد تطويرها. هل
+              هل تريد لياقة بدنية جمالية في كمال الأجسام؟ قد ترغب في جمالية
+              اللياقة البدنية مع عضلات أقل قليلاً. بغض النظر ، سوف تحتاج إلى
+              العمل على النسب والتناسق والتوازن والتكييف. هذه
+              يعني خصرًا صغيرًا ، وفتحة V جيدة ، ورباعية كبيرة بما يكفي للتصنيع
+              تبدو الركبتان صغيرتين. أيضًا ، يجب أن يكون للكواد مظهر خارجي جيد
+              مسح. ولا تنس العجول! على سبيل المثال ، كان سمير بنوت
+              معروف بجمالياته ونسبه. العثور على أمثلة لجسم جمالي
+              هذا هو مصدر إلهام لك هو حافز قوي لمساعدتك على الإبداع
+              اللياقة الجمالية الخاصة بك؟ ادرس اللياقة البدنية حتى تتمكن من إنشاء ملف
+              صورة ذهنية واضحة وتدريب وفقًا لذلك لإضفاء الحيوية على ما تريد
+              انظر في عقلك.
+            </p>
+          </div>
+          <div class="img-container scroll-appear" id="calisthenic-img">
+            <img class="img" loading="lazy" id="calith" src="pictures1/pexels-anush-gorak-1431282.jpg" width="100%"
+              height="100%" alt="">
+            <h4 class="small-header-2">Aes<span class="Orange-txt">thetics</span></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Weightlifting-section ">
+
+      <div class="weightlifting-container">
+        <h1 class="weightlifting-header">Weight<span class="Orange-txt">Lifting</span> </h1>
+        <hr>
+        <p>رفع الأثقال هي رياضة أولمبية ، وقد تم التنافس عليها في كل دورة ألعاب أولمبية صيفية منذ عام 1920. بينما
+          تم تسمية هذه الرياضة رسميًا باسم "رفع الأثقال" ، ومصطلح "رفع الأثقال الأولمبي" و "النمط الأولمبي
+          غالبًا ما يستخدم رفع الأثقال "لتمييزه عن الرياضات والأحداث الأخرى التي تتضمن رفع الأثقال
+          الأوزان ، مثل رفع الأثقال ، وتدريب الأثقال ، وأحداث الرجل القوي. وبالمثل ، الخطف والنظافة
+          تُعرف باسم "المصاعد الأولمبية".
+          في حين أن اختبار رياضات القوة الأخرى يحد من القوة ، فإن رفع الأثقال على غرار الألعاب الأولمبية يختبر أيضًا
+          جوانب الإنسان
+          الحدود الباليستية (القوة المتفجرة): يتم تنفيذ المصاعد الأولمبية بشكل أسرع ، وبقدرة أكبر على الحركة
+          نطاق حركة أكبر أثناء التنفيذ ، من مصاعد الحديد الأخرى. المصاعد الأولمبية ، و
+          يتم استخدام مصاعد المكونات (على سبيل المثال ، التنظيف ، القرفصاء) وتنوعاتها (على سبيل المثال ، انتزاع القوة ،
+          تنظيف الطاقة) بواسطة
+          نخبة الرياضيين في الرياضات الأخرى للتدريب على القوة المتفجرة والوظيفية.</p>
+      </div>
+
+    </section>
+    <!--  ---------------------------------------======Slider-section=====--------------- -->
+    <section class="slider-section">
+      <div class="sliderTxt-container hidden">لا يمكن أن يكون هناك نجاح إذا لم يكن لدى المرء شغف.
+        <br>
+        <img src="pictures/muscle.png" width="50px" height="50px" alt="">
+      </div>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+
+            <div class="slide first">
+              <img loading="lazy" src="pictures1/image1.jpg" alt="" width="500px" height="500px" />
+              >
+            </div>
+            <div class="slide">
+              <img loading="lazy" src="pictures1/image2.jpg" alt="" width="500px" height="500px" />
+
+            </div>
+            <div class="slide">
+              <img loading="lazy" src="pictures1/image3.jpg" alt="" width="500px" height="500px" />
+
+            </div>
+            <div class="slide">
+              <img loading="lazy" src="pictures1/image 4.jpg" alt="" width="500px" height="500px" />
+
+            </div>
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+      <div class="sliderTxt-container hidden">إذا كان لديك حلم إيجابي عن نفسك فهذا يعني بالتأكيد أنه سيكون حقيقة واقعةy.
+        <br>
+        <img src="pictures1/weightlifting.png" width="50px" height="50px" alt="">
+      </div>
+    </section>
+
+
+
+    <section class="section-coach">
+
+      <h5 class="coachs-header hidden">مكتبة رياضية مفتوحة ومتنوعة <br>
+        من الافضل <span class="Orange-txt">
+          تمارين</span>
+        في مكان واحد</h5>
+      <div class="coach-ids">
+
+        <div class="coach-card hidden" id="weightlift">
+
+          <span class="description">مكتبة لرفع الاثقال</span>
+        </div>
+        <div class="coach-card hidden" id="bodyBuild">
+
+          <span class="description">مكتبة لكمال الاجسام</span>
+        </div>
+
+
+
+        <div class="coach-card hidden" id="powerlift">
+
+          <span class="description">مكتبة لالعاب القوي</span>
+        </div>
+        <div class="coach-card hidden" id="nutrition">
+
+          <span class="description">مكتبة للتغذية</span>
+        </div>
+
+      </div>
+
+    </section>
+    <section>
+      <div class="content-container" id="starting">
+        <h2>انقر على ما يلي</h2>
+        <a href="assessment page/Assessment.html" class="button">ابدأ التقييم</a>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      <h1 class="footer-heading">بوكت-<span class="Orange-txt">كوتش</span></h1>
+      <img src="pictures/muscle.png" class="footer-img" width="150px" height="150px" alt="">
+      <div class="tables-container">
+        <h1 id="tables-heading">اتصل بنا</h1>
+        <div id="tables">
+          <table>
+            <thead>
+              <tr>
+                <th>Social media</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td><a class="footer-links" href="#">Facebook</a> </td>
+
+
+
+              </tr>
+              <tr>
+                <td><a class="footer-links" href="#">Instagram</a> </td>
+              </tr>
+              <tr>
+                <td><a class="footer-links" href="#">Twitter</a> </td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Email</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Pocket-coach@gmail.com</td>
+
+              </tr>
+
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>phone numbers</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>+201000000068</td>
+
+
+              </tr>
+              <tr>
+                <td>+201200000049</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="overlay"></div> -->
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

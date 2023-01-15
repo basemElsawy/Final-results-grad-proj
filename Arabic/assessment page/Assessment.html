@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body Assessment</title>
+  <link rel="stylesheet" href="header&footer.css" />
+  <link rel="stylesheet" href="assessmentStyle.css" />
+  <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"> بوكت- <span class="Orange-txt hlf"> كوتش </span></div>
+
+    <img src="/pictures1/muscle.png" width="100px" height="100px" alt="muscle" class="muscle-img not-showing" />
+
+    <ul class="navbar">
+      <li><a href="merchandise page/Merch.Html">المتجر</a></li>
+      <li><a href="Home.html">ماذا نقدم</a></li>
+      <li><a href="#">تسجيل الدخول</a></li>
+      <li><a id="sign-up-btn" href="assessment page/Assessment.html">انشاء حساب</a></li>
+    </ul>
+  </header>
+
+  <main class="main-content">
+    <section class="first-section">
+      <h1>انشاء حسابك <span class="Orange-txt">الشخصي</span></h1>
+      <a href="#second-section" class="start btn-style">ابدأ</a>
+      <div class="overlay"></div>
+    </section>
+
+    <section id="second-section">
+      <div class="side-bar" id="nav-bar">
+        <a class="page-links clicked" href="#personal-data">
+          بيانات شخصية</a>
+        <a class="page-links" href="#body-assessment">
+          تقييم الجسم</a>
+        <a class="page-links" href="#general-question">اسئلة عامة</a>
+        <a class="page-links" href="#picture">صورة شخصية</a>
+      </div>
+
+    </section>
+    <section class="sect-behavior not-shown third-section">
+      <div class="first-container">
+        <form action="">
+          <label for="First-name">اسمك الاول</label><input placeholder="Your first name" id="First-name" type="text">
+          <label for="Middle-name">اسمك الاوسط</label><input placeholder="Your middle name" id="Middle-name"
+            type="text"><label for="Last-name">اسمك الاخير</label><input placeholder="Your last name" id="Last-name"
+            type="text"><label for="Email">البريد الالكتروني</label><input placeholder="Ex.mohamed@gmail.com" id="Email"
+            type="email">
+        </form>
+        <div class="start-assesing first">
+          <button class="btn-style next-btn">التالي</button>
+          <button class="small-btn first-skip" id="skip">تخطي</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">للخلف</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="sect-behavior not-shown">
+      <div class="first-container">
+        <form action="">
+          <label for="Weight">الوزن <span class="small-txt">in kg</span></label><input placeholder="Your weight in kg"
+            id="Weight" type="number">
+          <label for="Height">الطول <span class="small-txt">in metres</span> </label><input
+            placeholder="your height in metres" id="Height" type="number"><label for="Last-name">النوع</label><input
+            placeholder="Gender M/F" maxlength="1" id="Last-name" type="text"><label for="Email">السن</label><input
+            placeholder="Ex.mohamed@gmail.com" id="Email" type="number">
+        </form>
+        <div class="start-assesing">
+          <button class="btn-style next-btn">التالي</button>
+          <button class="small-btn" id="skip">تخطي</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">للخلف</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="sect-behavior not-shown">
+      <div class="first-container">
+        <form action="">
+          <label for="First-name">ما هو أكبر هدف لياقتك?</label><input placeholder="Answer here" id="First-name"
+            type="text">
+          <label for="Middle-name">من يحفزك?</label><input placeholder="Answer here" id="Middle-name" type="text"><label
+            for="Last-name">هل لديك أي إصابات قديمة</label><input placeholder="Answer here" id="Last-name"
+            type="text"><label for="Email">هل لديك أي تاريخ مع الرياضات القديمة?</label><input placeholder="Answer here"
+            id="Email" type="email">
+        </form>
+        <div class="start-assesing">
+          <button class="btn-style next-btn">التالي</button>
+          <button class="small-btn" id="skip">تخطي</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">للخلف</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="sect-behavior section-four not-shown">
+      <div class="first-container fourth-sect">
+        <div class="user-image">
+          <img src="pictures/user profile.jpg" id="imageInside" height="150px" width="150px" alt="">
+          <label class="label-img-in" id="label" for="img-input">
+            Add
+            <input type="file" id="img-input" class="file-Input">
+          </label>
+        </div>
+        <form action="">
+          <label for="Password">كلمة المرور</span></label><input placeholder="must be unique" id="Password"
+            type="password">
+          <label for="Password-confirm">تأكيد كلمة المرور</label><input placeholder="confirm" id="Password-confirm"
+            type="password">
+        </form>
+        <a href="/starting workout/WorkoutPage.html" class="btn-style start-working">Start workingout</a>
+        <div class="start-assesing fourth">
+          <button class="btn-style next-btn">التالي</button>
+          <button class="small-btn" id="skip">تخطي</button>
+        </div>
+        <div class="go-back">
+          <button class="goback-btn small-btn">للخلف</button>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer-section hidden">
+    <div class="footer-container">
+      <h1 class="footer-heading"><a href="/Home.html">ماذا نقدم</a></h1>
+      <div>
+        <span>Powered by Pocket-<span class="Orange-txt">Coach</span> for fitness industries</span>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </footer>
+  <script src="https://kit.fontawesome.com/7031694be7.js" crossorigin="anonymous"></script>
+  <script src="assessingBehavior.js"></script>
+</body>
+
+</html>
