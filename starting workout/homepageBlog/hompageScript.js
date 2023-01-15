@@ -29,12 +29,75 @@ let errMsg = document.createElement('span');
 let textInputArea = document.getElementById('main-text');
 let postBtn = document.querySelector('.posting-btn');
 let userImage = document.querySelector('.user-image');
+let firstName = document.querySelector('.first-name');
 likesNumbers.textContent = Number(likesNumbers.textContent);
-
+let postContainer = document.querySelector('.post-container');
 errMsg.classList.add('errMsg');
 
 let counter;
 
+
+//posting behavior 
+postBtn.addEventListener('click', () => {
+
+
+
+    let post = document.createElement('div');
+    post.classList.add('post');
+    //self post heading
+    let postHeading = document.createElement('div');
+    postHeading.classList.add('post-heading');
+    let clonedName = firstName.cloneNode(true);
+    let clonedImage = userImage.cloneNode(true);
+    let newpostHeading = document.createElement('p');
+    newpostHeading.innerHTML = `<p>${clonedName.innerText} <Strong class="Orange-txt">posted</Strong> </p>`
+    postHeading.append(clonedImage, newpostHeading);
+    //self post body
+    let postBody = document.createElement('div');
+    let newPara = document.createElement('p');
+    newPara.textContent = textInputArea.value;
+    postBody.classList.add('post-body');
+    postBody.append(newPara);
+
+    //self post footer
+    let postFooter = document.createElement('div');
+    postFooter.classList.add('post-footer');
+    let likesButton = document.createElement('button');
+    likesButton.textContent = 'Like';
+    likesButton.classList.add('like-btns');
+    likesButton.classList.add('post-btns');
+    let commentsButton = document.createElement('button');
+    commentsButton.textContent = 'Comment';
+    commentsButton.classList.add('comment-btns');
+    commentsButton.classList.add('post-btns');
+    postFooter.append(likesButton, commentsButton);
+
+    //self post likes and comments
+    let likesNdComments = document.createElement('div');
+    likesNdComments.classList.add('likes-comments');
+    let spanLikes = document.createElement('span');
+    spanLikes.innerHTML = '<span>Likes <span class="likes-number numbers">0</span></span>'
+    spanLikes.style.textAlign = 'left';
+    let spanComments = document.createElement('span');
+    spanComments.innerHTML = '<span>comments <span class="comments-number numbers">0</span></span>'
+    spanComments.style.textAlign = 'left';
+
+    likesNdComments.append(spanLikes, spanComments);
+    // self posrt comments panel
+    let commentsPanel = document.createElement('div');
+    commentsPanel.classList.add('comments-panel');
+    let panelHeader = document.createElement('h5');
+    panelHeader.textContent = 'comments';
+    panelHeader.classList.add('comments');
+    commentsPanel.append(panelHeader);
+    post.append(postHeading, postBody, likesNdComments, postFooter, commentsPanel)
+    postContainer.append(post);
+})
+
+
+
+
+//commenting behavior
 let error = document.createElement('span');
 error.textContent = 'The comment field is empty';
 error.classList.add('errMsg');
