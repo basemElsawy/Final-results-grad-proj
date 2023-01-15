@@ -18,8 +18,10 @@ let secondSect = document.querySelector('.second-section');
 let likeBtns = document.querySelectorAll('.like-btns');
 let commentBtns = document.querySelectorAll('.comment-btns');
 let likesNumbers = document.querySelectorAll('.likes-number');
+let commentsNumbers = document.querySelectorAll('.comments-number');
 let commentsPanel = document.querySelectorAll('.comments-panel');
 let posts = document.querySelectorAll('.post')
+
 
 //posting variables
 let userName = document.querySelector('.user-name');
@@ -31,7 +33,10 @@ let postBtn = document.querySelector('.posting-btn');
 let userImage = document.querySelector('.user-image');
 let firstName = document.querySelector('.first-name');
 likesNumbers.textContent = Number(likesNumbers.textContent);
+commentsNumbers.textContent = Number(commentsNumbers.textContent);
 let postContainer = document.querySelector('.post-container');
+
+
 errMsg.classList.add('errMsg');
 
 let counter;
@@ -40,58 +45,151 @@ let counter;
 //posting behavior 
 postBtn.addEventListener('click', () => {
 
+    if (textInputArea.value || fileUploading.files[0] == true) {
+
+        let post = document.createElement('div');
+        post.classList.add('post');
+        post.classList.add('new-post');
+        //self post heading
+        let postHeading = document.createElement('div');
+        postHeading.classList.add('post-heading');
+        let clonedName = firstName.cloneNode(true);
+        let clonedImage = userImage.cloneNode(true);
+        let newpostHeading = document.createElement('p');
+        newpostHeading.innerHTML = `<p>${clonedName.innerText} <Strong class="Orange-txt">posted</Strong> </p>`
+        postHeading.append(clonedImage, newpostHeading);
+        //self post body
+        let postBody = document.createElement('div');
+        let newPara = document.createElement('p');
+        newPara.textContent = textInputArea.value;
+        postBody.classList.add('post-body');
+        postBody.append(newPara);
+
+        //self post footer
+        let postFooter = document.createElement('div');
+        postFooter.classList.add('post-footer');
+        let likesButton = document.createElement('button');
+        likesButton.textContent = 'Like';
+        likesButton.classList.add('new-like-btn');
+        likesButton.classList.add('like-btns');
+        likesButton.classList.add('post-btns');
+        let commentsButton = document.createElement('button');
+        commentsButton.textContent = 'Comment';
+
+        commentsButton.classList.add('comment-btns');
+        commentsButton.classList.add('post-btns');
+        postFooter.append(likesButton, commentsButton);
+
+        //self post likes and comments
+        let likesNdComments = document.createElement('div');
+        likesNdComments.classList.add('likes-comments');
+        let spanLikes = document.createElement('span');
+        spanLikes.innerHTML = '<span>Likes <span class="likes-number new-like-numb numbers">0</span></span>'
+        spanLikes.style.textAlign = 'left';
+        let spanComments = document.createElement('span');
+        spanComments.innerHTML = '<span>comments <span class="comments-number new-comm-numb numbers">0</span></span>'
+        spanComments.style.textAlign = 'left';
 
 
-    let post = document.createElement('div');
-    post.classList.add('post');
-    //self post heading
-    let postHeading = document.createElement('div');
-    postHeading.classList.add('post-heading');
-    let clonedName = firstName.cloneNode(true);
-    let clonedImage = userImage.cloneNode(true);
-    let newpostHeading = document.createElement('p');
-    newpostHeading.innerHTML = `<p>${clonedName.innerText} <Strong class="Orange-txt">posted</Strong> </p>`
-    postHeading.append(clonedImage, newpostHeading);
-    //self post body
-    let postBody = document.createElement('div');
-    let newPara = document.createElement('p');
-    newPara.textContent = textInputArea.value;
-    postBody.classList.add('post-body');
-    postBody.append(newPara);
+        likesNdComments.append(spanLikes, spanComments);
+        // self post comments panel
+        let comments_panel = document.createElement('div');
+        comments_panel.classList.add('comments-panel');
+        let panelHeader = document.createElement('h5');
+        panelHeader.textContent = 'comments';
+        panelHeader.classList.add('comments');
+        comments_panel.classList.add('new-comment');
+        comments_panel.append(panelHeader);
+        post.append(postHeading, postBody, likesNdComments, postFooter, comments_panel)
+        postContainer.append(post);
+        commentsButton.onclick = () => {
+            let commentsContainer = document.createElement('div');
 
-    //self post footer
-    let postFooter = document.createElement('div');
-    postFooter.classList.add('post-footer');
-    let likesButton = document.createElement('button');
-    likesButton.textContent = 'Like';
-    likesButton.classList.add('like-btns');
-    likesButton.classList.add('post-btns');
-    let commentsButton = document.createElement('button');
-    commentsButton.textContent = 'Comment';
-    commentsButton.classList.add('comment-btns');
-    commentsButton.classList.add('post-btns');
-    postFooter.append(likesButton, commentsButton);
+            commentsContainer.classList.add('absolute');
+            let closeBtn = document.createElement('button');
 
-    //self post likes and comments
-    let likesNdComments = document.createElement('div');
-    likesNdComments.classList.add('likes-comments');
-    let spanLikes = document.createElement('span');
-    spanLikes.innerHTML = '<span>Likes <span class="likes-number numbers">0</span></span>'
-    spanLikes.style.textAlign = 'left';
-    let spanComments = document.createElement('span');
-    spanComments.innerHTML = '<span>comments <span class="comments-number numbers">0</span></span>'
-    spanComments.style.textAlign = 'left';
+            closeBtn.classList.add('small-close');
 
-    likesNdComments.append(spanLikes, spanComments);
-    // self posrt comments panel
-    let commentsPanel = document.createElement('div');
-    commentsPanel.classList.add('comments-panel');
-    let panelHeader = document.createElement('h5');
-    panelHeader.textContent = 'comments';
-    panelHeader.classList.add('comments');
-    commentsPanel.append(panelHeader);
-    post.append(postHeading, postBody, likesNdComments, postFooter, commentsPanel)
-    postContainer.append(post);
+            document.querySelector('.new-post').append(commentsContainer);
+            let commentsAdd = document.createElement('button');
+            let comments = document.createElement('input');
+            commentsAdd.textContent = 'Add';
+            comments.setAttribute('placeholder', 'Add your comment');
+
+
+
+
+            commentsAdd.classList.add('add-comments');
+            commentsAdd.addEventListener('click', () => {
+                document.querySelector('.new-comm-numb').textContent++;
+                if (comments.value) {
+                    let cloneImage = userImage.cloneNode(true);
+                    let cloneName = firstName.cloneNode(true);
+                    let newHeading = document.createElement('span');
+                    newHeading.textContent = `Commenting as ${cloneName.textContent}`;
+                    newHeading.style.fontSize = '0.8rem';
+                    cloneImage.classList.add('clonedImg');
+                    let removeComment = document.createElement('button');
+                    removeComment.classList.add('small-close');
+
+                    let commentsInside = document.createElement('div');
+                    let commentsValue = document.createElement('span');
+                    commentsValue.innerText = comments.value;
+                    let nameImgContainer = document.createElement('div');
+                    nameImgContainer.classList.add('nameImgContainer');
+                    nameImgContainer.append(cloneImage, newHeading);
+                    let commentContentContainer = document.createElement('div');
+                    commentContentContainer.append(nameImgContainer, commentsValue);
+                    commentContentContainer.classList.add('display-flex-container');
+                    commentsInside.style.position = 'relative';
+                    commentsInside.append(commentContentContainer, removeComment);
+                    document.querySelector('.new-comment').append(commentsInside);
+                    commentsAdd.parentElement.remove();
+                    removeComment.addEventListener('click', () => {
+                        removeComment.parentElement.remove();
+                        document.querySelector('.new-comm-numb').textContent--;
+                    })
+
+
+
+                } else {
+
+                    commentsContainer.append(error)
+                }
+
+            })
+
+
+            commentsContainer.append(comments, commentsAdd, closeBtn);
+            closeBtn.addEventListener('click', () => {
+                closeBtn.parentElement.remove();
+            })
+
+        }
+        document.querySelector('.new-like-btn').onclick = () => {
+            if (document.querySelector('.new-like-btn').textContent == 'Like') {
+                document.querySelector('.new-like-numb').textContent++;
+                document.querySelector('.new-like-btn').textContent = 'Unlike';
+
+            } else {
+                if (document.querySelector('.new-like-btn').textContent == 'Unlike') {
+                    document.querySelector('.new-like-numb').textContent--;
+                    document.querySelector('.new-like-btn').textContent = 'Like';
+                }
+            }
+
+
+        }
+
+
+
+    } else {
+        errMsg.textContent = 'write something to post';
+        secondSect.append(errMsg);
+    }
+
+
+
 })
 
 
@@ -120,9 +218,10 @@ commentBtns.forEach((btn, idx) => {
 
         commentsAdd.classList.add('add-comments');
         commentsAdd.addEventListener('click', () => {
+            commentsNumbers[idx].textContent++;
             if (comments.value) {
                 let cloneImage = userImage.cloneNode(true);
-                let cloneName = userName.cloneNode(true);
+                let cloneName = firstName.cloneNode(true);
                 let newHeading = document.createElement('span');
                 newHeading.textContent = `Commenting as ${cloneName.textContent}`;
                 newHeading.style.fontSize = '0.8rem';
@@ -145,6 +244,7 @@ commentBtns.forEach((btn, idx) => {
                 commentsAdd.parentElement.remove();
                 removeComment.addEventListener('click', () => {
                     removeComment.parentElement.remove();
+                    commentsNumbers[idx].textContent--;
                 })
 
 
@@ -192,18 +292,6 @@ likeBtns.forEach((btn, idx) => {
 })
 
 
-
-postBtn.addEventListener('click', () => {
-    if (textInputArea.value || fileUploading.files[0] == true) {
-
-
-        errMsg.remove();
-    }
-    else {
-        errMsg.textContent = 'write something to post';
-        secondSect.append(errMsg);
-    }
-})
 
 
 

@@ -186,7 +186,7 @@ hr {
   margin-left: 5rem;
   /* box-shadow: 30px 0px 40px 50px #2233419b; */
 
-  /* display: inline; */
+  display: none;
 }
 
 .side-bar span {
@@ -304,15 +304,15 @@ svg {
   top: 25%;
   width: 300px;
   height: 300px;
-  stroke-dasharray: 2500;
-  stroke-dashoffset: 3500;
-  animation: stroke-offset 5s ease-in-out;
-  animation-fill-mode: forwards;
+  stroke-dasharray: 1420;
+  stroke-dashoffset: 2420;
+  animation: stroke-offset 4s ease-in-out forwards;
+
 }
 
 @keyframes stroke-offset {
   0% {
-    stroke-dashoffset: 3500;
+    stroke-dashoffset: 2420;
   }
 
   100% {

@@ -20,6 +20,10 @@ let totalPayment = document.querySelector('.total');
 let cartContainer = document.querySelector('.cart-container');
 //-------------------========== VARIABLES =========----------------
 
+let path = document.querySelector('.path');
+let length = path.getTotalLength();
+console.log(length)
+
 merchCounter.innerText = Number(merchCounter.innerText);
 let addItemId = 0;
 let counter = 1;
@@ -152,6 +156,7 @@ let scrollFunction = () => {
     document.body.scrollTop > 300 ||
     document.documentElement.scrollTop > 300
   ) {
+    sideCheckoutMenu.style.display = 'inline';
     cartBtn.style.visibility = 'visible';
     shoppingCart.style.visibility = 'visible';
     cartContainer.style.display = 'inline';
@@ -159,6 +164,7 @@ let scrollFunction = () => {
     cartContainer.style.display = 'none';
     cartBtn.style.visibility = 'hidden';
     shoppingCart.style.visibility = 'hidden';
+    sideCheckoutMenu.style.display = 'none';
   }
   if (
     document.body.scrollTop > 305 ||
