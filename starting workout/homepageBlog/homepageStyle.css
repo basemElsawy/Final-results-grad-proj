@@ -22,6 +22,10 @@ body {
     height: auto;
 }
 
+main {
+    height: auto;
+}
+
 .first-section {
     background-image: url(pictures/squatting.jpg);
     background-size: 160%;
@@ -66,7 +70,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     z-index: 10;
-
+    height: fit-content;
 
     animation: slide-up 1s ease forwards;
     opacity: 0;
@@ -81,15 +85,20 @@ body {
     border: 4px solid var(--text-Clr);
 }
 
-.user-name {
+.posting-as {
     grid-column: 2/span 3;
+
 
     grid-row: 1;
     font-size: 1.2rem;
 
 
+
 }
 
+.user-name {
+    font-size: 1.4rem;
+}
 
 .search-bar-frm {
     grid-row: 2;
@@ -156,7 +165,7 @@ body {
 .third-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-block: 50px;
 
 }
@@ -306,6 +315,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2px;
+    z-index: 10;
 
 }
 
@@ -376,7 +386,7 @@ body {
     align-items: baseline;
     border-radius: 5px;
     gap: 15px;
-    height: 100%;
+    height: fit-content;
 }
 
 .time-line {
@@ -526,25 +536,31 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    background-color: var(--background-clr);
+    color: white;
 }
 
 .post-container {
     width: 100%;
+    padding: 10px;
 
 }
 
 .post {
     width: 100%;
+    padding: 5px;
     box-shadow: 0px 0px 70px 20px #2233410e;
+    position: relative;
+
 }
 
 .post-body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    height: 30vh;
     padding-inline: 40px;
-    padding-bottom: 40px;
+    padding-block: 20px;
     gap: 20px;
 
 }
@@ -579,4 +595,115 @@ body {
     color: white;
     cursor: pointer;
     border: 1px solid var(--background-clr);
+}
+
+.post-heading strong {
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+}
+
+.numbers {
+    font-weight: bolder;
+}
+
+.likes-comments {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    gap: 10px;
+}
+
+
+.absolute {
+    position: absolute;
+    bottom: 10px;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 70%;
+    height: 50%;
+    outline: 2px solid var(--background-clr);
+    background-color: white;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.absolute input {
+    height: 40px;
+    padding: 20px;
+}
+
+.add-comments {
+    align-self: center;
+    font-size: 0.9em;
+    background-color: var(--background-clr);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    transition: 0.3s ease all;
+    font-weight: bold;
+}
+
+.add-comments:hover {
+    color: var(--text-Clr);
+    cursor: pointer;
+}
+
+.small-close {
+    position: absolute;
+    right: 5%;
+    border: none;
+    top: 15%;
+    background-color: transparent;
+
+}
+
+.small-close::after {
+    content: "\2715";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--background-clr);
+}
+
+.clonedImg {
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.comments {
+    color: var(--background-clr);
+}
+
+.comments-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nameImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.display-flex-container {
+    border-bottom: 2px solid #223341;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25%;
+
 }

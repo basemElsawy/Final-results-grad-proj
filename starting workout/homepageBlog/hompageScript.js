@@ -13,31 +13,134 @@ let plusSign = document.querySelector('.plus');
 let firstSection = document.querySelector('.first-section');
 let footerSection = document.querySelector('.footer-section');
 let secondSection = document.querySelector('.second-section');
-// posting variables
+// posts variables
+let secondSect = document.querySelector('.second-section');
+let likeBtns = document.querySelectorAll('.like-btns');
+let commentBtns = document.querySelectorAll('.comment-btns');
+let likesNumbers = document.querySelectorAll('.likes-number');
+let commentsPanel = document.querySelectorAll('.comments-panel');
+let posts = document.querySelectorAll('.post')
+
+//posting variables
+let userName = document.querySelector('.user-name');
 let fileUploading = document.getElementById('uploading');
+
+let errMsg = document.createElement('span');
 let textInputArea = document.getElementById('main-text');
 let postBtn = document.querySelector('.posting-btn');
-let errMsg = document.createElement('span');
-let secondSect = document.querySelector('.second-section');
-
-
+let userImage = document.querySelector('.user-image');
+likesNumbers.textContent = Number(likesNumbers.textContent);
 
 errMsg.classList.add('errMsg');
 
+let counter;
+
+let error = document.createElement('span');
+error.textContent = 'The comment field is empty';
+error.classList.add('errMsg');
+commentBtns.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        let commentsContainer = document.createElement('div');
+
+        commentsContainer.classList.add('absolute');
+        let closeBtn = document.createElement('button');
+        closeBtn.classList.add('small-close');
+
+        posts[idx].append(commentsContainer);
+        let commentsAdd = document.createElement('button');
+        let comments = document.createElement('input');
+        commentsAdd.textContent = 'Add';
+        comments.setAttribute('placeholder', 'Add your comment');
 
 
 
-// postBtn.addEventListener('click', () => {
-//     if (textInputArea.value || fileUploading.files[0] == true) {
+
+        commentsAdd.classList.add('add-comments');
+        commentsAdd.addEventListener('click', () => {
+            if (comments.value) {
+                let cloneImage = userImage.cloneNode(true);
+                let cloneName = userName.cloneNode(true);
+                let newHeading = document.createElement('span');
+                newHeading.textContent = `Commenting as ${cloneName.textContent}`;
+                newHeading.style.fontSize = '0.8rem';
+                cloneImage.classList.add('clonedImg');
+                let removeComment = document.createElement('button');
+                removeComment.classList.add('small-close');
+
+                let commentsInside = document.createElement('div');
+                let commentsValue = document.createElement('span');
+                commentsValue.innerText = comments.value;
+                let nameImgContainer = document.createElement('div');
+                nameImgContainer.classList.add('nameImgContainer');
+                nameImgContainer.append(cloneImage, newHeading);
+                let commentContentContainer = document.createElement('div');
+                commentContentContainer.append(nameImgContainer, commentsValue);
+                commentContentContainer.classList.add('display-flex-container');
+                commentsInside.style.position = 'relative';
+                commentsInside.append(commentContentContainer, removeComment);
+                commentsPanel[idx].append(commentsInside);
+                commentsAdd.parentElement.remove();
+                removeComment.addEventListener('click', () => {
+                    removeComment.parentElement.remove();
+                })
 
 
-//         errMsg.remove();
-//     }
-//     else {
-//         errMsg.textContent = 'write something to post';
-//         secondSect.append(errMsg);
-//     }
-// })
+
+            } else {
+
+                commentsContainer.append(error)
+            }
+        })
+
+
+
+
+        commentsContainer.append(comments, commentsAdd, closeBtn);
+        closeBtn.addEventListener('click', () => {
+            closeBtn.parentElement.remove();
+        })
+
+
+
+
+    })
+})
+
+
+likeBtns.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+
+        if (likeBtns[idx].textContent == 'Like') {
+            likesNumbers[idx].textContent++;
+            likeBtns[idx].textContent = 'Unlike';
+
+        } else {
+            if (likeBtns[idx].textContent == 'Unlike') {
+                likesNumbers[idx].textContent--;
+                likeBtns[idx].textContent = 'Like';
+            }
+        }
+
+
+
+
+    })
+
+})
+
+
+
+postBtn.addEventListener('click', () => {
+    if (textInputArea.value || fileUploading.files[0] == true) {
+
+
+        errMsg.remove();
+    }
+    else {
+        errMsg.textContent = 'write something to post';
+        secondSect.append(errMsg);
+    }
+})
 
 
 
