@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100;200;300&display=swap');
+
 * {
   font-family: 'Roboto';
   box-sizing: border-box;
@@ -10,12 +11,14 @@
   --background-color: #223341;
   --text-Clr: #ffae21;
 }
+
 body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -23,8 +26,9 @@ body {
   height: 100vh;
   background-color: #223341;
 }
+
 .image {
-  background-image: url(pictures/muscle.png);
+  background-image: url(images/muscle.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right bottom;
@@ -33,6 +37,7 @@ body {
   filter: invert(100%);
   transition: 0.5s ease;
 }
+
 .image::after {
   background-image: inherit;
   background-repeat: no-repeat;
@@ -46,12 +51,13 @@ body {
   opacity: 0.05;
   transition: 1s ease-in;
 }
+
 .image:hover {
   transform: translateY(-20px) scale(1.1);
 
-  filter: invert(80%) sepia(30%) saturate(11207%) hue-rotate(0deg)
-    brightness(95%) contrast(150%);
+  filter: invert(80%) sepia(30%) saturate(11207%) hue-rotate(0deg) brightness(95%) contrast(150%);
 }
+
 .image:hover::after {
   display: none;
 }
@@ -61,6 +67,7 @@ h1 {
   color: white;
   transition: 0.4s ease;
 }
+
 .Orange-txt {
   color: var(--text-Clr);
 }
