@@ -55,6 +55,8 @@ postBtn.addEventListener('click', () => {
         postHeading.classList.add('post-heading');
         let clonedName = firstName.cloneNode(true);
         let clonedImage = userImage.cloneNode(true);
+        clonedImage.style.width = '50px';
+        clonedImage.style.height = '50px';
         let newpostHeading = document.createElement('p');
         newpostHeading.innerHTML = `<p>${clonedName.innerText} <Strong class="Orange-txt">posted</Strong> </p>`
         postHeading.append(clonedImage, newpostHeading);
