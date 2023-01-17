@@ -463,23 +463,7 @@
   position: relative;
 }
 
-.schedule-choice {
-  position: absolute;
-  top: 20%;
-  left: 36.5%;
-  background-color: white;
-  border: 5px solid var(--background-clr);
-  width: 400px;
-  height: 300px;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  opacity: 0;
-  transition: 0.2s ease;
-  border-radius: 10px;
-}
+
 
 .schedule-choice h3 {
   margin: 15px;
@@ -575,33 +559,40 @@
 }
 
 .section-container {
-  border: 10px solid var(--background-clr);
+  /* border: 10px solid var(--background-clr); */
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 400px;
   position: relative;
   border-radius: 10px;
 }
 
 .container-header {
-  position: absolute;
-  top: -1px;
-  right: 1px;
-  left: 1px;
+  width: 100%;
   background-color: var(--background-clr);
-  width: auto;
+  margin-bottom: 50px;
   color: white;
   text-align: center;
   padding: 10px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 5px;
+
 }
 
 .section-mssg {
   font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.section-mssg span .Orange-txt {
+  background-color: #223341;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+
 }
 
 .favorites-container {
@@ -621,7 +612,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: 10px;
   padding: 10px;
   position: relative;
