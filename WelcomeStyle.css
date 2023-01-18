@@ -19,6 +19,14 @@ body {
   align-items: center;
 }
 
+#main-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -36,6 +44,7 @@ body {
   height: 100px;
   filter: invert(100%);
   transition: 0.5s ease;
+  margin-bottom: 60px;
 }
 
 .image::after {
@@ -53,13 +62,13 @@ body {
 }
 
 .image:hover {
-  transform: translateY(-20px) scale(1.1);
+  transform: translateY(-5px) scale(1.1);
 
   filter: invert(80%) sepia(30%) saturate(11207%) hue-rotate(0deg) brightness(95%) contrast(150%);
 }
 
 .image:hover::after {
-  display: none;
+  opacity: 0;
 }
 
 h2,
@@ -80,7 +89,38 @@ a {
 }
 
 .Welcome {
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s ease-in;
   font-size: 3rem;
+}
+
+.Lang {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+
+
+
+}
+
+.Lang a {
+  padding-inline: 15px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.4rem;
+
+}
+
+.Lang a:nth-child(1) {
+  border-right: 1px solid #ffae21;
+}
+
+.Lang a:nth-child(2) {
+  border-left: 1px solid #ffae21;
+}
+
+.Lang a:hover {
+  color: #ffae21;
+
 }
