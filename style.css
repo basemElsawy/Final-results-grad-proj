@@ -502,7 +502,7 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 300px; */
-  background-image: url(pictures1/weightlifting\ section-min\ \(2\).jpg);
+  background-image: url(pictures1/weightlifting-section-min-\(2\).jpg);
   width: 100%;
   height: 65vh;
   background-size: cover;
@@ -632,7 +632,7 @@ body {
   /* margin:; */
   height: auto;
   margin-bottom: 10px;
-  background: url(pictures1/weightlifting22.jpg);
+  background: url(pictures1/ambitious-creative-co-rick-barrett-FL3_5uBVMPI-unsplash.jpg);
   background-color: var(--background-clr);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1166,7 +1166,7 @@ body {
 }
 
 .footer-section {
-  background-image: url(pictures1/weightlifting22.jpg);
+  background-image: url(pictures1/ambitious-creative-co-rick-barrett-FL3_5uBVMPI-unsplash.jpg);
   background-position: center;
   height: fit-content;
   background-size: cover;
